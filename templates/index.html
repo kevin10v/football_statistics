@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Football Statistics{% endblock %}
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+<div class="container dashboard-container">
+    <header class="dashboard-header">
+        <h1><i class="fas fa-chart-line"></i> Player Statistics & Performance Dashboard</h1>
+        <p>Comprehensive analytics and ML-powered predictions for football players</p>
+    </header>
+
+    <!-- Player Selection -->
+    <div class="player-selection">
+        <label for="playerSelect"><i class="fas fa-user"></i> Select Player:</label>
+        <select id="playerSelect" class="player-select">
+            <option value="">Choose a player...</option>
+            {% for player in players %}
+            <option value="{{ player }}">{{ player }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div id="playerDashboard" class="player-dashboard" style="display: none;">
+        
+        <!-- Player Info Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-running"></i></div>
+                <div class="stat-content">
+                    <h3 id="statPosition">-</h3>
+                    <p>Position</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-calendar"></i></div>
+                <div class="stat-content">
+                    <h3 id="statMatches">0</h3>
+                    <p>Total Matches</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <div class="stat-content">
+                    <h3 id="statPerformance">0.0</h3>
+                    <p>Avg Performance</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                <div class="stat-content">
+                    <h3 id="statGoals">0</h3>
+                    <p>Total Goals</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- Heatmap -->
+            <div class="card heatmap-card">
+                <h2><i class="fas fa-map"></i> Field Coverage Heatmap</h2>
+                <div id="heatmapContainer"></div>
+            </div>
+
+            <!-- Radar Chart -->
+            <div class="card radar-card">
+                <h2><i class="fas fa-chart-radar"></i> Performance Radar</h2>
+                <canvas id="radarChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Performance Trend -->
+        <div class="card full-width">
+            <h2><i class="fas fa-chart-line"></i> Performance Trend</h2>
+            <canvas id="trendChart"></canvas>
+        </div>
+
+        <!-- Detailed Statistics -->
+        <div class="stats-section">
+            <h2><i class="fas fa-chart-bar"></i> Detailed Statistics</h2>
+            <div class="stats-detailed-grid">
+                <!-- Attacking Stats -->
+                <div class="stats-category">
+                    <h3><i class="fas fa-bullseye"></i> Attacking</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Goals</span>
+                        <span class="stat-value" id="detailGoals">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Assists</span>
+                        <span class="stat-value" id="detailAssists">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Avg Shots</span>
+                        <span class="stat-value" id="detailShots">0.0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Shot Accuracy</span>
+                        <span class="stat-value" id="detailShotAccuracy">0%</span>
+                    </div>
+                </div>
+
+                <!-- Passing Stats -->
+                <div class="stats-category">
+                    <h3><i class="fas fa-exchange-alt"></i> Passing</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Passes</span>
+                        <span class="stat-value" id="detailPasses">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Pass Accuracy</span>
+                        <span class="stat-value" id="detailPassAcc">0%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Avg Passes/Match</span>
+                        <span class="stat-value" id="detailAvgPasses">0.0</span>
+                    </div>
+                </div>
+
+                <!-- Defensive Stats -->
+                <div class="stats-category">
+                    <h3><i class="fas fa-shield-alt"></i> Defensive</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Tackles</span>
+                        <span class="stat-value" id="detailTackles">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Interceptions</span>
+                        <span class="stat-value" id="detailInterceptions">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Avg Dribbles</span>
+                        <span class="stat-value" id="detailDribbles">0.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ML Prediction Section -->
+        <div class="card prediction-section">
+            <h2><i class="fas fa-robot"></i> Performance Prediction</h2>
+            <p class="prediction-description">Adjust the statistics below to predict performance rating using our ML model</p>
+            
+            <div class="prediction-grid">
+                <div class="prediction-inputs">
+                    <div class="input-group">
+                        <label for="predMinutes">Minutes Played</label>
+                        <input type="range" id="predMinutes" min="0" max="90" value="90">
+                        <span id="predMinutesValue">90</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predGoals">Goals</label>
+                        <input type="range" id="predGoals" min="0" max="5" value="0">
+                        <span id="predGoalsValue">0</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predAssists">Assists</label>
+                        <input type="range" id="predAssists" min="0" max="5" value="0">
+                        <span id="predAssistsValue">0</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predShots">Shots</label>
+                        <input type="range" id="predShots" min="0" max="15" value="5">
+                        <span id="predShotsValue">5</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predShotsTarget">Shots on Target</label>
+                        <input type="range" id="predShotsTarget" min="0" max="15" value="3">
+                        <span id="predShotsTargetValue">3</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predPasses">Passes Completed</label>
+                        <input type="range" id="predPasses" min="0" max="100" value="50">
+                        <span id="predPassesValue">50</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predPassAcc">Pass Accuracy %</label>
+                        <input type="range" id="predPassAcc" min="0" max="100" value="85">
+                        <span id="predPassAccValue">85</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predTackles">Tackles</label>
+                        <input type="range" id="predTackles" min="0" max="15" value="3">
+                        <span id="predTacklesValue">3</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predInterceptions">Interceptions</label>
+                        <input type="range" id="predInterceptions" min="0" max="15" value="3">
+                        <span id="predInterceptionsValue">3</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="predDribbles">Dribbles Completed</label>
+                        <input type="range" id="predDribbles" min="0" max="10" value="2">
+                        <span id="predDribblesValue">2</span>
+                    </div>
+                </div>
+                
+                <div class="prediction-result">
+                    <h3>Predicted Performance Rating</h3>
+                    <div class="prediction-value" id="predictionValue">--</div>
+                    <p class="prediction-scale">Out of 100</p>
+                    <button id="predictBtn" class="btn btn-primary">
+                        <i class="fas fa-brain"></i> Calculate Prediction
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feature Importance -->
+            <div class="feature-importance">
+                <h3><i class="fas fa-chart-bar"></i> Feature Importance</h3>
+                <canvas id="importanceChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Recent Matches Table -->
+        <div class="card full-width">
+            <h2><i class="fas fa-table"></i> Recent Matches</h2>
+            <div class="table-container">
+                <table id="matchesTable">
+                    <thead>
+                        <tr>
+                            <th>Match</th>
+                            <th>Goals</th>
+                            <th>Assists</th>
+                            <th>Passes</th>
+                            <th>Pass Acc%</th>
+                            <th>Tackles</th>
+                            <th>Interceptions</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matchesTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Loading player data...</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Initialize the dashboard
+    const playerSelect = document.getElementById('playerSelect');
+    playerSelect.addEventListener('change', function() {
+        if (this.value) {
+            loadPlayerData(this.value);
+        }
+    });
+</script>
+{% endblock %}
+

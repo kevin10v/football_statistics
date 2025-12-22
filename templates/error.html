@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Error - Football Statistics{% endblock %}
+
+{% block content %}
+<div class="container error-container">
+    <div class="error-content">
+        <i class="fas fa-exclamation-triangle error-icon"></i>
+        <h1>Oops! Something went wrong</h1>
+        <p class="error-message">{{ message }}</p>
+        
+        <div class="error-instructions">
+            <h2>To fix this issue:</h2>
+            <ol>
+                <li>Open a terminal in the project directory</li>
+                <li>Run: <code>python train_model.py</code></li>
+                <li>Wait for the data generation and model training to complete</li>
+                <li>Refresh this page</li>
+            </ol>
+        </div>
+        
+        <a href="/" class="btn btn-primary">
+            <i class="fas fa-home"></i> Go to Dashboard
+        </a>
+    </div>
+</div>
+{% endblock %}
+
