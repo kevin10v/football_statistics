@@ -34,12 +34,71 @@ async function loadPlayerData(playerName) {
     }
 }
 
+// Update player profile (with photo and complete info)
+function updatePlayerProfile(data) {
+    // Photo
+    const photoEl = document.getElementById('playerPhoto');
+    if (photoEl && data.photo_url) {
+        photoEl.src = data.photo_url;
+        photoEl.alt = data.player_name;
+    }
+    
+    // Full name
+    const nameEl = document.getElementById('playerFullName');
+    if (nameEl) {
+        nameEl.textContent = data.full_name || data.player_name;
+    }
+    
+    // Profile details
+    if (document.getElementById('playerBirthdate')) {
+        document.getElementById('playerBirthdate').textContent = data.birth_date || 'Unknown';
+    }
+    if (document.getElementById('playerAge')) {
+        document.getElementById('playerAge').textContent = data.age ? data.age + ' years' : 'Unknown';
+    }
+    if (document.getElementById('playerNationality')) {
+        document.getElementById('playerNationality').textContent = data.nationality || 'Unknown';
+    }
+    if (document.getElementById('playerPosition')) {
+        document.getElementById('playerPosition').textContent = data.positions_full || data.position || 'Unknown';
+    }
+    if (document.getElementById('playerHeight')) {
+        document.getElementById('playerHeight').textContent = data.height_cm || 'Unknown';
+    }
+    if (document.getElementById('playerWeight')) {
+        document.getElementById('playerWeight').textContent = data.weight_kg || 'Unknown';
+    }
+    if (document.getElementById('playerRating')) {
+        document.getElementById('playerRating').textContent = data.overall_rating || '-';
+    }
+    if (document.getElementById('playerFoot')) {
+        document.getElementById('playerFoot').textContent = data.preferred_foot || 'Unknown';
+    }
+}
+
 // Update player info cards
 function updatePlayerInfo(data) {
-    document.getElementById('statPosition').textContent = data.position;
-    document.getElementById('statMatches').textContent = data.total_matches;
-    document.getElementById('statPerformance').textContent = data.avg_performance;
-    document.getElementById('statGoals').textContent = data.total_goals;
+    // Update profile if elements exist
+    if (document.getElementById('playerPhoto')) {
+        updatePlayerProfile(data);
+    }
+    
+    // Update stat cards
+    if (document.getElementById('statPosition')) {
+        document.getElementById('statPosition').textContent = data.position;
+    }
+    if (document.getElementById('statMatches')) {
+        document.getElementById('statMatches').textContent = data.total_matches;
+    }
+    if (document.getElementById('statPerformance')) {
+        document.getElementById('statPerformance').textContent = data.avg_performance;
+    }
+    if (document.getElementById('statGoals')) {
+        document.getElementById('statGoals').textContent = data.total_goals;
+    }
+    if (document.getElementById('statAssists')) {
+        document.getElementById('statAssists').textContent = data.total_assists;
+    }
 }
 
 // Update detailed statistics

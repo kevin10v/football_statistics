@@ -1,81 +1,77 @@
 """
-Flask Web Application for Football Player Statistics & Predictions
+Flask App with REAL Transfermarkt Current Season Data
+Includes: Search, Photos, Complete Info, Variable Matches
 """
 
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
-import numpy as np
 from model import PlayerPerformanceModel
 from data_generator import generate_heatmap_data
 import os
-import json
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'football-stats-secret-key-2024'
 
-# Global variables for model and data
 model = None
 df = None
 
+DATA_FILE = 'player_data.csv'
+MODEL_FILE = 'model.pkl'
+
 
 def load_app_data():
-    """Load model and data on startup"""
     global model, df
     
-    # Load data
-    if os.path.exists('player_statistics.csv'):
-        df = pd.read_csv('player_statistics.csv')
+    if os.path.exists(DATA_FILE):
+        df = pd.read_csv(DATA_FILE)
+        print(f"✅ TRANSFERMARKT DATA: {df['player_name'].nunique()} players")
+        print(f"   Season: 2024-2025 (CURRENT)")
     else:
-        return False, "Data file not found. Please run train_model.py first."
+        return False, "Run: python train_model_transfermarkt.py"
     
-    # Load model
     model = PlayerPerformanceModel()
-    if os.path.exists('player_performance_model.pkl'):
-        model.load_model()
+    if os.path.exists(MODEL_FILE):
+        model.load_model(MODEL_FILE)
     else:
-        return False, "Model not found. Please run train_model.py first."
+        return False, "Run: python train_model_transfermarkt.py"
     
-    return True, "Data and model loaded successfully"
+    return True, "OK"
 
 
 @app.route('/')
 def index():
-    """Main dashboard page"""
     success, message = load_app_data()
     if not success:
         return render_template('error.html', message=message)
     
-    # Get list of players
     players = sorted(df['player_name'].unique().tolist())
-    
     return render_template('index.html', players=players)
-
-
-@app.route('/api/players')
-def get_players():
-    """API endpoint to get all players"""
-    if df is None:
-        return jsonify({'error': 'Data not loaded'}), 500
-    
-    players = sorted(df['player_name'].unique().tolist())
-    return jsonify({'players': players})
 
 
 @app.route('/api/player/<player_name>')
 def get_player_stats(player_name):
-    """API endpoint to get player statistics"""
     if df is None:
-        return jsonify({'error': 'Data not loaded'}), 500
+        return jsonify({'error': 'Not loaded'}), 500
     
     player_data = df[df['player_name'] == player_name]
-    
     if len(player_data) == 0:
-        return jsonify({'error': 'Player not found'}), 404
+        return jsonify({'error': 'Not found'}), 404
     
-    # Calculate statistics
-    stats = {
+    profile = player_data.iloc[0]
+    
+    return jsonify({
         'player_name': player_name,
-        'position': player_data['position'].iloc[0],
+        'full_name': profile.get('full_name', player_name),
+        'photo_url': profile.get('photo_url', ''),
+        'birth_date': profile.get('birth_date', ''),
+        'age': int(profile.get('age', 0)),
+        'height_cm': f"{int(profile.get('height_cm', 0))} cm",
+        'weight_kg': f"{int(profile.get('weight_kg', 0))} kg",
+        'nationality': profile.get('nationality', ''),
+        'position': profile.get('position', ''),
+        'positions_full': profile.get('position', ''),
+        'preferred_foot': profile.get('preferred_foot', ''),
+        'overall_rating': int(profile.get('market_value_euro', 0) / 5000000),  # Approximate rating
+        'current_team': profile.get('team', ''),
         'total_matches': len(player_data),
         'avg_performance': round(player_data['performance_rating'].mean(), 2),
         'total_goals': int(player_data['goals'].sum()),
@@ -88,8 +84,6 @@ def get_player_stats(player_name):
         'total_tackles': int(player_data['tackles'].sum()),
         'total_interceptions': int(player_data['interceptions'].sum()),
         'avg_dribbles': round(player_data['dribbles_completed'].mean(), 2),
-        
-        # For radar chart
         'radar_stats': {
             'goals': round(player_data['goals'].mean(), 2),
             'assists': round(player_data['assists'].mean(), 2),
@@ -99,41 +93,27 @@ def get_player_stats(player_name):
             'interceptions': round(player_data['interceptions'].mean(), 2),
             'dribbles_completed': round(player_data['dribbles_completed'].mean(), 2),
         },
-        
-        # Performance trend
         'performance_trend': {
             'matches': player_data['match_id'].tolist(),
             'ratings': player_data['performance_rating'].tolist(),
         },
-        
-        # Recent matches
-        'recent_matches': player_data.sort_values('match_id', ascending=False).head(10).to_dict('records')
-    }
-    
-    return jsonify(stats)
+        'recent_matches': player_data.head(10).to_dict('records')
+    })
 
 
 @app.route('/api/heatmap/<player_name>')
 def get_heatmap(player_name):
-    """API endpoint to get player heatmap data"""
     x_pos, y_pos = generate_heatmap_data(player_name, n_positions=200)
-    
-    return jsonify({
-        'x': x_pos.tolist(),
-        'y': y_pos.tolist()
-    })
+    return jsonify({'x': x_pos.tolist(), 'y': y_pos.tolist()})
 
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
-    """API endpoint for ML predictions"""
     if model is None:
-        return jsonify({'error': 'Model not loaded'}), 500
+        return jsonify({'error': 'Not loaded'}), 500
     
     try:
         data = request.get_json()
-        
-        # Create prediction dataframe
         prediction_data = pd.DataFrame({
             'minutes_played': [data.get('minutes_played', 90)],
             'goals': [data.get('goals', 0)],
@@ -147,26 +127,18 @@ def predict():
             'dribbles_completed': [data.get('dribbles_completed', 2)],
         })
         
-        # Make prediction
         prediction = model.predict(prediction_data)[0]
-        
-        return jsonify({
-            'prediction': round(float(prediction), 2),
-            'status': 'success'
-        })
-    
+        return jsonify({'prediction': round(float(prediction), 2), 'status': 'success'})
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
 
 @app.route('/api/feature_importance')
 def get_feature_importance():
-    """API endpoint to get feature importance"""
     if model is None:
-        return jsonify({'error': 'Model not loaded'}), 500
+        return jsonify({'error': 'Not loaded'}), 500
     
     importance_df = model.get_feature_importance()
-    
     return jsonify({
         'features': importance_df['feature'].tolist(),
         'importance': importance_df['importance'].tolist()
@@ -175,18 +147,18 @@ def get_feature_importance():
 
 @app.route('/about')
 def about():
-    """About page"""
     return render_template('about.html')
 
 
 if __name__ == '__main__':
-    print("=" * 60)
-    print("Football Statistics Web Application")
-    print("=" * 60)
-    print("\nStarting server...")
-    print("Open your browser and navigate to: http://localhost:8080")
-    print("\nPress CTRL+C to stop the server")
-    print("=" * 60)
+    print("=" * 80)
+    print("⚽ TRANSFERMARKT - Current 2024-2025 Season")
+    print("=" * 80)
+    print("\n✅ REAL Players with Photos & Complete Info")
+    print("🔍 Search Feature Enabled")
+    print("📅 Current Rosters & Transfers")
+    print("\n🚀 http://localhost:8080")
+    print("=" * 80)
     
     app.run(debug=True, host='0.0.0.0', port=8080)
 

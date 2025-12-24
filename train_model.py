@@ -1,36 +1,30 @@
 """
-Script to train the ML model
+Train model on Transfermarkt current season data
 """
 
-from data_generator import generate_player_data
+from load_data import create_transfermarkt_based_database
 from model import train_and_save_model
 import os
 
 
 def main():
-    """Generate data and train model"""
+    print("=" * 80)
+    print("⚽ Training with TRANSFERMARKT DATA")
+    print("=" * 80)
     
-    print("=" * 60)
-    print("Football Player Performance Prediction - Model Training")
-    print("=" * 60)
-    
-    # Check if data exists, if not generate it
-    if not os.path.exists('player_statistics.csv'):
-        print("\n📊 Generating synthetic player data...")
-        df = generate_player_data(n_players=50, n_matches=20)
-        df.to_csv('player_statistics.csv', index=False)
-        print(f"✅ Generated {len(df)} records for {df['player_name'].nunique()} players")
+    if not os.path.exists('player_data.csv'):
+        print("\n📊 Creating player database...")
+        df = create_transfermarkt_based_database()
     else:
-        print("\n✅ Data file already exists")
+        print("\n✅ Database exists")
     
-    # Train model
-    print("\n🤖 Training ML model...")
-    model, metrics = train_and_save_model('player_statistics.csv')
+    print("\n🤖 Training model...")
+    model, metrics = train_and_save_model('player_data.csv')
     
-    print("\n" + "=" * 60)
-    print("✅ Training Complete!")
-    print("=" * 60)
-    print("\nYou can now run the dashboard with: streamlit run dashboard.py")
+    model.save_model('model.pkl')
+    
+    print("\n✅ Training complete!")
+    print("🚀 Run: python app.py")
 
 
 if __name__ == "__main__":

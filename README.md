@@ -1,45 +1,17 @@
-# Football Player Statistics & Predictions Dashboard ⚽
+# ⚽ Football Player Statistics & Predictions Dashboard
 
-A comprehensive Machine Learning project that predicts football player performance and visualizes statistics through an interactive dashboard.
+A complete Machine Learning web application for analyzing football player performance with interactive visualizations.
 
-## 🎯 Features
+## ✨ Features
 
-- **ML Model**: Random Forest Regressor to predict player performance ratings
-- **Interactive Dashboard**: Built with Streamlit for real-time visualization
-- **Player Statistics**: Comprehensive stats including goals, assists, passes, tackles, and more
-- **Field Coverage Heatmap**: Visualize player movement and positioning on the field
-- **Performance Radar Chart**: Multi-dimensional view of player capabilities
-- **Trend Analysis**: Track performance over multiple matches
-- **Real-time Predictions**: Adjust stats and see predicted performance ratings
+- 🔍 **Search Functionality** - Find any player instantly
+- 📸 **Player Profiles** - Photos, birthdates, complete information
+- 📊 **Interactive Dashboard** - Charts, heatmaps, statistics
+- 🤖 **ML Predictions** - Predict player performance ratings
+- 📈 **Performance Analytics** - Trends, radar charts, detailed stats
+- 🗺️ **Field Coverage Heatmaps** - Visualize player positioning
 
-## 📁 Project Structure
-
-```
-football_statistics/
-├── README.md                          # Project documentation
-├── requirements.txt                   # Python dependencies
-├── config.py                         # Configuration settings
-├── data_generator.py                 # Generate synthetic player data
-├── model.py                          # ML model implementation
-├── train_model.py                    # Script to train the model
-├── run_website.py                    # Quick start script for Flask app
-├── app.py                            # Flask web application
-├── dashboard.py                      # Streamlit dashboard (alternative)
-├── templates/                        # HTML templates
-│   ├── base.html                     # Base template
-│   ├── index.html                    # Main dashboard
-│   ├── about.html                    # About page
-│   └── error.html                    # Error page
-├── static/                           # Static assets
-│   ├── css/
-│   │   └── style.css                 # Custom CSS styling
-│   └── js/
-│       └── main.js                   # JavaScript functionality
-├── player_statistics.csv             # Generated data (after running)
-└── player_performance_model.pkl      # Trained model (after training)
-```
-
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### 1. Install Dependencies
 
@@ -47,192 +19,106 @@ football_statistics/
 pip install -r requirements.txt
 ```
 
-### 2. Generate Data and Train Model
+### 2. Generate Data & Train Model
 
 ```bash
-python train_model.py
+python load_data.py      # Create player database
+python train_model.py    # Train ML model
 ```
 
-This will:
-- Generate synthetic player statistics data (1000+ records)
-- Train the ML model with Random Forest
-- Save the trained model to disk
-- Display training metrics and feature importance
-
-### 3. Run the Web Application
-
-#### Option A: Flask Web Application (Recommended for Production)
-
-```bash
-python run_website.py
-```
-
-Or directly:
+### 3. Launch Website
 
 ```bash
 python app.py
 ```
 
-The website will open at `http://localhost:5000`
+Open your browser: **http://localhost:8080**
 
-**Features:**
-- Beautiful, responsive web interface
-- Interactive charts with Chart.js and Plotly
-- Real-time ML predictions
-- Professional dashboard design
-- Mobile-friendly layout
+---
 
-#### Option B: Streamlit Dashboard (Quick Prototyping)
+## 📁 Project Structure
 
-```bash
-streamlit run dashboard.py
+```
+football_statistics/
+├── app.py                  # Main Flask web application
+├── app_epl.py             # Alternative EPL-focused version
+├── model.py               # ML model (Random Forest)
+├── load_data.py           # Data loader
+├── train_model.py         # Model training script
+├── data_generator.py      # Heatmap generation
+├── config.py              # Configuration
+├── requirements.txt       # Dependencies
+├── templates/             # HTML templates
+│   ├── index.html         # Main dashboard
+│   ├── about.html         # About page
+│   └── ...
+├── static/                # CSS & JavaScript
+│   ├── css/style.css
+│   └── js/main.js
+├── player_data.csv        # Player statistics (generated)
+└── model.pkl              # Trained ML model (generated)
 ```
 
-The dashboard will open at `http://localhost:8501`
+---
 
-**Features:**
-- Rapid prototyping interface
-- Streamlit's built-in widgets
-- Quick data exploration
+## 🎯 Usage
 
-## 📊 Web Application Features
+### Search for Players
+1. Type player name in search bar (e.g., "Haaland", "Salah")
+2. Or select from dropdown
+3. View complete profile with photo and stats
 
-### 🏠 Main Dashboard
+### View Statistics
+- Goals, assists, passes, tackles
+- Performance ratings over time
+- Field coverage heatmaps
+- Radar charts
 
-1. **Player Selection Dropdown**
-   - Browse 50+ players
-   - Instant stats loading
+### ML Predictions
+- Adjust stat sliders
+- Get predicted performance rating
+- See feature importance
 
-2. **Key Stats Cards**
-   - Position, Total Matches, Avg Performance, Total Goals
-   - Beautiful gradient backgrounds
-   - Hover animations
+---
 
-3. **Field Coverage Heatmap** 🗺️
-   - Interactive football field visualization
-   - Real field dimensions (105m x 68m)
-   - Density heatmap showing player positioning
-   - Built with Plotly.js
+## 🛠️ Technologies
 
-4. **Performance Radar Chart** 📊
-   - 7-dimensional performance view
-   - Normalized statistics (0-100 scale)
-   - Interactive tooltips
-   - Built with Chart.js
+- **Backend:** Python, Flask
+- **ML:** Scikit-learn (Random Forest)
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Visualizations:** Chart.js, Plotly.js
+- **Data:** Pandas, NumPy
 
-5. **Performance Trend Line Chart** 📈
-   - Match-by-match rating progression
-   - Smooth animations
-   - Identify consistency patterns
+---
 
-6. **Detailed Statistics Breakdown**
-   - **⚽ Attacking Stats**: Goals, assists, shots, accuracy
-   - **🎯 Passing Stats**: Total passes, accuracy, avg per match
-   - **🛡️ Defensive Stats**: Tackles, interceptions, dribbles
-   - Color-coded categories
+## 📊 Data
 
-7. **ML Prediction Interface** 🤖
-   - 10 interactive sliders for stat adjustment
-   - Real-time value display
-   - Large prediction display (0-100)
-   - Calculate button with smooth animations
+- Real player names and information
+- Variable match statistics (realistic)
+- Multiple leagues supported
+- Easy to update with new data
 
-8. **Feature Importance Chart**
-   - Horizontal bar chart
-   - Shows which stats matter most
-   - Based on trained model
-
-9. **Recent Matches Table** 📋
-   - Last 10 matches detailed view
-   - Sortable columns
-   - Hover effects
-
-### 📄 About Page
-- Full project documentation
-- Technology stack details
-- Model information
-- Quick start guide
-
-## 🤖 Model Details
-
-### Algorithm
-- **Random Forest Regressor** with 100 estimators
-- Features: 10 key player statistics
-- Target: Performance rating (0-100)
-
-### Features Used
-1. Minutes played
-2. Goals
-3. Assists
-4. Shots
-5. Shots on target
-6. Passes completed
-7. Pass accuracy
-8. Tackles
-9. Interceptions
-10. Dribbles completed
-
-### Performance Metrics
-- R² Score: ~0.95+ on test set
-- RMSE: Low error rate
-- Cross-validation: 5-fold CV for robustness
-
-## 🎨 Visualizations
-
-- **Plotly**: Interactive charts and heatmaps
-- **Matplotlib/Seaborn**: Statistical visualizations
-- **Custom Football Field**: Accurate field dimensions (105m x 68m)
-
-## 📝 Data
-
-The project uses synthetic data that mimics realistic football statistics:
-- 50 players across 4 positions (Forward, Midfielder, Defender, Goalkeeper)
-- 20 matches per player (1000 total records)
-- Position-specific statistical distributions
-- Realistic performance ratings based on multiple factors
+---
 
 ## 🔧 Configuration
 
 Edit `config.py` to customize:
-- Model hyperparameters
+- Model parameters
 - Feature columns
 - Dashboard settings
-- Field dimensions
-
-## 🎓 Use Cases
-
-- **Player Analysis**: Evaluate player performance comprehensively
-- **Scouting**: Predict potential based on statistics
-- **Team Strategy**: Understand player strengths and weaknesses
-- **Performance Tracking**: Monitor improvement over time
-- **Educational**: Learn ML and data visualization techniques
-
-## 🛠️ Technologies Used
-
-- **Python 3.8+**
-- **Pandas & NumPy**: Data manipulation
-- **Scikit-learn**: Machine learning
-- **Streamlit**: Web dashboard
-- **Plotly**: Interactive visualizations
-- **Matplotlib & Seaborn**: Statistical plots
-
-## 📈 Future Enhancements
-
-- Real football data integration (API)
-- Player comparison features
-- Team-level analytics
-- Advanced ML models (XGBoost, Neural Networks)
-- Historical data analysis
-- Export reports functionality
-
-## 📄 License
-
-This project is open source and available for educational purposes.
-
-## 👨‍💻 Author
-
-Created as a demonstration of ML and data visualization capabilities in sports analytics.
 
 ---
 
-**Enjoy exploring football statistics! ⚽📊**
+## 📝 License
+
+Open source - Educational purposes
+
+---
+
+## 👨‍💻 Author
+
+Football Statistics ML Dashboard Project
+
+---
+
+**Enjoy analyzing football statistics! ⚽📊**
