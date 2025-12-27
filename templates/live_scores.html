@@ -1,0 +1,770 @@
+{% extends "base.html" %}
+
+{% block title %}Football Live Scores - Latest Results & Fixtures{% endblock %}
+
+{% block content %}
+<div class="live-scores-container">
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="top-bar-content">
+                <div class="info-message">
+                    <i class="fas fa-futbol"></i>
+                    <span>Premier League 2024-25 Season</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content-area">
+        <!-- Left Sidebar - League Navigation -->
+        <aside class="leagues-sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-trophy"></i> Premier League</h3>
+            </div>
+            <div class="leagues-list">
+                <div class="league-category">
+                    <div class="category-header">
+                        <i class="fas fa-star"></i> Season 2024-25
+                    </div>
+                    <div class="league-item active" data-league="Premier League">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" 
+                             alt="EPL" class="league-flag" onerror="this.style.display='none'">
+                        <span>Premier League</span>
+                        <span class="match-count" id="pl-count">0</span>
+                    </div>
+                </div>
+
+                <div class="league-category">
+                    <div class="category-header">
+                        <i class="fas fa-info-circle"></i> Information
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-futbol"></i>
+                        <span>380 Matches</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>20 Teams</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Aug 2024 - May 2025</span>
+                    </div>
+                </div>
+
+                <div class="league-category">
+                    <div class="category-header">
+                        <i class="fas fa-link"></i> Quick Links
+                    </div>
+                    <a href="/leagues" class="league-item quick-link">
+                        <i class="fas fa-list"></i>
+                        <span>League Table</span>
+                    </a>
+                    <a href="/players" class="league-item quick-link">
+                        <i class="fas fa-user"></i>
+                        <span>Player Stats</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Center Content - Matches -->
+        <main class="matches-section">
+            <!-- Season Info -->
+            <div class="season-selector">
+                <label><i class="fas fa-calendar-alt"></i> Season:</label>
+                <span style="font-weight: 600; color: var(--text-primary);">2024/25 (Current)</span>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingMatches" class="loading-container" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading matches...</p>
+            </div>
+
+            <!-- Matches Container -->
+            <div id="matchesContainer">
+                <!-- Matches will be dynamically inserted here -->
+            </div>
+
+            <!-- No Matches Message -->
+            <div id="noMatches" class="no-matches" style="display: none;">
+                <i class="fas fa-info-circle"></i>
+                <p>No matches available for the selected criteria</p>
+            </div>
+        </main>
+
+        <!-- Right Sidebar - Featured -->
+        <aside class="featured-sidebar">
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-fire"></i> Top Scorers</h3>
+                <div id="topScorers" class="top-scorers-list">
+                    <div class="loading-small">Loading...</div>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-chart-line"></i> Recent Form</h3>
+                <div id="teamForm" class="team-form-list">
+                    <div class="loading-small">Loading...</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.live-scores-container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+/* Top Bar */
+.top-bar {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.info-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.info-message i {
+    font-size: 24px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Main Content Area */
+.main-content-area {
+    display: grid;
+    grid-template-columns: 280px 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Sidebar Styles */
+.leagues-sidebar, .featured-sidebar {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    height: fit-content;
+    position: sticky;
+    top: 90px;
+    border: 1px solid var(--border-color);
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.sidebar-header h3 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.leagues-list {
+    padding: 10px;
+}
+
+.league-category {
+    margin-bottom: 20px;
+}
+
+.category-header {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.league-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.league-item:hover {
+    background: var(--bg-primary);
+    transform: translateX(5px);
+}
+
+.league-item.active {
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 600;
+}
+
+.league-flag {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.match-count {
+    margin-left: auto;
+    background: rgba(93, 173, 226, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.league-item.active .match-count {
+    background: rgba(255,255,255,0.3);
+    color: white;
+}
+
+/* Info Items Styling */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.info-item i {
+    color: var(--accent-color);
+    width: 20px;
+}
+
+/* Matches Section */
+.matches-section {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.season-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.season-selector label {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Match Card */
+.match-league-header {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 20px 0 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+    background: var(--bg-secondary);
+}
+
+.match-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.match-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.match-status.finished {
+    color: #28a745;
+}
+
+.match-status.scheduled {
+    color: #ffc107;
+}
+
+.match-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team.home {
+    justify-content: flex-end;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.match-score {
+    text-align: center;
+    padding: 10px 20px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    min-width: 80px;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.vs-text {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 5px 0;
+}
+
+.match-time {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
+/* Sidebar Widgets */
+.sidebar-widget {
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-widget:last-child {
+    border-bottom: none;
+}
+
+.sidebar-widget h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scorer-item, .leader-item, .form-item {
+    padding: 10px;
+    border-bottom: 1px solid #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.scorer-item:last-child, .leader-item:last-child, .form-item:last-child {
+    border-bottom: none;
+}
+
+.team-badge {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.form-badges {
+    display: flex;
+    gap: 3px;
+}
+
+.form-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-badge.W { background: #28a745; }
+.form-badge.D { background: #ffc107; color: #333; }
+.form-badge.L { background: #dc3545; }
+
+/* Loading States */
+.loading-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--accent-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+.loading-small {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 13px;
+}
+
+.no-matches {
+    text-align: center;
+    padding: 50px;
+    color: var(--text-secondary);
+}
+
+.no-matches i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .main-content-area {
+        grid-template-columns: 250px 1fr 280px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-content-area {
+        grid-template-columns: 1fr;
+    }
+    
+    .leagues-sidebar, .featured-sidebar {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+    }
+    
+    .search-section {
+        max-width: 100%;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const matchesContainer = document.getElementById('matchesContainer');
+    const loadingMatches = document.getElementById('loadingMatches');
+    const noMatches = document.getElementById('noMatches');
+    
+    // Fixed to Premier League 2024-25
+    const currentLeague = 'Premier League';
+    const currentSeason = '2024-25';
+    let allMatches = [];
+    
+    // Load matches for selected league
+    async function loadMatches(league, season) {
+        loadingMatches.style.display = 'block';
+        matchesContainer.innerHTML = '';
+        noMatches.style.display = 'none';
+        
+        try {
+            console.log('Fetching matches for:', league, season);
+            const response = await fetch(`/api/league/matches/${encodeURIComponent(league)}?season=${season}`);
+            console.log('Response status:', response.status);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            console.log('Data received:', data);
+            
+            if (!data.matches || data.matches.length === 0) {
+                console.log('No matches in response');
+                noMatches.style.display = 'block';
+                loadingMatches.style.display = 'none';
+                return;
+            }
+            
+            allMatches = data.matches;
+            console.log('Total matches:', allMatches.length);
+            
+            displayMatches(allMatches);
+            updateMatchCounts();
+            
+            loadingMatches.style.display = 'none';
+        } catch (error) {
+            console.error('Error loading matches:', error);
+            loadingMatches.style.display = 'none';
+            matchesContainer.innerHTML = `
+                <div style="padding: 40px; text-align: center; color: var(--text-secondary);">
+                    <i class="fas fa-exclamation-circle" style="font-size: 48px; margin-bottom: 15px;"></i>
+                    <p style="font-size: 16px; margin: 0;">Error loading matches</p>
+                    <p style="font-size: 14px; margin: 10px 0 20px;">Please check your internet connection and try refreshing the page.</p>
+                    <button onclick="location.reload()" style="padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                        <i class="fas fa-redo"></i> Refresh Page
+                    </button>
+                </div>
+            `;
+        }
+    }
+    
+    function displayMatches(matches) {
+        if (!matches || matches.length === 0) {
+            noMatches.style.display = 'block';
+            return;
+        }
+        
+        // Group matches by round
+        const groupedMatches = {};
+        matches.forEach(match => {
+            const round = match.round || 'Unknown Round';
+            if (!groupedMatches[round]) {
+                groupedMatches[round] = [];
+            }
+            groupedMatches[round].push(match);
+        });
+        
+        matchesContainer.innerHTML = '';
+        
+        // Display all matches by round
+        Object.keys(groupedMatches).forEach(round => {
+            const roundHeader = document.createElement('div');
+            roundHeader.className = 'match-league-header';
+            roundHeader.innerHTML = `<i class="fas fa-calendar"></i> ${round}`;
+            matchesContainer.appendChild(roundHeader);
+            
+            groupedMatches[round].forEach(match => {
+                const matchCard = createMatchCard(match);
+                matchesContainer.appendChild(matchCard);
+            });
+        });
+    }
+    
+    function createMatchCard(match) {
+        const card = document.createElement('div');
+        card.className = 'match-card';
+        
+        const hasScore = match.score1 !== null && match.score2 !== null;
+        const status = hasScore ? 'finished' : 'scheduled';
+        const statusText = hasScore ? 'FT' : formatDate(match.date);
+        
+        card.innerHTML = `
+            <div class="match-header">
+                <div class="match-status ${status}">
+                    <i class="fas fa-${hasScore ? 'check-circle' : 'clock'}"></i>
+                    ${statusText}
+                </div>
+                <div class="match-date">${match.date || ''}</div>
+            </div>
+            <div class="match-content">
+                <div class="team home">
+                    <span class="team-name">${match.team1}</span>
+                </div>
+                <div class="match-score">
+                    ${hasScore 
+                        ? `<div class="score">${match.score1} - ${match.score2}</div>`
+                        : `<div class="vs-text">VS</div><div class="match-time">${formatTime(match.date)}</div>`
+                    }
+                </div>
+                <div class="team away">
+                    <span class="team-name">${match.team2}</span>
+                </div>
+            </div>
+        `;
+        
+        return card;
+    }
+    
+    function formatDate(dateStr) {
+        if (!dateStr) return 'TBD';
+        const date = new Date(dateStr);
+        const options = { month: 'short', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+    
+    function formatTime(dateStr) {
+        if (!dateStr) return 'TBD';
+        const date = new Date(dateStr);
+        return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    }
+    
+    function updateMatchCounts() {
+        const countElement = document.getElementById('pl-count');
+        if (countElement) {
+            countElement.textContent = allMatches.length;
+        }
+    }
+    
+    // Load sidebar data
+    async function loadSidebarData() {
+        loadTopScorers();
+        loadTeamForm();
+    }
+    
+    async function loadTopScorers() {
+        const container = document.getElementById('topScorers');
+        container.innerHTML = '<div class="loading-small">Loading top scorers...</div>';
+        
+        // Real Premier League top scorers 2024-25
+        const realScorers = [
+            { name: 'Mohamed Salah', team: 'Liverpool', goals: 29 },
+            { name: 'Alexander Isak', team: 'Newcastle', goals: 23 },
+            { name: 'Erling Haaland', team: 'Man City', goals: 22 },
+            { name: 'Chris Wood', team: 'Nottingham Forest', goals: 20 },
+            { name: 'Bryan Mbeumo', team: 'Brentford', goals: 20 },
+            { name: 'Yoane Wissa', team: 'Brentford', goals: 19 },
+            { name: 'Ollie Watkins', team: 'Aston Villa', goals: 16 },
+            { name: 'Matheus Cunha', team: 'Wolves', goals: 15 },
+            { name: 'Cole Palmer', team: 'Chelsea', goals: 15 },
+            { name: 'Jean-Philippe Mateta', team: 'Crystal Palace', goals: 14 }
+        ];
+        
+        container.innerHTML = realScorers.map((scorer, i) => `
+            <div class="scorer-item">
+                <div>
+                    <strong>${i + 1}. ${scorer.name}</strong><br>
+                    <small style="color: var(--text-secondary);">${scorer.team}</small>
+                </div>
+                <div style="font-weight: bold; color: var(--accent-color);">${scorer.goals}</div>
+            </div>
+        `).join('');
+    }
+    
+    // Removed league leaders function
+    
+    async function loadTeamForm() {
+        const container = document.getElementById('teamForm');
+        container.innerHTML = '<div class="loading-small">Loading...</div>';
+        
+        try {
+            const response = await fetch(`/api/league/table/${encodeURIComponent(currentLeague)}?season=${currentSeason}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.standings && data.standings.length > 0) {
+                    let html = '';
+                    for (let i = 0; i < Math.min(5, data.standings.length); i++) {
+                        const team = data.standings[i];
+                        const formResponse = await fetch(`/api/team/form/${encodeURIComponent(currentLeague)}/${encodeURIComponent(team.team)}?season=${currentSeason}&last_n=5`);
+                        if (formResponse.ok) {
+                            const formData = await formResponse.json();
+                            const formBadges = formData.form.map(r => 
+                                `<span class="form-badge ${r}">${r}</span>`
+                            ).join('');
+                            
+                            html += `
+                                <div class="form-item">
+                                    <div><strong>${team.team}</strong></div>
+                                    <div class="form-badges">${formBadges}</div>
+                                </div>
+                            `;
+                        }
+                    }
+                    container.innerHTML = html;
+                }
+            }
+        } catch (error) {
+            console.error('Error loading team form:', error);
+            container.innerHTML = '<div class="loading-small">Failed to load</div>';
+        }
+    }
+    
+    // Event Listeners removed - no search or view filtering
+    
+    // Initial load - Premier League 2024-25
+    loadMatches(currentLeague, currentSeason);
+    loadSidebarData();
+    
+    // Listen for global theme changes
+    window.addEventListener('themeChanged', function(e) {
+        // Page already uses CSS variables, so no additional action needed
+        console.log('Theme changed to:', e.detail.theme);
+    });
+});
+</script>
+{% endblock %}
+

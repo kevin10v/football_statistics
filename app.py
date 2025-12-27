@@ -1,21 +1,60 @@
 """
 Flask App with REAL Transfermarkt Current Season Data
 Includes: Search, Photos, Complete Info, Variable Matches
++ OpenFootball Real Match Data Integration
 """
 
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from model import PlayerPerformanceModel
 from data_generator import generate_heatmap_data
+from football_json_loader import FootballJSONLoader
+from load_premier_league_matches import load_matches
 import os
+import json
 
 app = Flask(__name__)
 
 model = None
 df = None
+football_loader = FootballJSONLoader()
+premier_league_matches = None
 
 DATA_FILE = 'player_data.csv'
 MODEL_FILE = 'model.pkl'
+
+
+def load_premier_league_matches_data():
+    """Load Premier League matches from local JSON file"""
+    global premier_league_matches
+    try:
+        with open('premier_league_2024_25_matches.json', 'r') as f:
+            data = json.load(f)
+        
+        matches = []
+        for match in data['matches']:
+            match_info = {
+                'date': match.get('date'),
+                'time': match.get('time', ''),
+                'round': match.get('round'),
+                'team1': match.get('team1'),
+                'team2': match.get('team2'),
+                'score1': None,
+                'score2': None,
+            }
+            
+            # Extract scores if available
+            if 'score' in match and 'ft' in match['score']:
+                match_info['score1'] = match['score']['ft'][0]
+                match_info['score2'] = match['score']['ft'][1]
+            
+            matches.append(match_info)
+        
+        premier_league_matches = matches
+        print(f"✅ Loaded {len(matches)} Premier League matches from local file")
+    except Exception as e:
+        print(f"⚠️  Could not load local matches: {e}")
+        premier_league_matches = []
 
 
 def load_app_data():
@@ -39,12 +78,19 @@ def load_app_data():
 
 @app.route('/')
 def index():
+    """Default homepage - live scores"""
+    return render_template('live_scores.html')
+
+
+@app.route('/players')
+def players():
+    """Player statistics page"""
     success, message = load_app_data()
     if not success:
         return render_template('error.html', message=message)
     
-    players = sorted(df['player_name'].unique().tolist())
-    return render_template('index.html', players=players)
+    players_list = sorted(df['player_name'].unique().tolist())
+    return render_template('index.html', players=players_list)
 
 
 @app.route('/api/player/<player_name>')
@@ -150,15 +196,137 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/leagues')
+def leagues():
+    """League tables page"""
+    return render_template('league_table.html')
+
+
+@app.route('/live-scores')
+def live_scores():
+    """Live scores page - Flashscore style"""
+    return render_template('live_scores.html')
+
+
+# ============================================================================
+# OpenFootball JSON API Endpoints - Real Match Data
+# ============================================================================
+
+@app.route('/api/league/table/<league_name>')
+def get_league_table(league_name):
+    """Get league standings/table"""
+    try:
+        season = request.args.get('season', '2024-25')
+        table = football_loader.get_team_statistics(league_name, season)
+        
+        if table.empty:
+            return jsonify({'error': 'No data available', 'league': league_name}), 404
+        
+        return jsonify({
+            'league': league_name,
+            'season': season,
+            'standings': table.to_dict('records')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@app.route('/api/league/matches/<league_name>')
+def get_league_matches_api(league_name):
+    """Get all matches for a league - uses local data for Premier League"""
+    try:
+        season = request.args.get('season', '2024-25')
+        
+        # Use local Premier League data for faster loading
+        if league_name == 'Premier League' and season == '2024-25':
+            if premier_league_matches is None:
+                load_premier_league_matches_data()
+            
+            return jsonify({
+                'league': league_name,
+                'season': season,
+                'total_matches': len(premier_league_matches),
+                'matches': premier_league_matches
+            })
+        
+        # Fallback to external API for other leagues/seasons
+        matches = football_loader.get_league_matches(league_name, season)
+        
+        if matches.empty:
+            return jsonify({'error': 'No data available', 'league': league_name}), 404
+        
+        return jsonify({
+            'league': league_name,
+            'season': season,
+            'total_matches': len(matches),
+            'matches': matches.to_dict('records')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@app.route('/api/league/fixtures/<league_name>')
+def get_league_fixtures(league_name):
+    """Get upcoming fixtures for a league"""
+    try:
+        season = request.args.get('season', '2024-25')
+        fixtures = football_loader.get_upcoming_fixtures(league_name, season)
+        
+        return jsonify({
+            'league': league_name,
+            'season': season,
+            'upcoming_matches': len(fixtures),
+            'fixtures': fixtures.to_dict('records')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@app.route('/api/team/form/<league_name>/<team_name>')
+def get_team_form(league_name, team_name):
+    """Get recent form for a team"""
+    try:
+        season = request.args.get('season', '2024-25')
+        last_n = int(request.args.get('last_n', 5))
+        
+        form = football_loader.get_team_form(team_name, league_name, season, last_n)
+        
+        return jsonify({
+            'team': team_name,
+            'league': league_name,
+            'season': season,
+            'form': form,
+            'wins': form.count('W'),
+            'draws': form.count('D'),
+            'losses': form.count('L')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@app.route('/api/leagues')
+def get_available_leagues():
+    """Get list of available leagues"""
+    return jsonify({
+        'leagues': list(football_loader.LEAGUES.keys()),
+        'details': football_loader.LEAGUES
+    })
+
+
 if __name__ == '__main__':
     print("=" * 80)
-    print("⚽ TRANSFERMARKT - Current 2024-2025 Season")
+    print("⚽ PREMIER LEAGUE STATISTICS 2024-25")
     print("=" * 80)
-    print("\n✅ REAL Players with Photos & Complete Info")
-    print("🔍 Search Feature Enabled")
-    print("📅 Current Rosters & Transfers")
+    print("\n✅ REAL Premier League Players & Matches")
+    print("⚽ 380 Matches from 2024-25 Season")
+    print("👥 21 Real Players with Accurate Stats")
+    print("🏆 Top Scorers: Salah (29), Isak (23), Haaland (22)")
+    print("🌓 Dark/Light Mode on All Pages")
     print("\n🚀 http://localhost:8080")
     print("=" * 80)
+    
+    # Load Premier League matches
+    load_premier_league_matches_data()
     
     app.run(debug=True, host='0.0.0.0', port=8080)
 

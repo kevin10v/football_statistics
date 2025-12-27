@@ -1,0 +1,836 @@
+{% extends "base.html" %}
+
+{% block title %}Premier League Table - Football Statistics{% endblock %}
+
+{% block content %}
+<div class="league-table-page">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="league-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" 
+                     alt="Premier League" 
+                     onerror="this.style.display='none'">
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Premier League</span>
+            </h1>
+            <p class="hero-subtitle">Season 2024/25 - Live Standings</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-futbol"></i>
+                    <span id="totalMatches">380</span>
+                    <small>Matches</small>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>20</span>
+                    <small>Teams</small>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <span id="gamesPlayed">0</span>
+                    <small>Played</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Loading State -->
+        <div id="loadingState" class="loading-state">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading Premier League standings...</p>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state" style="display: none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Oops! Something went wrong</h3>
+            <p id="errorMessage">Failed to load league data</p>
+            <button onclick="location.reload()" class="retry-btn">
+                <i class="fas fa-redo"></i> Try Again
+            </button>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div id="statsCards" class="stats-grid" style="display: none;">
+            <div class="stat-card champion-card">
+                <div class="stat-card-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Current Leader</h3>
+                    <p id="leaderTeam">-</p>
+                    <span id="leaderPoints" class="stat-value">- pts</span>
+                </div>
+            </div>
+
+            <div class="stat-card attack-card">
+                <div class="stat-card-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Best Attack</h3>
+                    <p id="topScorer">-</p>
+                    <span id="topScorerGoals" class="stat-value">- goals</span>
+                </div>
+            </div>
+
+            <div class="stat-card defense-card">
+                <div class="stat-card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Best Defense</h3>
+                    <p id="bestDefense">-</p>
+                    <span id="bestDefenseGoals" class="stat-value">- conceded</span>
+                </div>
+            </div>
+
+            <div class="stat-card form-card">
+                <div class="stat-card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Hot Streak</h3>
+                    <p id="hotStreak">-</p>
+                    <span id="hotStreakWins" class="stat-value">- wins</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- League Table -->
+        <div id="tableSection" class="table-section" style="display: none;">
+            <div class="table-header">
+                <h2>
+                    <i class="fas fa-list"></i>
+                    Current Standings
+                </h2>
+                <div class="legend">
+                    <span class="legend-item ucl"><span class="dot"></span> Champions League</span>
+                    <span class="legend-item europa"><span class="dot"></span> Europa League</span>
+                    <span class="legend-item relegation"><span class="dot"></span> Relegation</span>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th class="pos-col">Pos</th>
+                            <th class="team-col">Team</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th class="pts-col">Pts</th>
+                            <th class="form-col">Form</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* CSS Variables for Theme - Extended from base.html */
+:root {
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+}
+
+[data-theme="dark"] {
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+/* Base Styles */
+.league-table-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+/* Theme toggle is now global in base.html */
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradient-primary);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    animation: float 20s linear infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.league-badge {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.league-badge img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #fff, #e0e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: rgba(255,255,255,0.9);
+    margin: 0 0 40px;
+    font-weight: 300;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.stat-item i {
+    font-size: 32px;
+    opacity: 0.9;
+}
+
+.stat-item span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.stat-item small {
+    font-size: 14px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1400px;
+    margin: -40px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Loading State */
+.loading-state {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Error State */
+.error-state {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.error-state i {
+    font-size: 64px;
+    color: var(--danger-color);
+    margin-bottom: 20px;
+}
+
+.error-state h3 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.error-state p {
+    color: var(--text-secondary);
+    margin: 0 0 30px;
+}
+
+.retry-btn {
+    padding: 12px 30px;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Statistics Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.champion-card .stat-card-icon {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: white;
+}
+
+.attack-card .stat-card-icon {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    color: white;
+}
+
+.defense-card .stat-card-icon {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    color: white;
+}
+
+.form-card .stat-card-icon {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+}
+
+.stat-card-content {
+    flex: 1;
+}
+
+.stat-card-content h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.stat-card-content p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: var(--text-primary);
+}
+
+.stat-value {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Table Section */
+.table-section {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--border-color);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.table-header h2 {
+    font-size: 28px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.table-header h2 i {
+    color: var(--accent-color);
+}
+
+.legend {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.legend-item .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+.legend-item.ucl .dot {
+    background: var(--success-color);
+}
+
+.legend-item.europa .dot {
+    background: var(--info-color);
+}
+
+.legend-item.relegation .dot {
+    background: var(--danger-color);
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.standings-table thead {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.standings-table th {
+    padding: 18px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.standings-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.standings-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.standings-table th:not(.team-col):not(.pos-col) {
+    text-align: center;
+}
+
+.standings-table tbody tr {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.standings-table tbody tr:hover {
+    background: var(--bg-primary);
+    transform: scale(1.01);
+    box-shadow: var(--shadow-sm);
+}
+
+.standings-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.standings-table td {
+    padding: 20px 12px;
+    font-size: 14px;
+}
+
+.standings-table td:not(.team-col):not(.pos-col) {
+    text-align: center;
+}
+
+/* Position Column */
+.pos-col {
+    width: 60px;
+    font-weight: bold;
+}
+
+.standings-table tbody tr .pos-col {
+    position: relative;
+}
+
+.standings-table tbody tr .pos-col::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+}
+
+/* Champions League positions (1-4) */
+.standings-table tbody tr:nth-child(-n+4) .pos-col::before {
+    background: var(--success-color);
+}
+
+/* Europa League positions (5-7) */
+.standings-table tbody tr:nth-child(n+5):nth-child(-n+7) .pos-col::before {
+    background: var(--info-color);
+}
+
+/* Relegation zone (18-20) */
+.standings-table tbody tr:nth-child(n+18) .pos-col::before {
+    background: var(--danger-color);
+}
+
+/* Team Column */
+.team-col {
+    font-weight: 600;
+    min-width: 200px;
+}
+
+/* Points Column */
+.pts-col {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--accent-color);
+}
+
+/* Form Column */
+.form-col {
+    min-width: 140px;
+}
+
+.form-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.form-badge.win {
+    background: var(--success-color);
+    color: white;
+}
+
+.form-badge.draw {
+    background: var(--warning-color);
+    color: #333;
+}
+
+.form-badge.loss {
+    background: var(--danger-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .hero-stats {
+        gap: 30px;
+    }
+    
+    .stat-item span {
+        font-size: 28px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-section {
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .legend {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .standings-table th,
+    .standings-table td {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+    
+    .team-col {
+        min-width: 150px;
+    }
+    
+    .theme-toggle-btn {
+        top: 70px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingState = document.getElementById('loadingState');
+    const errorState = document.getElementById('errorState');
+    const statsCards = document.getElementById('statsCards');
+    const tableSection = document.getElementById('tableSection');
+    const tableBody = document.getElementById('tableBody');
+    
+    // Theme is now controlled globally from base.html
+    // Load Premier League Data Automatically
+    loadPremierLeague();
+    
+    async function loadPremierLeague() {
+        const league = 'Premier League';
+        const season = '2024-25';
+        
+        try {
+            // Fetch league table
+            const response = await fetch(`/api/league/table/${encodeURIComponent(league)}?season=${season}`);
+            
+            if (!response.ok) {
+                throw new Error('Failed to fetch league data');
+            }
+            
+            const data = await response.json();
+            
+            if (!data.standings || data.standings.length === 0) {
+                throw new Error('No data available');
+            }
+            
+            // Hide loading, show data
+            loadingState.style.display = 'none';
+            statsCards.style.display = 'grid';
+            tableSection.style.display = 'block';
+            
+            // Update statistics
+            displayStats(data.standings);
+            
+            // Display table with form
+            await displayTable(data.standings, league, season);
+            
+            // Update hero stats
+            updateHeroStats(data.standings);
+            
+        } catch (error) {
+            loadingState.style.display = 'none';
+            errorState.style.display = 'block';
+            document.getElementById('errorMessage').textContent = error.message;
+        }
+    }
+    
+    function updateHeroStats(standings) {
+        // Calculate games played
+        const gamesPlayed = standings[0]?.played || 0;
+        document.getElementById('gamesPlayed').textContent = gamesPlayed;
+    }
+    
+    function displayStats(standings) {
+        // Current Leader
+        const leader = standings[0];
+        document.getElementById('leaderTeam').textContent = leader.team;
+        document.getElementById('leaderPoints').textContent = `${leader.points} pts`;
+        
+        // Best Attack (most goals scored)
+        const topScorer = standings.reduce((max, team) => 
+            team.goals_for > max.goals_for ? team : max
+        );
+        document.getElementById('topScorer').textContent = topScorer.team;
+        document.getElementById('topScorerGoals').textContent = `${topScorer.goals_for} goals`;
+        
+        // Best Defense (fewest goals conceded)
+        const bestDefense = standings.reduce((min, team) => 
+            team.goals_against < min.goals_against ? team : min
+        );
+        document.getElementById('bestDefense').textContent = bestDefense.team;
+        document.getElementById('bestDefenseGoals').textContent = `${bestDefense.goals_against} conceded`;
+        
+        // Hot Streak (most wins)
+        const hotStreak = standings.reduce((max, team) => 
+            team.wins > max.wins ? team : max
+        );
+        document.getElementById('hotStreak').textContent = hotStreak.team;
+        document.getElementById('hotStreakWins').textContent = `${hotStreak.wins} wins`;
+    }
+    
+    async function displayTable(standings, league, season) {
+        tableBody.innerHTML = '';
+        
+        for (const team of standings) {
+            const row = document.createElement('tr');
+            
+            // Fetch team form
+            let formHtml = '<span class="text-muted">Loading...</span>';
+            try {
+                const formUrl = `/api/team/form/${encodeURIComponent(league)}/${encodeURIComponent(team.team)}?season=${season}&last_n=5`;
+                const formResponse = await fetch(formUrl);
+                if (formResponse.ok) {
+                    const formData = await formResponse.json();
+                    formHtml = formData.form.map(result => {
+                        const className = result === 'W' ? 'win' : result === 'D' ? 'draw' : 'loss';
+                        return `<span class="form-badge ${className}">${result}</span>`;
+                    }).join('');
+                }
+            } catch (e) {
+                formHtml = '<span class="text-muted">-</span>';
+            }
+            
+            row.innerHTML = `
+                <td class="pos-col">${team.position}</td>
+                <td class="team-col">${team.team}</td>
+                <td>${team.played}</td>
+                <td>${team.wins}</td>
+                <td>${team.draws}</td>
+                <td>${team.losses}</td>
+                <td>${team.goals_for}</td>
+                <td>${team.goals_against}</td>
+                <td>${team.goal_difference > 0 ? '+' + team.goal_difference : team.goal_difference}</td>
+                <td class="pts-col">${team.points}</td>
+                <td class="form-col">${formHtml}</td>
+            `;
+            tableBody.appendChild(row);
+        }
+    }
+});
+</script>
+{% endblock %}

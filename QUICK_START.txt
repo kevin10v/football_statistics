@@ -1,0 +1,118 @@
+═══════════════════════════════════════════════════════════════════
+  ⚽ FLASHSCORE-STYLE FOOTBALL WEBSITE - QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════
+
+🚀 HOW TO START THE WEBSITE (3 COMMANDS)
+
+1️⃣  Open Terminal and copy/paste this:
+    cd /Users/kevsmac/football_statistics
+
+2️⃣  Activate virtual environment:
+    source venv/bin/activate
+
+3️⃣  Start the website:
+    python app.py
+
+4️⃣  Open in browser: http://localhost:8080
+
+═══════════════════════════════════════════════════════════════════
+
+📱 WHAT YOU'LL SEE
+
+✅ Flashscore-style live scores page (default homepage)
+✅ League sidebar (Premier League, La Liga, Bundesliga, Serie A)
+✅ Match cards showing scores and fixtures
+✅ Search and filter functionality
+✅ Top scorers, league leaders, team form
+✅ Beautiful purple gradient design
+
+═══════════════════════════════════════════════════════════════════
+
+🎮 HOW TO USE
+
+NAVIGATE LEAGUES:
+→ Click "Premier League" in left sidebar
+→ Click "La Liga" to see Spanish matches
+→ Click "Bundesliga" for German matches
+
+SEARCH MATCHES:
+→ Type "Liverpool" in search box at top
+→ See only Liverpool matches
+
+FILTER VIEWS:
+→ Click "Finished" to see completed matches
+→ Click "Scheduled" to see upcoming fixtures
+
+CHANGE SEASON:
+→ Use dropdown to select 2024/25 or 2023/24
+
+VIEW TABLES:
+→ Click "Tables" in top menu
+→ See full league standings
+
+═══════════════════════════════════════════════════════════════════
+
+🌐 ALL PAGES
+
+Homepage (Live Scores):  http://localhost:8080/
+League Tables:           http://localhost:8080/leagues
+Player Stats:            http://localhost:8080/players
+About:                   http://localhost:8080/about
+
+═══════════════════════════════════════════════════════════════════
+
+🛑 TO STOP THE WEBSITE
+
+Press Control + C in Terminal
+
+═══════════════════════════════════════════════════════════════════
+
+✨ FEATURES
+
+✅ Real match data from OpenFootball JSON
+✅ 10+ European leagues (EPL, La Liga, Bundesliga, Serie A, etc.)
+✅ 380+ matches per league
+✅ Historical data (2010-2024)
+✅ League standings and tables
+✅ Team form tracking (W/D/L)
+✅ Player statistics with photos
+✅ ML predictions
+✅ Beautiful Flashscore-inspired design
+✅ Responsive (works on mobile, tablet, desktop)
+✅ Search and filter functionality
+
+═══════════════════════════════════════════════════════════════════
+
+📖 FULL DOCUMENTATION
+
+Read these files for more details:
+- FLASHSCORE_LAYOUT_GUIDE.md (Complete guide with screenshots)
+- QUICK_START_GUIDE.md (OpenFootball integration guide)
+- OPENFOOTBALL_INTEGRATION.md (Technical documentation)
+- README.md (Project overview)
+
+═══════════════════════════════════════════════════════════════════
+
+💡 TROUBLESHOOTING
+
+Problem: Port already in use
+Solution: Close other instances or use different port
+
+Problem: No matches showing
+Solution: Check internet connection, try different league
+
+Problem: Page won't load
+Solution: Check terminal for errors, make sure venv is activated
+
+Problem: Styles look broken
+Solution: Refresh page (Command + R), clear browser cache
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE READY!
+
+Your Flashscore-style football website is complete and ready to use.
+Just run the 3 commands above and enjoy!
+
+═══════════════════════════════════════════════════════════════════
+

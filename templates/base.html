@@ -19,16 +19,125 @@
     
     <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    
+    <style>
+        /* Global Styles with Baby Blue Theme */
+        :root {
+            --bg-primary: #f0f8ff;
+            --bg-secondary: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6c757d;
+            --border-color: #d4e7f7;
+            --card-bg: #ffffff;
+            --navbar-bg: #4a90e2;
+            --footer-bg: #3a7bc8;
+            --accent-color: #5dade2;
+            --accent-hover: #3498db;
+            --gradient-primary: linear-gradient(135deg, #5dade2 0%, #3498db 100%);
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: #1a1d29;
+            --bg-secondary: #252936;
+            --text-primary: #ffffff;
+            --text-secondary: #e0e0e0;
+            --border-color: #3a3f52;
+            --card-bg: #252936;
+            --navbar-bg: #1a2332;
+            --footer-bg: #0f1419;
+            --accent-color: #5dade2;
+            --accent-hover: #7ec8f5;
+        }
+        
+        /* Dark mode - ensure all text is white except on white containers */
+        [data-theme="dark"] body,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] p,
+        [data-theme="dark"] span,
+        [data-theme="dark"] div,
+        [data-theme="dark"] label,
+        [data-theme="dark"] td,
+        [data-theme="dark"] th {
+            color: var(--text-primary);
+        }
+        
+        [data-theme="dark"] .text-secondary,
+        [data-theme="dark"] small {
+            color: var(--text-secondary) !important;
+        }
+        
+        /* White containers in dark mode should have black text */
+        [data-theme="dark"] .white-container,
+        [data-theme="dark"] .white-container * {
+            color: #1a1a1a !important;
+            background: #ffffff !important;
+        }
+        
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar {
+            background: var(--navbar-bg) !important;
+        }
+        
+        .footer {
+            background: var(--footer-bg) !important;
+            color: var(--text-secondary);
+        }
+        
+        /* Global Theme Toggle Button */
+        .global-theme-toggle {
+            position: fixed;
+            top: 80px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            z-index: 9999;
+        }
+        
+        .global-theme-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+        }
+    </style>
 </head>
 <body>
+    <!-- Global Theme Toggle Button -->
+    <button id="globalThemeToggle" class="global-theme-toggle" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-brand">
+            <a href="/" class="navbar-brand" style="text-decoration: none; cursor: pointer; transition: all 0.3s ease;">
                 <i class="fas fa-futbol"></i>
                 <span>Football Stats</span>
-            </div>
+            </a>
             <ul class="navbar-menu">
-                <li><a href="/" class="{% block nav_home %}{% endblock %}">Dashboard</a></li>
+                <li><a href="/leagues" class="{% block nav_leagues %}{% endblock %}">Tables</a></li>
+                <li><a href="/players" class="{% block nav_players %}{% endblock %}">Players</a></li>
                 <li><a href="/about" class="{% block nav_about %}{% endblock %}">About</a></li>
             </ul>
         </div>
@@ -46,6 +155,43 @@
 
     <!-- JavaScript -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <!-- Global Theme Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const globalThemeToggle = document.getElementById('globalThemeToggle');
+            
+            // Load saved theme or default to light
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateGlobalThemeIcon(currentTheme);
+            
+            // Toggle theme on button click
+            if (globalThemeToggle) {
+                globalThemeToggle.addEventListener('click', function() {
+                    const currentTheme = document.documentElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateGlobalThemeIcon(newTheme);
+                    
+                    // Trigger custom event for page-specific updates
+                    window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme: newTheme } }));
+                });
+            }
+            
+            function updateGlobalThemeIcon(theme) {
+                const icon = globalThemeToggle.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            }
+        });
+    </script>
+    
     {% block scripts %}{% endblock %}
 </body>
 </html>

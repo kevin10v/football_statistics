@@ -1,190 +1,516 @@
 {% extends "base.html" %}
 
-{% block title %}About - Football Statistics{% endblock %}
+{% block title %}About - Premier League Statistics{% endblock %}
 {% block nav_about %}active{% endblock %}
 
 {% block content %}
-<div class="container about-container">
-    <header class="page-header">
-        <h1><i class="fas fa-info-circle"></i> About This Project</h1>
-    </header>
+<div class="about-page">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">About Our Platform</span>
+            </h1>
+            <p class="hero-subtitle">Premier League Statistics & Analytics Dashboard 2024-25</p>
+        </div>
+    </div>
 
-    <div class="about-content">
-        <section class="about-section">
-            <h2><i class="fas fa-futbol"></i> Football Player Statistics & Predictions Dashboard</h2>
-            <p>A comprehensive Machine Learning project that predicts football player performance and visualizes statistics through an interactive web dashboard.</p>
-        </section>
-
-        <section class="about-section">
-            <h2><i class="fas fa-star"></i> Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-brain"></i>
-                    <h3>ML Model</h3>
-                    <p>Random Forest Regressor to predict player performance ratings</p>
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- Features Grid -->
+        <div class="features-section">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                Key Features
+            </h2>
+            <div class="features-grid-modern">
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Real Match Data</h3>
+                    <p>380 Premier League matches from the 2024-25 season with actual results and scores</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-chart-line"></i>
+
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Player Statistics</h3>
+                    <p>21 real Premier League players with accurate goals, assists, and performance data</p>
+                </div>
+
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>League Tables</h3>
+                    <p>Live standings with team statistics, form tracking, and position indicators</p>
+                </div>
+
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Analytics</h3>
-                    <p>Comprehensive statistical analysis and trend visualization</p>
+                    <p>Comprehensive charts, radar graphs, and performance trend visualizations</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Heatmaps</h3>
-                    <p>Field coverage visualization showing player positioning</p>
+
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Toggle between light and dark themes for comfortable viewing anytime</p>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-chart-radar"></i>
-                    <h3>Radar Charts</h3>
-                    <p>Multi-dimensional performance analysis</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-robot"></i>
-                    <h3>Predictions</h3>
-                    <p>Real-time performance predictions with interactive controls</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-table"></i>
-                    <h3>Match Data</h3>
-                    <p>Detailed match-by-match statistics tracking</p>
+
+                <div class="feature-card white-container">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Works perfectly on desktop, tablet, and mobile devices</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="about-section">
-            <h2><i class="fas fa-cogs"></i> Technologies Used</h2>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Python 3.8+</li>
-                        <li>Flask Web Framework</li>
-                        <li>Scikit-learn (ML)</li>
-                        <li>Pandas & NumPy</li>
-                    </ul>
+        <!-- Technologies Section -->
+        <div class="tech-section">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Technologies Used
+            </h2>
+            <div class="tech-grid-modern">
+                <div class="tech-card white-container">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-list">
+                        <span class="tech-badge">Python 3.14</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">NumPy</span>
+                        <span class="tech-badge">Scikit-learn</span>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Chart.js</li>
-                        <li>Plotly.js</li>
-                    </ul>
-                </div>
-                <div class="tech-item">
-                    <h3>Machine Learning</h3>
-                    <ul>
-                        <li>Random Forest Regressor</li>
-                        <li>Feature Engineering</li>
-                        <li>Cross-validation</li>
-                        <li>Model Evaluation</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <section class="about-section">
-            <h2><i class="fas fa-database"></i> Model Details</h2>
-            <p><strong>Algorithm:</strong> Random Forest Regressor with 100 estimators</p>
-            <p><strong>Features Used (10):</strong></p>
-            <ul class="features-list">
-                <li>Minutes played</li>
-                <li>Goals scored</li>
-                <li>Assists</li>
-                <li>Total shots</li>
-                <li>Shots on target</li>
-                <li>Passes completed</li>
-                <li>Pass accuracy (%)</li>
-                <li>Tackles made</li>
-                <li>Interceptions</li>
-                <li>Dribbles completed</li>
-            </ul>
-            <p><strong>Target:</strong> Performance rating (0-100 scale)</p>
-            <p><strong>Performance:</strong> R² Score > 0.95 on test set with low RMSE</p>
-        </section>
+                <div class="tech-card white-container">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <div class="tech-list">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Chart.js</span>
+                        <span class="tech-badge">Plotly.js</span>
+                    </div>
+                </div>
 
-        <section class="about-section">
-            <h2><i class="fas fa-chart-pie"></i> Data</h2>
-            <p>This project uses synthetic data that mimics realistic football statistics:</p>
-            <ul class="features-list">
-                <li>50+ players across 4 positions (Forward, Midfielder, Defender, Goalkeeper)</li>
-                <li>20 matches per player (1000+ total records)</li>
-                <li>Position-specific statistical distributions</li>
-                <li>Realistic performance ratings based on multiple factors</li>
-            </ul>
-        </section>
-
-        <section class="about-section">
-            <h2><i class="fas fa-lightbulb"></i> Use Cases</h2>
-            <div class="use-cases">
-                <div class="use-case-item">
-                    <i class="fas fa-search"></i>
-                    <h3>Player Analysis</h3>
-                    <p>Comprehensive evaluation of player performance across multiple metrics</p>
-                </div>
-                <div class="use-case-item">
-                    <i class="fas fa-users"></i>
-                    <h3>Scouting</h3>
-                    <p>Predict player potential based on statistical performance</p>
-                </div>
-                <div class="use-case-item">
-                    <i class="fas fa-tactics"></i>
-                    <h3>Team Strategy</h3>
-                    <p>Understand player strengths and weaknesses for tactical decisions</p>
-                </div>
-                <div class="use-case-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Educational</h3>
-                    <p>Learn ML and data visualization techniques in sports analytics</p>
+                <div class="tech-card white-container">
+                    <h3><i class="fas fa-database"></i> Data Sources</h3>
+                    <div class="tech-list">
+                        <span class="tech-badge">OpenFootball JSON</span>
+                        <span class="tech-badge">Premier League</span>
+                        <span class="tech-badge">Real Statistics</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="about-section">
-            <h2><i class="fas fa-code"></i> Project Structure</h2>
-            <div class="code-block">
-                <pre>
-football_statistics/
-├── app.py                    # Flask web application
-├── model.py                  # ML model implementation
-├── data_generator.py         # Synthetic data generation
-├── train_model.py            # Model training script
-├── dashboard.py              # Streamlit alternative
-├── config.py                 # Configuration settings
-├── requirements.txt          # Dependencies
-├── templates/                # HTML templates
-│   ├── base.html
-│   ├── index.html
-│   ├── about.html
-│   └── error.html
-└── static/                   # CSS, JS, Images
-    ├── css/style.css
-    └── js/main.js
-                </pre>
+        <!-- Stats Highlight -->
+        <div class="stats-highlight">
+            <div class="highlight-card white-container">
+                <div class="highlight-number">380</div>
+                <div class="highlight-label">Premier League Matches</div>
             </div>
-        </section>
-
-        <section class="about-section cta-section">
-            <h2><i class="fas fa-rocket"></i> Get Started</h2>
-            <p>To run this project locally:</p>
-            <div class="code-block">
-                <pre>
-# Install dependencies
-pip install -r requirements.txt
-
-# Train the model
-python train_model.py
-
-# Run the web application
-python app.py
-
-# Visit http://localhost:5000 in your browser
-                </pre>
+            <div class="highlight-card white-container">
+                <div class="highlight-number">21</div>
+                <div class="highlight-label">Real Players</div>
             </div>
-        </section>
+            <div class="highlight-card white-container">
+                <div class="highlight-number">20</div>
+                <div class="highlight-label">Teams</div>
+            </div>
+            <div class="highlight-card white-container">
+                <div class="highlight-number">2024-25</div>
+                <div class="highlight-label">Current Season</div>
+            </div>
+        </div>
+
+        <!-- Thank You Section -->
+        <div class="thank-you-section">
+            <div class="thank-you-card">
+                <i class="fas fa-heart"></i>
+                <h2>Thank You for Visiting!</h2>
+                <p>We hope you enjoy exploring Premier League statistics and insights. This platform is designed to provide comprehensive football analytics in a beautiful, user-friendly interface.</p>
+                <div class="cta-buttons">
+                    <a href="/leagues" class="cta-btn primary">
+                        <i class="fas fa-trophy"></i> View League Table
+                    </a>
+                    <a href="/players" class="cta-btn secondary">
+                        <i class="fas fa-user"></i> Search Players
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+/* About Page Styles */
+.about-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    padding-bottom: 60px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradient-primary);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    animation: float 20s linear infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: var(--accent-color);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #fff, #e0f0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: rgba(255,255,255,0.95);
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1400px;
+    margin: -40px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 40px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-title i {
+    color: var(--accent-color);
+}
+
+/* Features Section */
+.features-section {
+    margin-bottom: 60px;
+}
+
+.features-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(93, 173, 226, 0.2);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--gradient-primary);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #6c757d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Technologies Section */
+.tech-section {
+    margin-bottom: 60px;
+}
+
+.tech-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.tech-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 2px solid var(--border-color);
+}
+
+.tech-card h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+    color: #1a1a1a;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-card h3 i {
+    color: var(--accent-color);
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-badge {
+    padding: 8px 16px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Stats Highlight */
+.stats-highlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.highlight-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(93, 173, 226, 0.2);
+}
+
+.highlight-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.highlight-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+/* Thank You Section */
+.thank-you-section {
+    margin-bottom: 40px;
+}
+
+.thank-you-card {
+    background: var(--gradient-primary);
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    color: white;
+}
+
+.thank-you-card i {
+    font-size: 64px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.thank-you-card h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.thank-you-card p {
+    font-size: 18px;
+    margin: 0 0 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.95);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+    background: white;
+    color: var(--accent-color);
+}
+
+.cta-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+}
+
+.cta-btn.secondary {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-btn.secondary:hover {
+    background: white;
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .features-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-highlight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .thank-you-card {
+        padding: 40px 20px;
+    }
+    
+    .thank-you-card h2 {
+        font-size: 28px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+</style>
 {% endblock %}
-
-

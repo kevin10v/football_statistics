@@ -1,260 +1,1001 @@
 {% extends "base.html" %}
 
-{% block title %}Dashboard - Football Statistics{% endblock %}
-{% block nav_home %}active{% endblock %}
+{% block title %}Player Statistics - Premier League{% endblock %}
+{% block nav_players %}active{% endblock %}
 
 {% block content %}
-<div class="container dashboard-container">
-    <header class="dashboard-header">
-        <h1><i class="fas fa-chart-line"></i> Player Statistics & Performance Dashboard</h1>
-        <p>Comprehensive analytics and ML-powered predictions for football players</p>
-    </header>
-
-    <!-- Player Selection -->
-    <div class="player-selection">
-        <label for="playerSelect"><i class="fas fa-user"></i> Select Player:</label>
-        <select id="playerSelect" class="player-select">
-            <option value="">Choose a player...</option>
-            {% for player in players %}
-            <option value="{{ player }}">{{ player }}</option>
-            {% endfor %}
-        </select>
+<div class="player-page">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Player Statistics</span>
+            </h1>
+            <p class="hero-subtitle">Search and analyze Premier League players 2024-25</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" 
+                       id="playerSearch" 
+                       class="player-search-input" 
+                       placeholder="Type player name and press Enter..."
+                       autocomplete="off">
+                <div id="searchSuggestions" class="search-suggestions"></div>
+            </div>
+            
+            <!-- Hidden player list for JavaScript -->
+            <div id="playersData" style="display: none;">
+                {% for player in players %}
+                <span data-player="{{ player }}">{{ player }}</span>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 
-    <div id="playerDashboard" class="player-dashboard" style="display: none;">
-        
-        <!-- Player Info Cards -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-running"></i></div>
-                <div class="stat-content">
-                    <h3 id="statPosition">-</h3>
-                    <p>Position</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-calendar"></i></div>
-                <div class="stat-content">
-                    <h3 id="statMatches">0</h3>
-                    <p>Total Matches</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-star"></i></div>
-                <div class="stat-content">
-                    <h3 id="statPerformance">0.0</h3>
-                    <p>Avg Performance</p>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                <div class="stat-content">
-                    <h3 id="statGoals">0</h3>
-                    <p>Total Goals</p>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Welcome State -->
+        <div id="welcomeState" class="welcome-state">
+            <i class="fas fa-user-circle"></i>
+            <h2>Welcome to Player Statistics</h2>
+            <p>Search for any Premier League player above to view their detailed statistics and performance analysis</p>
+            <div class="featured-players">
+                <h3>Featured Players:</h3>
+                <div class="player-chips">
+                    <span class="player-chip" data-player="Mohamed Salah">Mohamed Salah</span>
+                    <span class="player-chip" data-player="Erling Haaland">Erling Haaland</span>
+                    <span class="player-chip" data-player="Alexander Isak">Alexander Isak</span>
+                    <span class="player-chip" data-player="Cole Palmer">Cole Palmer</span>
+                    <span class="player-chip" data-player="Bukayo Saka">Bukayo Saka</span>
                 </div>
             </div>
         </div>
 
-        <!-- Main Content Grid -->
-        <div class="content-grid">
+        <!-- Loading State -->
+        <div id="loadingState" class="loading-state" style="display: none;">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading player data...</p>
+            </div>
+        </div>
+
+        <!-- Player Dashboard -->
+        <div id="playerDashboard" class="player-dashboard" style="display: none;">
+            
+            <!-- Player Header Card -->
+            <div class="player-header-card">
+                <div class="player-photo">
+                    <img id="playerPhoto" src="" alt="Player" onerror="this.src='https://via.placeholder.com/150?text=No+Photo'">
+                </div>
+                <div class="player-info">
+                    <h2 id="playerName">Player Name</h2>
+                    <div class="player-meta">
+                        <span id="playerTeam"><i class="fas fa-shield-alt"></i> Team</span>
+                        <span id="playerPosition"><i class="fas fa-running"></i> Position</span>
+                        <span id="playerNationality"><i class="fas fa-flag"></i> Nationality</span>
+                        <span id="playerAge"><i class="fas fa-birthday-cake"></i> Age</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Cards Grid -->
+            <div class="stats-cards-grid">
+                <div class="stat-card-modern goals-card">
+                    <div class="stat-icon-modern">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="stat-content-modern">
+                        <div class="stat-value-modern" id="totalGoals">0</div>
+                        <div class="stat-label-modern">Total Goals</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-modern assists-card">
+                    <div class="stat-icon-modern">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="stat-content-modern">
+                        <div class="stat-value-modern" id="totalAssists">0</div>
+                        <div class="stat-label-modern">Total Assists</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-modern matches-card">
+                    <div class="stat-icon-modern">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-content-modern">
+                        <div class="stat-value-modern" id="totalMatches">0</div>
+                        <div class="stat-label-modern">Matches Played</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-modern performance-card">
+                    <div class="stat-icon-modern">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content-modern">
+                        <div class="stat-value-modern" id="avgPerformance">0.0</div>
+                        <div class="stat-label-modern">Avg Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <!-- Radar Chart -->
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-radar"></i> Performance Radar</h3>
+                    <canvas id="radarChart"></canvas>
+                </div>
+
+                <!-- Performance Trend -->
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-line"></i> Performance Trend</h3>
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Detailed Statistics -->
+            <div class="detailed-stats-section">
+                <h3><i class="fas fa-chart-bar"></i> Detailed Statistics</h3>
+                <div class="stats-detailed-grid">
+                    <!-- Attacking Stats -->
+                    <div class="stats-category-modern">
+                        <h4><i class="fas fa-bullseye"></i> Attacking</h4>
+                        <div class="stat-row">
+                            <span>Total Goals</span>
+                            <span class="stat-value-bold" id="detailGoals">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Total Assists</span>
+                            <span class="stat-value-bold" id="detailAssists">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Avg Shots per Match</span>
+                            <span class="stat-value-bold" id="detailShots">0.0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Shot Accuracy</span>
+                            <span class="stat-value-bold" id="detailShotAccuracy">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Passing Stats -->
+                    <div class="stats-category-modern">
+                        <h4><i class="fas fa-exchange-alt"></i> Passing</h4>
+                        <div class="stat-row">
+                            <span>Total Passes</span>
+                            <span class="stat-value-bold" id="detailPasses">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Pass Accuracy</span>
+                            <span class="stat-value-bold" id="detailPassAcc">0%</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Avg Passes per Match</span>
+                            <span class="stat-value-bold" id="detailAvgPasses">0.0</span>
+                        </div>
+                    </div>
+
+                    <!-- Defensive Stats -->
+                    <div class="stats-category-modern">
+                        <h4><i class="fas fa-shield-alt"></i> Defensive</h4>
+                        <div class="stat-row">
+                            <span>Total Tackles</span>
+                            <span class="stat-value-bold" id="detailTackles">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Total Interceptions</span>
+                            <span class="stat-value-bold" id="detailInterceptions">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Avg Dribbles</span>
+                            <span class="stat-value-bold" id="detailDribbles">0.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Heatmap -->
-            <div class="card heatmap-card">
-                <h2><i class="fas fa-map"></i> Field Coverage Heatmap</h2>
+            <div class="chart-card full-width">
+                <h3><i class="fas fa-map-marked-alt"></i> Field Coverage Heatmap</h3>
                 <div id="heatmapContainer"></div>
             </div>
-
-            <!-- Radar Chart -->
-            <div class="card radar-card">
-                <h2><i class="fas fa-chart-radar"></i> Performance Radar</h2>
-                <canvas id="radarChart"></canvas>
-            </div>
         </div>
-
-        <!-- Performance Trend -->
-        <div class="card full-width">
-            <h2><i class="fas fa-chart-line"></i> Performance Trend</h2>
-            <canvas id="trendChart"></canvas>
-        </div>
-
-        <!-- Detailed Statistics -->
-        <div class="stats-section">
-            <h2><i class="fas fa-chart-bar"></i> Detailed Statistics</h2>
-            <div class="stats-detailed-grid">
-                <!-- Attacking Stats -->
-                <div class="stats-category">
-                    <h3><i class="fas fa-bullseye"></i> Attacking</h3>
-                    <div class="stat-item">
-                        <span class="stat-label">Total Goals</span>
-                        <span class="stat-value" id="detailGoals">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Total Assists</span>
-                        <span class="stat-value" id="detailAssists">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Avg Shots</span>
-                        <span class="stat-value" id="detailShots">0.0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Shot Accuracy</span>
-                        <span class="stat-value" id="detailShotAccuracy">0%</span>
-                    </div>
-                </div>
-
-                <!-- Passing Stats -->
-                <div class="stats-category">
-                    <h3><i class="fas fa-exchange-alt"></i> Passing</h3>
-                    <div class="stat-item">
-                        <span class="stat-label">Total Passes</span>
-                        <span class="stat-value" id="detailPasses">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Pass Accuracy</span>
-                        <span class="stat-value" id="detailPassAcc">0%</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Avg Passes/Match</span>
-                        <span class="stat-value" id="detailAvgPasses">0.0</span>
-                    </div>
-                </div>
-
-                <!-- Defensive Stats -->
-                <div class="stats-category">
-                    <h3><i class="fas fa-shield-alt"></i> Defensive</h3>
-                    <div class="stat-item">
-                        <span class="stat-label">Total Tackles</span>
-                        <span class="stat-value" id="detailTackles">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Total Interceptions</span>
-                        <span class="stat-value" id="detailInterceptions">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Avg Dribbles</span>
-                        <span class="stat-value" id="detailDribbles">0.0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ML Prediction Section -->
-        <div class="card prediction-section">
-            <h2><i class="fas fa-robot"></i> Performance Prediction</h2>
-            <p class="prediction-description">Adjust the statistics below to predict performance rating using our ML model</p>
-            
-            <div class="prediction-grid">
-                <div class="prediction-inputs">
-                    <div class="input-group">
-                        <label for="predMinutes">Minutes Played</label>
-                        <input type="range" id="predMinutes" min="0" max="90" value="90">
-                        <span id="predMinutesValue">90</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predGoals">Goals</label>
-                        <input type="range" id="predGoals" min="0" max="5" value="0">
-                        <span id="predGoalsValue">0</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predAssists">Assists</label>
-                        <input type="range" id="predAssists" min="0" max="5" value="0">
-                        <span id="predAssistsValue">0</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predShots">Shots</label>
-                        <input type="range" id="predShots" min="0" max="15" value="5">
-                        <span id="predShotsValue">5</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predShotsTarget">Shots on Target</label>
-                        <input type="range" id="predShotsTarget" min="0" max="15" value="3">
-                        <span id="predShotsTargetValue">3</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predPasses">Passes Completed</label>
-                        <input type="range" id="predPasses" min="0" max="100" value="50">
-                        <span id="predPassesValue">50</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predPassAcc">Pass Accuracy %</label>
-                        <input type="range" id="predPassAcc" min="0" max="100" value="85">
-                        <span id="predPassAccValue">85</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predTackles">Tackles</label>
-                        <input type="range" id="predTackles" min="0" max="15" value="3">
-                        <span id="predTacklesValue">3</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predInterceptions">Interceptions</label>
-                        <input type="range" id="predInterceptions" min="0" max="15" value="3">
-                        <span id="predInterceptionsValue">3</span>
-                    </div>
-                    <div class="input-group">
-                        <label for="predDribbles">Dribbles Completed</label>
-                        <input type="range" id="predDribbles" min="0" max="10" value="2">
-                        <span id="predDribblesValue">2</span>
-                    </div>
-                </div>
-                
-                <div class="prediction-result">
-                    <h3>Predicted Performance Rating</h3>
-                    <div class="prediction-value" id="predictionValue">--</div>
-                    <p class="prediction-scale">Out of 100</p>
-                    <button id="predictBtn" class="btn btn-primary">
-                        <i class="fas fa-brain"></i> Calculate Prediction
-                    </button>
-                </div>
-            </div>
-
-            <!-- Feature Importance -->
-            <div class="feature-importance">
-                <h3><i class="fas fa-chart-bar"></i> Feature Importance</h3>
-                <canvas id="importanceChart"></canvas>
-            </div>
-        </div>
-
-        <!-- Recent Matches Table -->
-        <div class="card full-width">
-            <h2><i class="fas fa-table"></i> Recent Matches</h2>
-            <div class="table-container">
-                <table id="matchesTable">
-                    <thead>
-                        <tr>
-                            <th>Match</th>
-                            <th>Goals</th>
-                            <th>Assists</th>
-                            <th>Passes</th>
-                            <th>Pass Acc%</th>
-                            <th>Tackles</th>
-                            <th>Interceptions</th>
-                            <th>Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody id="matchesTableBody">
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Loading Spinner -->
-    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
-        <div class="spinner"></div>
-        <p>Loading player data...</p>
     </div>
 </div>
-{% endblock %}
 
-{% block scripts %}
+<style>
+/* Player Page Styles */
+.player-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    padding-bottom: 60px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradient-primary);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    animation: float 20s linear infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #fff, #e0e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    margin: 0 0 40px;
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+}
+
+.player-search-input {
+    width: 100%;
+    padding: 18px 20px 18px 55px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #1a1a1a;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.player-search-input:focus {
+    outline: none;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+}
+
+.player-search-input::placeholder {
+    color: #999;
+}
+
+/* Search Suggestions */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #1a1a1a;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background: #f0f8ff;
+    color: var(--accent-color);
+}
+
+.suggestion-item:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.suggestion-item:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1400px;
+    margin: -40px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Welcome State */
+.welcome-state {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 2px solid var(--border-color);
+}
+
+.welcome-state i {
+    font-size: 80px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.welcome-state h2 {
+    font-size: 32px;
+    margin: 0 0 15px;
+    color: var(--text-primary);
+}
+
+.welcome-state p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin: 0 0 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-players h3 {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.player-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.player-chip {
+    padding: 10px 20px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.player-chip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(93, 173, 226, 0.4);
+}
+
+/* Loading State */
+.loading-state {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-state p {
+    color: var(--text-secondary);
+    font-size: 18px;
+}
+
+/* Player Dashboard */
+.player-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Player Header Card */
+.player-header-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid var(--border-color);
+}
+
+.player-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--bg-primary);
+    flex-shrink: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.player-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-info h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+    color: var(--text-primary);
+}
+
+.player-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.player-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+}
+
+.player-meta i {
+    color: var(--accent-color);
+}
+
+/* Statistics Cards Grid */
+.stats-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.stat-card-modern {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+}
+
+.stat-card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.stat-icon-modern {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.goals-card .stat-icon-modern {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: white;
+}
+
+.assists-card .stat-icon-modern {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    color: white;
+}
+
+.matches-card .stat-icon-modern {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    color: white;
+}
+
+.performance-card .stat-icon-modern {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+}
+
+.stat-content-modern {
+    flex: 1;
+}
+
+.stat-value-modern {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-label-modern {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.chart-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border: 2px solid var(--border-color);
+}
+
+.chart-card h3 {
+    font-size: 20px;
+    margin: 0 0 25px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chart-card h3 i {
+    color: var(--accent-color);
+}
+
+.chart-card.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Detailed Statistics Section */
+.detailed-stats-section {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border: 2px solid var(--border-color);
+}
+
+.detailed-stats-section h3 {
+    font-size: 24px;
+    margin: 0 0 30px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detailed-stats-section h3 i {
+    color: var(--accent-color);
+}
+
+.stats-detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.stats-category-modern {
+    background: var(--bg-primary);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.stats-category-modern h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats-category-modern h4 i {
+    color: var(--accent-color);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-value-bold {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .player-header-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .player-info h2 {
+        font-size: 28px;
+    }
+    
+    .player-meta {
+        justify-content: center;
+    }
+    
+    .stats-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-detailed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
 <script>
-    // Initialize the dashboard
-    const playerSelect = document.getElementById('playerSelect');
-    playerSelect.addEventListener('change', function() {
-        if (this.value) {
-            loadPlayerData(this.value);
+document.addEventListener('DOMContentLoaded', function() {
+    const playerSearch = document.getElementById('playerSearch');
+    const searchSuggestions = document.getElementById('searchSuggestions');
+    const welcomeState = document.getElementById('welcomeState');
+    const loadingState = document.getElementById('loadingState');
+    const playerDashboard = document.getElementById('playerDashboard');
+    const playerChips = document.querySelectorAll('.player-chip');
+    
+    // Get all available players
+    const playersData = document.getElementById('playersData');
+    const allPlayers = Array.from(playersData.querySelectorAll('[data-player]')).map(el => el.getAttribute('data-player'));
+    
+    // Search with suggestions
+    playerSearch.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        
+        if (query.length === 0) {
+            searchSuggestions.style.display = 'none';
+            return;
+        }
+        
+        // Filter players
+        const matches = allPlayers.filter(player => 
+            player.toLowerCase().includes(query)
+        );
+        
+        if (matches.length > 0) {
+            searchSuggestions.innerHTML = matches.slice(0, 8).map(player => 
+                `<div class="suggestion-item" data-player="${player}">${player}</div>`
+            ).join('');
+            searchSuggestions.style.display = 'block';
+            
+            // Add click handlers to suggestions
+            searchSuggestions.querySelectorAll('.suggestion-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const playerName = this.getAttribute('data-player');
+                    playerSearch.value = playerName;
+                    searchSuggestions.style.display = 'none';
+                    loadPlayerData(playerName);
+                });
+            });
+        } else {
+            searchSuggestions.style.display = 'none';
         }
     });
+    
+    // Search on Enter key
+    playerSearch.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim()) {
+            searchSuggestions.style.display = 'none';
+            loadPlayerData(this.value.trim());
+        }
+    });
+    
+    // Close suggestions when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-container')) {
+            searchSuggestions.style.display = 'none';
+        }
+    });
+    
+    // Click on player chips
+    playerChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+            const playerName = this.getAttribute('data-player');
+            playerSearch.value = playerName;
+            searchSuggestions.style.display = 'none';
+            loadPlayerData(playerName);
+        });
+    });
+    
+    async function loadPlayerData(playerName) {
+        welcomeState.style.display = 'none';
+        loadingState.style.display = 'block';
+        playerDashboard.style.display = 'none';
+        
+        try {
+            const response = await fetch(`/api/player/${encodeURIComponent(playerName)}`);
+            if (!response.ok) throw new Error('Player not found');
+            
+            const data = await response.json();
+            
+            loadingState.style.display = 'none';
+            playerDashboard.style.display = 'flex';
+            
+            displayPlayerData(data);
+            createCharts(data);
+            loadHeatmap(playerName);
+            
+        } catch (error) {
+            loadingState.style.display = 'none';
+            welcomeState.style.display = 'block';
+            alert(`Player "${playerName}" not found. Please try another name.`);
+        }
+    }
+    
+    function displayPlayerData(data) {
+        // Player header
+        document.getElementById('playerName').textContent = data.player_name;
+        document.getElementById('playerTeam').innerHTML = `<i class="fas fa-shield-alt"></i> ${data.current_team}`;
+        document.getElementById('playerPosition').innerHTML = `<i class="fas fa-running"></i> ${data.position}`;
+        document.getElementById('playerNationality').innerHTML = `<i class="fas fa-flag"></i> ${data.nationality}`;
+        document.getElementById('playerAge').innerHTML = `<i class="fas fa-birthday-cake"></i> ${data.age} years`;
+        
+        if (data.photo_url) {
+            document.getElementById('playerPhoto').src = data.photo_url;
+        }
+        
+        // Stats cards
+        document.getElementById('totalGoals').textContent = data.total_goals;
+        document.getElementById('totalAssists').textContent = data.total_assists;
+        document.getElementById('totalMatches').textContent = data.total_matches;
+        document.getElementById('avgPerformance').textContent = data.avg_performance;
+        
+        // Detailed stats
+        document.getElementById('detailGoals').textContent = data.total_goals;
+        document.getElementById('detailAssists').textContent = data.total_assists;
+        document.getElementById('detailShots').textContent = data.avg_shots;
+        document.getElementById('detailShotAccuracy').textContent = data.shot_accuracy + '%';
+        document.getElementById('detailPasses').textContent = data.total_passes;
+        document.getElementById('detailPassAcc').textContent = data.avg_pass_accuracy + '%';
+        document.getElementById('detailAvgPasses').textContent = data.avg_passes_per_match;
+        document.getElementById('detailTackles').textContent = data.total_tackles;
+        document.getElementById('detailInterceptions').textContent = data.total_interceptions;
+        document.getElementById('detailDribbles').textContent = data.avg_dribbles;
+    }
+    
+    function createCharts(data) {
+        // Radar Chart
+        const radarCtx = document.getElementById('radarChart').getContext('2d');
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Goals', 'Assists', 'Shots on Target', 'Pass Accuracy', 'Tackles', 'Interceptions', 'Dribbles'],
+                datasets: [{
+                    label: data.player_name,
+                    data: [
+                        data.radar_stats.goals,
+                        data.radar_stats.assists,
+                        data.radar_stats.shots_on_target,
+                        data.radar_stats.pass_accuracy / 10,
+                        data.radar_stats.tackles,
+                        data.radar_stats.interceptions,
+                        data.radar_stats.dribbles_completed
+                    ],
+                    backgroundColor: 'rgba(93, 173, 226, 0.2)',
+                    borderColor: '#5dade2',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#5dade2',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#5dade2'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'var(--text-secondary)'
+                        },
+                        grid: {
+                            color: 'var(--border-color)'
+                        },
+                        pointLabels: {
+                            color: 'var(--text-primary)',
+                            font: {
+                                size: 12
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'var(--text-primary)'
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Performance Trend
+        const trendCtx = document.getElementById('trendChart').getContext('2d');
+        new Chart(trendCtx, {
+            type: 'line',
+            data: {
+                labels: data.performance_trend.matches.map((_, i) => `Match ${i + 1}`),
+                datasets: [{
+                    label: 'Performance Rating',
+                    data: data.performance_trend.ratings,
+                    borderColor: '#5dade2',
+                    backgroundColor: 'rgba(93, 173, 226, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'var(--text-primary)'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'var(--text-secondary)'
+                        },
+                        grid: {
+                            color: 'var(--border-color)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'var(--text-secondary)',
+                            maxTicksLimit: 10
+                        },
+                        grid: {
+                            color: 'var(--border-color)'
+                        }
+                    }
+                }
+            }
+        });
+    }
+    
+    async function loadHeatmap(playerName) {
+        try {
+            const response = await fetch(`/api/heatmap/${encodeURIComponent(playerName)}`);
+            const data = await response.json();
+            
+            const trace = {
+                x: data.x,
+                y: data.y,
+                mode: 'markers',
+                type: 'scatter',
+                marker: {
+                    size: 8,
+                    color: data.x,
+                    colorscale: 'Hot',
+                    showscale: true,
+                    opacity: 0.6
+                }
+            };
+            
+            const layout = {
+                title: '',
+                xaxis: {
+                    title: '',
+                    range: [0, 105],
+                    showgrid: true,
+                    gridcolor: 'var(--border-color)',
+                    color: 'var(--text-secondary)'
+                },
+                yaxis: {
+                    title: '',
+                    range: [0, 68],
+                    showgrid: true,
+                    gridcolor: 'var(--border-color)',
+                    color: 'var(--text-secondary)'
+                },
+                paper_bgcolor: 'var(--bg-secondary)',
+                plot_bgcolor: 'var(--bg-primary)',
+                height: 400,
+                margin: { t: 20, b: 40, l: 40, r: 40 }
+            };
+            
+            Plotly.newPlot('heatmapContainer', [trace], layout, {responsive: true});
+        } catch (error) {
+            console.error('Error loading heatmap:', error);
+        }
+    }
+});
 </script>
 {% endblock %}
-
