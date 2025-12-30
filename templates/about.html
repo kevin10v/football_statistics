@@ -23,57 +23,53 @@
         
         <!-- Features Grid -->
         <div class="features-section">
-            <h2 class="section-title">
-                <i class="fas fa-star"></i>
-                Key Features
-            </h2>
             <div class="features-grid-modern">
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-futbol"></i>
                     </div>
-                    <h3>Real Match Data</h3>
-                    <p>380 Premier League matches from the 2024-25 season with actual results and scores</p>
+                    <h3>380 Real Matches</h3>
+                    <p>Complete Premier League 2024-25 season with actual results and scores</p>
                 </div>
 
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Player Statistics</h3>
-                    <p>21 real Premier League players with accurate goals, assists, and performance data</p>
+                    <h3>562 Real Players</h3>
+                    <p>All Premier League players with accurate stats from Kaggle dataset</p>
                 </div>
 
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h3>League Tables</h3>
-                    <p>Live standings with team statistics, form tracking, and position indicators</p>
+                    <h3>Live Standings</h3>
+                    <p>Real-time league table with team form and position indicators</p>
                 </div>
 
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Analytics</h3>
-                    <p>Comprehensive charts, radar graphs, and performance trend visualizations</p>
+                    <h3>Advanced Analytics</h3>
+                    <p>Charts, radar graphs, and performance visualizations</p>
                 </div>
 
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-moon"></i>
                     </div>
                     <h3>Dark Mode</h3>
-                    <p>Toggle between light and dark themes for comfortable viewing anytime</p>
+                    <p>Beautiful dark theme for comfortable night viewing</p>
                 </div>
 
-                <div class="feature-card white-container">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Works perfectly on desktop, tablet, and mobile devices</p>
+                    <h3>Responsive</h3>
+                    <p>Perfect experience on any device - desktop, tablet, or mobile</p>
                 </div>
             </div>
         </div>
@@ -120,19 +116,19 @@
 
         <!-- Stats Highlight -->
         <div class="stats-highlight">
-            <div class="highlight-card white-container">
+            <div class="highlight-card">
                 <div class="highlight-number">380</div>
                 <div class="highlight-label">Premier League Matches</div>
             </div>
-            <div class="highlight-card white-container">
-                <div class="highlight-number">21</div>
+            <div class="highlight-card">
+                <div class="highlight-number">562</div>
                 <div class="highlight-label">Real Players</div>
             </div>
-            <div class="highlight-card white-container">
+            <div class="highlight-card">
                 <div class="highlight-number">20</div>
                 <div class="highlight-label">Teams</div>
             </div>
-            <div class="highlight-card white-container">
+            <div class="highlight-card">
                 <div class="highlight-number">2024-25</div>
                 <div class="highlight-label">Current Season</div>
             </div>
@@ -268,7 +264,7 @@
 }
 
 .feature-card {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 20px;
     padding: 35px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -280,6 +276,7 @@
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 32px rgba(93, 173, 226, 0.2);
+    border-color: var(--accent-color);
 }
 
 .feature-icon {
@@ -298,13 +295,13 @@
 .feature-card h3 {
     font-size: 22px;
     margin: 0 0 15px;
-    color: #1a1a1a;
+    color: var(--text-primary);
     font-weight: 700;
 }
 
 .feature-card p {
     font-size: 15px;
-    color: #6c757d;
+    color: var(--text-secondary);
     margin: 0;
     line-height: 1.6;
 }
@@ -321,7 +318,7 @@
 }
 
 .tech-card {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 20px;
     padding: 35px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -331,7 +328,7 @@
 .tech-card h3 {
     font-size: 22px;
     margin: 0 0 20px;
-    color: #1a1a1a;
+    color: var(--text-primary);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -366,7 +363,7 @@
 }
 
 .highlight-card {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: 20px;
     padding: 40px 30px;
     text-align: center;
@@ -391,7 +388,7 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #6c757d;
+    color: var(--text-secondary);
     font-weight: 600;
 }
 
