@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Player Prediction{% endblock %}
+
+{% block content %}
+<div class="prediction-page">
+    <h1 class="page-title">Player Performance Prediction</h1>
+    
+    <form method="POST" action="{{ url_for('player_prediction') }}" id="predictionForm">
+        <div class="prediction-layout">
+            <!-- Left Side: Sliders Grid -->
+            <div class="sliders-container">
+                <div class="sliders-grid">
+                    
+                    <!-- Row 1 -->
+                    <div class="slider-item">
+                        <label>Age: <span class="slider-value" id="age-value">25</span></label>
+                        <input type="range" id="age" name="age" min="16" max="40" value="25" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Minutes: <span class="slider-value" id="minutes-value">90</span></label>
+                        <input type="range" id="minutes_played" name="minutes_played" min="0" max="3420" value="90" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Goals: <span class="slider-value" id="goals-value">0</span></label>
+                        <input type="range" id="goals" name="goals" min="0" max="50" value="0" class="custom-slider">
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="slider-item">
+                        <label>Assists: <span class="slider-value" id="assists-value">0</span></label>
+                        <input type="range" id="assists" name="assists" min="0" max="30" value="0" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Shots: <span class="slider-value" id="shots-value">0</span></label>
+                        <input type="range" id="shots" name="shots" min="0" max="200" value="0" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>On Target: <span class="slider-value" id="shots-target-value">0</span></label>
+                        <input type="range" id="shots_on_target" name="shots_on_target" min="0" max="100" value="0" class="custom-slider">
+                    </div>
+                    
+                    <!-- Row 3 -->
+                    <div class="slider-item">
+                        <label>Passes: <span class="slider-value" id="passes-value">50</span></label>
+                        <input type="range" id="passes" name="passes" min="0" max="3000" value="50" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Pass Acc: <span class="slider-value" id="pass-accuracy-value">85%</span></label>
+                        <input type="range" id="pass_accuracy" name="pass_accuracy" min="0" max="100" value="85" step="0.1" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Tackles: <span class="slider-value" id="tackles-value">0</span></label>
+                        <input type="range" id="tackles" name="tackles" min="0" max="150" value="0" class="custom-slider">
+                    </div>
+                    
+                    <!-- Row 4 -->
+                    <div class="slider-item">
+                        <label>Intercept: <span class="slider-value" id="interceptions-value">0</span></label>
+                        <input type="range" id="interceptions" name="interceptions" min="0" max="100" value="0" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Dribbles: <span class="slider-value" id="dribbles-value">0</span></label>
+                        <input type="range" id="dribbles" name="dribbles" min="0" max="200" value="0" class="custom-slider">
+                    </div>
+                    
+                    <div class="slider-item">
+                        <label>Position</label>
+                        <select id="position" name="position" class="position-select" required>
+                            <option value="">Select Position</option>
+                            <option value="GK">Goalkeeper</option>
+                            <option value="DF">Defender</option>
+                            <option value="MF">Midfielder</option>
+                            <option value="FW">Forward</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span class="btn-content">
+                        <span class="btn-icon">🎯</span>
+                        <span>Predict Performance</span>
+                    </span>
+                    <span class="btn-shine"></span>
+                </button>
+            </div>
+            
+            <!-- Right Side: Results Boxes -->
+            <div class="results-boxes">
+                {% if error %}
+                <div class="result-box error-box">
+                    <div class="box-icon">⚠️</div>
+                    <h2>Error</h2>
+                    <p>{{ error }}</p>
+                </div>
+                {% elif prediction %}
+                <div class="result-box score-box">
+                    <div class="box-icon">⭐</div>
+                    <h2>Performance Score</h2>
+                    <div class="big-number">{{ prediction.performance_score }}</div>
+                    <div class="score-bar">
+                        <div class="score-fill" style="width: {{ prediction.performance_score }}%"></div>
+                    </div>
+                    <p class="box-subtitle">Overall Rating</p>
+                </div>
+                
+                <div class="result-box price-box">
+                    <div class="box-icon">💰</div>
+                    <h2>Market Value</h2>
+                    <div class="big-number">
+                        <span class="currency">€</span>{{ prediction.market_value }}<span class="unit">M</span>
+                    </div>
+                    <p class="box-subtitle">Estimated Transfer Value</p>
+                </div>
+                {% else %}
+                <div class="result-box placeholder-box">
+                    <div class="box-icon">📊</div>
+                    <h2>Performance Score</h2>
+                    <p>Adjust sliders and click predict</p>
+                </div>
+                
+                <div class="result-box placeholder-box">
+                    <div class="box-icon">💰</div>
+                    <h2>Market Value</h2>
+                    <p>Adjust sliders and click predict</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+// Update slider values dynamically
+const sliders = [
+    { id: 'age', displayId: 'age-value', suffix: '' },
+    { id: 'minutes_played', displayId: 'minutes-value', suffix: '' },
+    { id: 'goals', displayId: 'goals-value', suffix: '' },
+    { id: 'assists', displayId: 'assists-value', suffix: '' },
+    { id: 'shots', displayId: 'shots-value', suffix: '' },
+    { id: 'shots_on_target', displayId: 'shots-target-value', suffix: '' },
+    { id: 'passes', displayId: 'passes-value', suffix: '' },
+    { id: 'pass_accuracy', displayId: 'pass-accuracy-value', suffix: '%' },
+    { id: 'tackles', displayId: 'tackles-value', suffix: '' },
+    { id: 'interceptions', displayId: 'interceptions-value', suffix: '' },
+    { id: 'dribbles', displayId: 'dribbles-value', suffix: '' }
+];
+
+sliders.forEach(slider => {
+    const input = document.getElementById(slider.id);
+    const display = document.getElementById(slider.displayId);
+    
+    input.addEventListener('input', (e) => {
+        display.textContent = e.target.value + slider.suffix;
+        updateSliderBackground(input);
+    });
+    
+    // Initialize
+    updateSliderBackground(input);
+});
+
+function updateSliderBackground(slider) {
+    const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+    slider.style.background = `linear-gradient(to right, 
+        #667eea 0%, 
+        #764ba2 ${value}%, 
+        #e0e0e0 ${value}%, 
+        #e0e0e0 100%)`;
+}
+</script>
+{% endblock %}

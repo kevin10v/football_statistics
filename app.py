@@ -4,6 +4,7 @@ Includes: Search, Photos, Complete Info, Variable Matches
 + OpenFootball Real Match Data Integration
 """
 
+
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from model import PlayerPerformanceModel
@@ -12,16 +13,39 @@ from football_json_loader import FootballJSONLoader
 from load_premier_league_matches import load_matches
 import os
 import json
+import joblib
+import numpy as np
+
 
 app = Flask(__name__)
+
 
 model = None
 df = None
 football_loader = FootballJSONLoader()
 premier_league_matches = None
 
+# Load the prediction model
+prediction_model_data = None
+prediction_model = None
+prediction_scaler = None
+prediction_feature_columns = None
+
 DATA_FILE = 'player_data.csv'
 MODEL_FILE = 'model.pkl'
+
+
+def load_prediction_model():
+    """Load the player prediction model"""
+    global prediction_model_data, prediction_model, prediction_scaler, prediction_feature_columns
+    try:
+        prediction_model_data = joblib.load('model.pkl')
+        prediction_model = prediction_model_data['model']
+        prediction_scaler = prediction_model_data['scaler']
+        prediction_feature_columns = prediction_model_data['feature_columns']
+        print("✅ Prediction model loaded successfully")
+    except Exception as e:
+        print(f"⚠️  Could not load prediction model: {e}")
 
 
 def load_premier_league_matches_data():
@@ -212,6 +236,7 @@ def live_scores():
 # OpenFootball JSON API Endpoints - Real Match Data
 # ============================================================================
 
+
 @app.route('/api/league/table/<league_name>')
 def get_league_table(league_name):
     """Get league standings/table"""
@@ -313,6 +338,88 @@ def get_available_leagues():
     })
 
 
+# ============================================================================
+# Player Prediction Route
+# ============================================================================
+
+
+@app.route('/player-prediction', methods=['GET', 'POST'])
+def player_prediction():
+    prediction = None
+    error_message = None
+    
+    # Check if model is loaded
+    if prediction_model is None or prediction_scaler is None:
+        error_message = "Prediction model not loaded. Please check model.pkl file."
+    
+    if request.method == 'POST' and error_message is None:
+        try:
+            # Get form data
+            age = float(request.form['age'])
+            position = request.form['position']
+            minutes_played = float(request.form['minutes_played'])
+            goals = float(request.form['goals'])
+            assists = float(request.form['assists'])
+            shots = float(request.form['shots'])
+            shots_on_target = float(request.form['shots_on_target'])
+            passes = float(request.form['passes'])
+            pass_accuracy = float(request.form['pass_accuracy'])
+            tackles = float(request.form['tackles'])
+            interceptions = float(request.form.get('interceptions', 0))
+            dribbles = float(request.form.get('dribbles', 0))
+            
+            # Create DataFrame with proper feature names (this fixes the warning)
+            features_df = pd.DataFrame({
+                'minutes_played': [minutes_played],
+                'goals': [goals],
+                'assists': [assists],
+                'shots': [shots],
+                'shots_on_target': [shots_on_target],
+                'passes_completed': [passes],
+                'pass_accuracy': [pass_accuracy],
+                'tackles': [tackles],
+                'interceptions': [interceptions],
+                'dribbles_completed': [dribbles]
+            })
+            
+            # Scale features and predict
+            features_scaled = prediction_scaler.transform(features_df)
+            performance_score = prediction_model.predict(features_scaled)[0]
+            
+            # Calculate market value estimate (simplified formula)
+            # Based on age, position, and performance
+            base_value = performance_score * 2
+            
+            # Age factor (peak at 25-28)
+            if 25 <= age <= 28:
+                age_factor = 1.2
+            elif age < 23:
+                age_factor = 1.0
+            elif age > 32:
+                age_factor = 0.6
+            else:
+                age_factor = 0.9
+            
+            # Position factor
+            position_factors = {'FW': 1.3, 'MF': 1.0, 'DF': 0.8, 'GK': 0.7}
+            position_factor = position_factors.get(position, 1.0)
+            
+            market_value = round(base_value * age_factor * position_factor, 1)
+            
+            prediction = {
+                'performance_score': round(performance_score, 2),
+                'market_value': market_value
+            }
+            
+        except Exception as e:
+            print(f"Error in prediction: {e}")
+            import traceback
+            traceback.print_exc()
+            error_message = f"Prediction error: {str(e)}"
+    
+    return render_template('player_prediction.html', prediction=prediction, error=error_message)
+
+
 if __name__ == '__main__':
     print("=" * 80)
     print("⚽ PREMIER LEAGUE STATISTICS 2024-25")
@@ -322,11 +429,14 @@ if __name__ == '__main__':
     print("👥 21 Real Players with Accurate Stats")
     print("🏆 Top Scorers: Salah (29), Isak (23), Haaland (22)")
     print("🌓 Dark/Light Mode on All Pages")
+    print("🎯 Player Performance Prediction Available")
     print("\n🚀 http://localhost:8080")
     print("=" * 80)
     
     # Load Premier League matches
     load_premier_league_matches_data()
     
+    # Load prediction model
+    load_prediction_model()
+    
     app.run(debug=True, host='0.0.0.0', port=8080)
-

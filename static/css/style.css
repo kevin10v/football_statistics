@@ -968,3 +968,552 @@ canvas {
     gap: 0.5rem;
 }
 
+.prediction-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.prediction-result {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #e8f5e9;
+    border-radius: 8px;
+}
+
+.result-card {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-card h3 {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.result-card .score,
+.result-card .value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ============================================
+   Player Prediction - Clean & Stylish
+   ============================================ */
+
+.prediction-page {
+    max-width: 1600px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.prediction-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+}
+
+/* Sliders Container */
+.sliders-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sliders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.slider-item label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-value {
+    background: #667eea;
+    color: white;
+    padding: 0.25rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Custom Slider */
+.custom-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.4);
+    transition: all 0.2s;
+}
+
+.custom-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.6);
+}
+
+.custom-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.4);
+    transition: all 0.2s;
+}
+
+.custom-slider::-moz-range-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.6);
+}
+
+/* Position Select */
+.position-select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.position-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* STYLISH SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-icon {
+    font-size: 1.4rem;
+}
+
+.btn-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -50%; }
+    100% { left: 150%; }
+}
+
+/* STYLISH RESULT BOXES */
+.results-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.result-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.result-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.result-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.box-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.result-box h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.big-number {
+    font-size: 4rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.currency {
+    font-size: 2.5rem;
+    vertical-align: super;
+}
+
+.unit {
+    font-size: 2rem;
+}
+
+/* Score Bar */
+.score-bar {
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    transition: width 1s ease;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.box-subtitle {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Score Box Specific */
+.score-box::before {
+    background: linear-gradient(90deg, #4CAF50 0%, #45a049 100%);
+}
+
+/* Price Box Specific */
+.price-box::before {
+    background: linear-gradient(90deg, #2196F3 0%, #1976D2 100%);
+}
+
+/* Placeholder Box */
+.placeholder-box {
+    background: #f9f9f9;
+    border: 2px dashed #ddd;
+}
+
+.placeholder-box::before {
+    display: none;
+}
+
+.placeholder-box h2,
+.placeholder-box p {
+    color: #999;
+}
+
+/* Error Box */
+.error-box::before {
+    background: linear-gradient(90deg, #f44336 0%, #d32f2f 100%);
+}
+
+.error-box {
+    background: #ffebee;
+}
+
+.error-box h2,
+.error-box p {
+    color: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .prediction-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .sliders-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sliders-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Change the grid layout to give more space to the left */
+.prediction-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;  /* Changed from 1fr 400px */
+    gap: 2rem;
+}
+
+/* Make result boxes more compact */
+.results-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.result-box {
+    background: white;
+    padding: 2rem;  /* Changed from 2.5rem */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-icon {
+    font-size: 2.5rem;  /* Changed from 3rem */
+    margin-bottom: 0.75rem;  /* Changed from 1rem */
+}
+
+.result-box h2 {
+    font-size: 1.2rem;  /* Changed from 1.4rem */
+    color: #333;
+    margin-bottom: 1rem;  /* Changed from 1.5rem */
+    font-weight: 700;
+}
+
+.big-number {
+    font-size: 3rem;  /* Changed from 4rem */
+    font-weight: 900;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0.75rem 0;  /* Changed from 1rem 0 */
+    line-height: 1;
+}
+
+.currency {
+    font-size: 2rem;  /* Changed from 2.5rem */
+    vertical-align: super;
+}
+
+.unit {
+    font-size: 1.5rem;  /* Changed from 2rem */
+}
+
+.score-bar {
+    width: 100%;
+    height: 8px;  /* Changed from 10px */
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;  /* Changed from 1.5rem 0 */
+}
+
+.box-subtitle {
+    color: #666;
+    font-size: 0.85rem;  /* Changed from 0.95rem */
+    font-weight: 500;
+}
+
+/* ============================================
+   Dark Mode Fixes for Player Prediction
+   ============================================ */
+
+/* Dark mode text visibility for sliders */
+html[data-theme="dark"] .slider-item label {
+    color: #ffffff !important;
+}
+
+/* Dark mode for slider container */
+html[data-theme="dark"] .sliders-container {
+    background: #1e1e1e !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Dark mode for result boxes */
+html[data-theme="dark"] .result-box {
+    background: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="dark"] .result-box h2 {
+    color: #ffffff !important;
+}
+
+html[data-theme="dark"] .box-subtitle {
+    color: #b0b0b0 !important;
+}
+
+/* Dark mode for placeholder boxes */
+html[data-theme="dark"] .placeholder-box {
+    background: #1e1e1e !important;
+    border-color: #444 !important;
+}
+
+html[data-theme="dark"] .placeholder-box h2,
+html[data-theme="dark"] .placeholder-box p {
+    color: #888 !important;
+}
+
+/* Dark mode for page title */
+html[data-theme="dark"] .page-title {
+    color: #ffffff !important;
+}
+
+/* Dark mode for position select */
+html[data-theme="dark"] .position-select {
+    background: #2a2a2a !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+}
+
+html[data-theme="dark"] .position-select option {
+    background: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* Keep gradient text visible in dark mode */
+html[data-theme="dark"] .big-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Dark mode for score bar background */
+html[data-theme="dark"] .score-bar {
+    background: #1e1e1e !important;
+}
+
+/* Dark mode for prediction page background */
+html[data-theme="dark"] .prediction-page {
+    background: #121212 !important;
+}
