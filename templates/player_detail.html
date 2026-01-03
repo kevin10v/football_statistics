@@ -1,0 +1,332 @@
+{% extends "base.html" %}
+
+{% block title %}{{ player_name }} - Player Profile{% endblock %}
+{% block nav_players %}active{% endblock %}
+
+{% block content %}
+<div class="player-detail-page">
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <a href="/players" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Players
+        </a>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-state">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading {{ player_name }}'s data...</p>
+        </div>
+    </div>
+
+    <!-- Player Dashboard -->
+    <div id="playerDashboard" class="player-dashboard" style="display: none;">
+        
+        <!-- Player Header Card -->
+        <div class="player-header-card">
+            <div class="player-photo">
+                <img id="playerPhoto" src="" alt="Player" onerror="this.src='https://via.placeholder.com/150?text=No+Photo'">
+            </div>
+            <div class="player-info">
+                <h2 id="playerName">{{ player_name }}</h2>
+                <div class="player-meta">
+                    <span id="playerTeam"><i class="fas fa-shield-alt"></i> Team</span>
+                    <span id="playerPosition"><i class="fas fa-running"></i> Position</span>
+                    <span id="playerNationality"><i class="fas fa-flag"></i> Nationality</span>
+                    <span id="playerAge"><i class="fas fa-birthday-cake"></i> Age</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Cards Grid -->
+        <div class="stats-cards-grid">
+            <div class="stat-card-modern goals-card">
+                <div class="stat-icon-modern">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="stat-content-modern">
+                    <div class="stat-value-modern" id="totalGoals">0</div>
+                    <div class="stat-label-modern">Total Goals</div>
+                </div>
+            </div>
+
+            <div class="stat-card-modern assists-card">
+                <div class="stat-icon-modern">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="stat-content-modern">
+                    <div class="stat-value-modern" id="totalAssists">0</div>
+                    <div class="stat-label-modern">Total Assists</div>
+                </div>
+            </div>
+
+            <div class="stat-card-modern matches-card">
+                <div class="stat-icon-modern">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="stat-content-modern">
+                    <div class="stat-value-modern" id="totalMatches">0</div>
+                    <div class="stat-label-modern">Matches Played</div>
+                </div>
+            </div>
+
+            <div class="stat-card-modern performance-card">
+                <div class="stat-icon-modern">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-content-modern">
+                    <div class="stat-value-modern" id="avgPerformance">0.0</div>
+                    <div class="stat-label-modern">Avg Rating</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Statistics - Horizontal Layout -->
+        <div class="detailed-stats-section">
+            <h3><i class="fas fa-chart-bar"></i> Detailed Statistics</h3>
+            <div class="stats-detailed-grid-horizontal">
+                <!-- Attacking Stats -->
+                <div class="stats-category-modern">
+                    <h4><i class="fas fa-bullseye"></i> Attacking</h4>
+                    <div class="stat-row">
+                        <span>Total Goals</span>
+                        <span class="stat-value-bold" id="detailGoals">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Assists</span>
+                        <span class="stat-value-bold" id="detailAssists">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Avg Shots per Match</span>
+                        <span class="stat-value-bold" id="detailShots">0.0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Shot Accuracy</span>
+                        <span class="stat-value-bold" id="detailShotAccuracy">0%</span>
+                    </div>
+                </div>
+
+                <!-- Passing Stats -->
+                <div class="stats-category-modern">
+                    <h4><i class="fas fa-exchange-alt"></i> Passing</h4>
+                    <div class="stat-row">
+                        <span>Total Passes</span>
+                        <span class="stat-value-bold" id="detailPasses">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Pass Accuracy</span>
+                        <span class="stat-value-bold" id="detailPassAcc">0%</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Avg Passes per Match</span>
+                        <span class="stat-value-bold" id="detailAvgPasses">0.0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Shots on Target</span>
+                        <span class="stat-value-bold" id="detailShotsOnTarget">0</span>
+                    </div>
+                </div>
+
+                <!-- Defensive Stats -->
+                <div class="stats-category-modern">
+                    <h4><i class="fas fa-shield-alt"></i> Defensive</h4>
+                    <div class="stat-row">
+                        <span>Total Tackles</span>
+                        <span class="stat-value-bold" id="detailTackles">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Interceptions</span>
+                        <span class="stat-value-bold" id="detailInterceptions">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Avg Dribbles</span>
+                        <span class="stat-value-bold" id="detailDribbles">0.0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Minutes Played</span>
+                        <span class="stat-value-bold" id="detailMinutes">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Heatmap - Full Width -->
+        <div class="heatmap-section-full">
+            <div class="chart-card heatmap-card">
+                <h3><i class="fas fa-map-marked-alt"></i> Field Coverage Heatmap</h3>
+                <div id="heatmapContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Load player data on page load
+document.addEventListener('DOMContentLoaded', async function() {
+    const playerName = "{{ player_name }}";
+    const loadingState = document.getElementById('loadingState');
+    const playerDashboard = document.getElementById('playerDashboard');
+    
+    console.log('Loading player:', playerName);
+    
+    try {
+        const response = await fetch(`/api/player/${encodeURIComponent(playerName)}`);
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+            throw new Error('Player not found');
+        }
+        
+        const data = await response.json();
+        console.log('Player data:', data);
+        
+        // Hide loading, show dashboard
+        loadingState.style.display = 'none';
+        playerDashboard.style.display = 'flex';
+        
+        // Display player data
+        displayPlayerData(data);
+        loadHeatmap(playerName);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        loadingState.innerHTML = `
+            <div class="error-message" style="text-align: center; padding: 3rem;">
+                <i class="fas fa-exclamation-circle" style="font-size: 4rem; color: #ef4444; margin-bottom: 1rem;"></i>
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Player Not Found</h2>
+                <p style="color: #666; margin-bottom: 2rem;">Could not load data for ${playerName}</p>
+                <a href="/players" class="btn btn-primary" style="display: inline-block; padding: 1rem 2rem; background: #2563eb; color: white; text-decoration: none; border-radius: 8px;">
+                    <i class="fas fa-arrow-left"></i> Back to Players
+                </a>
+            </div>
+        `;
+    }
+});
+
+function displayPlayerData(data) {
+    console.log('Displaying data...');
+    
+    // Player header
+    document.getElementById('playerName').textContent = data.player_name || 'Unknown Player';
+    document.getElementById('playerTeam').innerHTML = `<i class="fas fa-shield-alt"></i> ${data.current_team || 'Unknown'}`;
+    document.getElementById('playerPosition').innerHTML = `<i class="fas fa-running"></i> ${data.position || 'Unknown'}`;
+    document.getElementById('playerNationality').innerHTML = `<i class="fas fa-flag"></i> ${data.nationality || 'Unknown'}`;
+    document.getElementById('playerAge').innerHTML = `<i class="fas fa-birthday-cake"></i> ${data.age || '-'} years`;
+    
+    // Photo
+    const photoElement = document.getElementById('playerPhoto');
+    if (data.photo_url && data.photo_url !== 'NaN' && data.photo_url !== null && data.photo_url !== '') {
+        photoElement.src = data.photo_url;
+    } else {
+        photoElement.src = 'https://via.placeholder.com/150/5dade2/ffffff?text=' + encodeURIComponent(data.player_name.split(' ')[0]);
+    }
+    
+    // Stats cards
+    document.getElementById('totalGoals').textContent = data.total_goals || 0;
+    document.getElementById('totalAssists').textContent = data.total_assists || 0;
+    document.getElementById('totalMatches').textContent = data.total_matches || 0;
+    document.getElementById('avgPerformance').textContent = data.avg_performance ? parseFloat(data.avg_performance).toFixed(2) : '0.0';
+    
+    // Detailed stats
+    document.getElementById('detailGoals').textContent = data.total_goals || 0;
+    document.getElementById('detailAssists').textContent = data.total_assists || 0;
+    document.getElementById('detailShots').textContent = data.avg_shots ? parseFloat(data.avg_shots).toFixed(1) : '0.0';
+    document.getElementById('detailShotAccuracy').textContent = (data.shot_accuracy || 0) + '%';
+    document.getElementById('detailPasses').textContent = data.total_passes || 0;
+    document.getElementById('detailPassAcc').textContent = (data.avg_pass_accuracy || 0) + '%';
+    document.getElementById('detailAvgPasses').textContent = data.avg_passes_per_match ? parseFloat(data.avg_passes_per_match).toFixed(1) : '0.0';
+    document.getElementById('detailTackles').textContent = data.total_tackles || 0;
+    document.getElementById('detailInterceptions').textContent = data.total_interceptions || 0;
+    document.getElementById('detailDribbles').textContent = data.avg_dribbles ? parseFloat(data.avg_dribbles).toFixed(1) : '0.0';
+    
+    // Calculate total minutes from recent matches
+    const totalMinutes = data.recent_matches.reduce((sum, match) => sum + (match.minutes_played || 0), 0);
+    document.getElementById('detailMinutes').textContent = totalMinutes;
+    
+    // Shots on target
+    const shotsOnTarget = data.recent_matches.reduce((sum, match) => sum + (match.shots_on_target || 0), 0);
+    document.getElementById('detailShotsOnTarget').textContent = shotsOnTarget;
+    
+    console.log('Data displayed successfully');
+}
+
+async function loadHeatmap(playerName) {
+    try {
+        console.log('Loading heatmap...');
+        const response = await fetch(`/api/heatmap/${encodeURIComponent(playerName)}`);
+        if (!response.ok) {
+            console.log('Heatmap not available');
+            document.querySelector('.heatmap-section-full').style.display = 'none';
+            return;
+        }
+        
+        const data = await response.json();
+        
+        // Create cleaner scatter plot
+        const trace = {
+            x: data.x,
+            y: data.y,
+            mode: 'markers',
+            type: 'scatter',
+            marker: {
+                size: 6,
+                color: '#5dade2',
+                opacity: 0.5,
+                line: {
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    width: 0.5
+                }
+            },
+            hovertemplate: '<b>Position</b><br>X: %{x:.1f}m<br>Y: %{y:.1f}m<extra></extra>'
+        };
+        
+        const layout = {
+            xaxis: { 
+                range: [0, 105], 
+                showgrid: true,
+                gridcolor: 'rgba(255, 255, 255, 0.15)',
+                showticklabels: true,
+                zeroline: false,
+                title: {
+                    text: 'Field Length (m)',
+                    font: { size: 13, color: 'var(--text-secondary)' }
+                },
+                tickfont: { size: 11, color: 'var(--text-secondary)' }
+            },
+            yaxis: { 
+                range: [0, 68], 
+                showgrid: true,
+                gridcolor: 'rgba(255, 255, 255, 0.15)',
+                showticklabels: true,
+                zeroline: false,
+                title: {
+                    text: 'Field Width (m)',
+                    font: { size: 13, color: 'var(--text-secondary)' }
+                },
+                tickfont: { size: 11, color: 'var(--text-secondary)' }
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: '#2d8f47',
+            height: 500,
+            margin: { t: 20, b: 70, l: 70, r: 20 },
+            font: {
+                family: 'Inter, sans-serif',
+                color: 'var(--text-primary)'
+            }
+        };
+        
+        const config = {
+            responsive: true,
+            displayModeBar: false
+        };
+        
+        Plotly.newPlot('heatmapContainer', [trace], layout, config);
+        console.log('Heatmap loaded');
+    } catch (error) {
+        console.error('Error loading heatmap:', error);
+        document.querySelector('.heatmap-section-full').style.display = 'none';
+    }
+}
+</script>
+{% endblock %}
