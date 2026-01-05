@@ -170,14 +170,6 @@ Edit `config.py` to customize:
 
 Open source - Educational purposes
 
----
-
-## 👨‍💻 Author
-
-Football Statistics ML Dashboard Project
-
----
-
 ## 🆕 What's New
 
 ### Flashscore-Style Layout (December 27, 2024) ⭐
@@ -252,3 +244,14 @@ This project's live scores interface is inspired by **[Flashscore.com](https://w
 **Enjoy your professional football statistics platform! ⚽📊🏆**
 
 **Reference**: Layout inspired by [Flashscore.com](https://www.flashscore.com/)
+
+---
+
+## 👨‍💻 Author
+
+Football Statistics ML Dashboard Project by Holberton School
+
+Kevin Voka                       Frenki Janaqi                  Erdi Shpati
+https://github.com/kevin10v.     https://github.com/frenk1j.    https://github.com/Erdi-Shpati
+
+---
