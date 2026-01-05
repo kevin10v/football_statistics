@@ -4,6 +4,8 @@ Includes: Search, Photos, Complete Info, Variable Matches
 + OpenFootball Real Match Data Integration
 """
 
+
+
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from model import PlayerPerformanceModel
@@ -14,6 +16,8 @@ import os
 import json
 import joblib
 import numpy as np
+
+
 
 # Extended Player photo URLs from Premier League official site
 PLAYER_PHOTOS = {
@@ -50,12 +54,18 @@ PLAYER_PHOTOS = {
 }
 
 
+
+
 app = Flask(__name__)
+
+
 
 model = None
 df = None
 football_loader = FootballJSONLoader()
 premier_league_matches = None
+
+
 
 # Load the prediction model
 prediction_model_data = None
@@ -63,8 +73,12 @@ prediction_model = None
 prediction_scaler = None
 prediction_feature_columns = None
 
+
+
 DATA_FILE = 'player_data.csv'
 MODEL_FILE = 'model.pkl'
+
+
 
 def load_prediction_model():
     """Load the player prediction model"""
@@ -77,6 +91,8 @@ def load_prediction_model():
         print("✅ Prediction model loaded successfully")
     except Exception as e:
         print(f"⚠️  Could not load prediction model: {e}")
+
+
 
 def load_premier_league_matches_data():
     """Load Premier League matches from local JSON file"""
@@ -110,6 +126,8 @@ def load_premier_league_matches_data():
         print(f"⚠️  Could not load local matches: {e}")
         premier_league_matches = []
 
+
+
 def load_app_data():
     global model, df
     
@@ -128,10 +146,14 @@ def load_app_data():
     
     return True, "OK"
 
+
+
 @app.route('/')
 def index():
     """Default homepage - live scores"""
     return render_template('live_scores.html')
+
+
 
 @app.route('/players')
 def players():
@@ -143,6 +165,29 @@ def players():
     players_list = sorted(df['player_name'].unique().tolist())
     players_json = json.dumps(players_list)  # Convert to JSON string
     return render_template('index.html', players=players_list, players_json=players_json)
+
+
+
+# ============================================================================
+# NEW: API endpoint for player autocomplete search
+# ============================================================================
+
+
+@app.route('/api/players')
+def get_all_players():
+    """Return list of all player names for autocomplete"""
+    success, message = load_app_data()
+    if not success or df is None:
+        return jsonify({'error': 'Data not loaded'}), 500
+    
+    try:
+        # Get unique player names sorted alphabetically
+        players_list = sorted(df['player_name'].unique().tolist())
+        return jsonify(players_list)
+    except Exception as e:
+        print(f"❌ Error getting players: {e}")
+        return jsonify({'error': str(e)}), 500
+
 
 
 @app.route('/player/<player_name>')
@@ -166,8 +211,10 @@ def player_detail(player_name):
     
     return render_template('player_detail.html', player_name=actual_name)
 
+
+
 def get_player_photo_url(player_name):
-    """Generate player photo URL - checks dictionary with fuzzy matching"""
+    """Generate player photo URL - returns None for CSS placeholder if not found"""
     # Direct match
     if player_name in PLAYER_PHOTOS:
         return PLAYER_PHOTOS[player_name]
@@ -181,8 +228,10 @@ def get_player_photo_url(player_name):
         if normalized_name.lower() == normalized_key.lower():
             return PLAYER_PHOTOS[photo_key]
     
-    # Generate placeholder with initials
-    return f"https://ui-avatars.com/api/?name={player_name.replace(' ', '+')}&size=200&background=5dade2&color=fff&bold=true&font-size=0.4"
+    # Return None - let frontend CSS handle the placeholder
+    return None
+
+
 
 
 @app.route('/api/player/<path:player_name>')
@@ -243,7 +292,7 @@ def get_player_stats(player_name):
     response_data = {
         'player_name': actual_player_name,
         'full_name': safe_str(profile.get('full_name')) or actual_player_name,
-        'photo_url': get_player_photo_url(actual_player_name),  # Use helper function
+        'photo_url': get_player_photo_url(actual_player_name),  # Returns None if not in dictionary
         'birth_date': safe_str(profile.get('birth_date')),
         'age': safe_int(profile.get('age')),
         'height_cm': f"{safe_int(profile.get('height_cm'))} cm",
@@ -254,7 +303,7 @@ def get_player_stats(player_name):
         'preferred_foot': safe_str(profile.get('preferred_foot')) or 'Unknown',
         'overall_rating': safe_int(safe_float(profile.get('market_value_euro')) / 5000000),
         'current_team': safe_str(profile.get('team')) or 'Unknown',
-        'total_matches': len(player_data),
+        'total_matches': safe_int(profile.get('Appearances')) or 35,
         'avg_performance': round(player_data['performance_rating'].mean(), 2),
         'total_goals': int(player_data['goals'].sum()),
         'total_assists': int(player_data['assists'].sum()),
@@ -285,10 +334,14 @@ def get_player_stats(player_name):
     print(f"📊 Response data created successfully")
     return jsonify(response_data)
 
+
+
 @app.route('/api/heatmap/<player_name>')
 def get_heatmap(player_name):
     x_pos, y_pos = generate_heatmap_data(player_name, n_positions=200)
     return jsonify({'x': x_pos.tolist(), 'y': y_pos.tolist()})
+
+
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
@@ -310,10 +363,14 @@ def predict():
             'dribbles_completed': [data.get('dribbles_completed', 2)],
         })
 
+
+
         prediction = model.predict(prediction_data)[0]
         return jsonify({'prediction': round(float(prediction), 2), 'status': 'success'})
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
+
 
 @app.route('/api/feature_importance')
 def get_feature_importance():
@@ -326,23 +383,33 @@ def get_feature_importance():
         'importance': importance_df['importance'].tolist()
     })
 
+
+
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+
 
 @app.route('/leagues')
 def leagues():
     """League tables page"""
     return render_template('league_table.html')
 
+
+
 @app.route('/live-scores')
 def live_scores():
     """Live scores page - Flashscore style"""
     return render_template('live_scores.html')
 
+
+
 # ============================================================================
 # OpenFootball JSON API Endpoints - Real Match Data
 # ============================================================================
+
+
 
 @app.route('/api/league/table/<league_name>')
 def get_league_table(league_name):
@@ -361,6 +428,8 @@ def get_league_table(league_name):
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
+
 
 @app.route('/api/league/matches/<league_name>')
 def get_league_matches_api(league_name):
@@ -395,6 +464,8 @@ def get_league_matches_api(league_name):
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
+
+
 @app.route('/api/league/fixtures/<league_name>')
 def get_league_fixtures(league_name):
     """Get upcoming fixtures for a league"""
@@ -410,6 +481,8 @@ def get_league_fixtures(league_name):
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
+
 
 @app.route('/api/team/form/<league_name>/<team_name>')
 def get_team_form(league_name, team_name):
@@ -432,6 +505,8 @@ def get_team_form(league_name, team_name):
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
+
+
 @app.route('/api/leagues')
 def get_available_leagues():
     """Get list of available leagues"""
@@ -440,9 +515,13 @@ def get_available_leagues():
         'details': football_loader.LEAGUES
     })
 
+
+
 # ============================================================================
 # Player Prediction Route
 # ============================================================================
+
+
 
 @app.route('/player-prediction', methods=['GET', 'POST'])
 def player_prediction():
@@ -519,6 +598,8 @@ def player_prediction():
             error_message = f"Prediction error: {str(e)}"
     
     return render_template('player_prediction.html', prediction=prediction, error=error_message)
+
+
 
 if __name__ == '__main__':
     print("=" * 80)

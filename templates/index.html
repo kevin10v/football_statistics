@@ -1,13 +1,24 @@
 {% extends "base.html" %}
 
+
+
 {% block title %}Player Statistics - Premier League{% endblock %}
 {% block nav_players %}active{% endblock %}
+
+
 
 {% block content %}
 <div class="player-page">
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="hero-content">
+            <!-- Add Custom Logo -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/baa830ad-6591-4080-8146-20f914d7955a.png" 
+                     alt="PL Stats Logo" 
+                     style="max-width: 350px; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));">
+            </div>
+            
             <h1 class="hero-title">
                 <span class="gradient-text">Player Statistics</span>
             </h1>
@@ -23,14 +34,10 @@
                        autocomplete="off">
                 <div id="searchSuggestions" class="search-suggestions"></div>
             </div>
-            
-           
-            <!-- Player data as JSON for JavaScript -->
-<script id="playersData" type="application/json">
-{{ players_json | safe }}
-</script>
         </div>
     </div>
+
+
 
     <!-- Main Container -->
     <div class="main-container">
@@ -42,13 +49,15 @@
             </div>
         </div>
 
+
+
         <!-- Player Dashboard -->
         <div id="playerDashboard" class="player-dashboard" style="display: none;">
             
             <!-- Player Header Card -->
             <div class="player-header-card">
                 <div class="player-photo">
-                    <img id="playerPhoto" src="" alt="Player" onerror="this.src='https://via.placeholder.com/150?text=No+Photo'">
+                    <img id="playerPhoto" src="" alt="Player" onerror="this.style.display='none'">
                 </div>
                 <div class="player-info">
                     <h2 id="playerName">Player Name</h2>
@@ -60,6 +69,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <!-- Statistics Cards Grid -->
             <div class="stats-cards-grid">
@@ -73,6 +84,8 @@
                     </div>
                 </div>
 
+
+
                 <div class="stat-card-modern assists-card">
                     <div class="stat-icon-modern">
                         <i class="fas fa-hands-helping"></i>
@@ -83,6 +96,8 @@
                     </div>
                 </div>
 
+
+
                 <div class="stat-card-modern matches-card">
                     <div class="stat-icon-modern">
                         <i class="fas fa-calendar-check"></i>
@@ -92,6 +107,8 @@
                         <div class="stat-label-modern">Matches Played</div>
                     </div>
                 </div>
+
+
 
                 <div class="stat-card-modern performance-card">
                     <div class="stat-icon-modern">
@@ -104,6 +121,8 @@
                 </div>
             </div>
 
+
+
             <!-- Charts Grid -->
             <div class="charts-grid">
                 <!-- Radar Chart -->
@@ -112,12 +131,16 @@
                     <canvas id="radarChart"></canvas>
                 </div>
 
+
+
                 <!-- Performance Trend -->
                 <div class="chart-card">
                     <h3><i class="fas fa-chart-line"></i> Performance Trend</h3>
                     <canvas id="trendChart"></canvas>
                 </div>
             </div>
+
+
 
             <!-- Detailed Statistics -->
             <div class="detailed-stats-section">
@@ -144,6 +167,8 @@
                         </div>
                     </div>
 
+
+
                     <!-- Passing Stats -->
                     <div class="stats-category-modern">
                         <h4><i class="fas fa-exchange-alt"></i> Passing</h4>
@@ -160,6 +185,8 @@
                             <span class="stat-value-bold" id="detailAvgPasses">0.0</span>
                         </div>
                     </div>
+
+
 
                     <!-- Defensive Stats -->
                     <div class="stats-category-modern">
@@ -180,6 +207,8 @@
                 </div>
             </div>
 
+
+
             <!-- Heatmap -->
             <div class="chart-card full-width">
                 <h3><i class="fas fa-map-marked-alt"></i> Field Coverage Heatmap</h3>
@@ -189,6 +218,8 @@
     </div>
 </div>
 
+
+
 <style>
 /* Player Page Styles */
 .player-page {
@@ -196,6 +227,8 @@
     background: var(--bg-primary);
     padding-bottom: 60px;
 }
+
+
 
 /* Hero Section */
 .hero-section {
@@ -205,6 +238,8 @@
     position: relative;
     overflow: hidden;
 }
+
+
 
 .hero-section::before {
     content: '';
@@ -217,10 +252,14 @@
     animation: float 20s linear infinite;
 }
 
+
+
 @keyframes float {
     from { transform: translateY(0); }
     to { transform: translateY(-100px); }
 }
+
+
 
 .hero-content {
     position: relative;
@@ -229,12 +268,16 @@
     margin: 0 auto;
 }
 
+
+
 .hero-title {
     font-size: 48px;
     font-weight: 800;
     margin: 0 0 15px;
     color: white;
 }
+
+
 
 .gradient-text {
     background: linear-gradient(to right, #fff, #e0e0ff);
@@ -243,11 +286,15 @@
     background-clip: text;
 }
 
+
+
 .hero-subtitle {
     font-size: 18px;
     color: rgba(255,255,255,0.9);
     margin: 0 0 40px;
 }
+
+
 
 /* Search Container */
 .search-container {
@@ -257,6 +304,8 @@
     z-index: 2000;
 }
 
+
+
 .search-icon {
     position: absolute;
     left: 20px;
@@ -265,6 +314,8 @@
     color: #999;
     font-size: 18px;
 }
+
+
 
 .player-search-input {
     width: 100%;
@@ -278,15 +329,21 @@
     transition: all 0.3s ease;
 }
 
+
+
 .player-search-input:focus {
     outline: none;
     box-shadow: 0 12px 32px rgba(0,0,0,0.25);
     transform: translateY(-2px);
 }
 
+
+
 .player-search-input::placeholder {
     color: #999;
 }
+
+
 
 /* Search Suggestions */
 .search-suggestions {
@@ -304,6 +361,8 @@
     display: none;
 }
 
+
+
 .suggestion-item {
     padding: 15px 20px;
     cursor: pointer;
@@ -312,24 +371,34 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
+
+
 .suggestion-item:last-child {
     border-bottom: none;
 }
+
+
 
 .suggestion-item:hover {
     background: #f0f8ff;
     color: var(--accent-color);
 }
 
+
+
 .suggestion-item:first-child {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
+
+
 .suggestion-item:last-child {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+
 
 /* Main Container */
 .main-container {
@@ -340,66 +409,7 @@
     z-index: 1;
 }
 
-/* Welcome State */
-.welcome-state {
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    padding: 80px 40px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-    border: 2px solid var(--border-color);
-    position: relative;
-}
 
-.welcome-state i {
-    font-size: 80px;
-    color: var(--accent-color);
-    margin-bottom: 20px;
-}
-
-.welcome-state h2 {
-    font-size: 32px;
-    margin: 0 0 15px;
-    color: var(--text-primary);
-}
-
-.welcome-state p {
-    font-size: 18px;
-    color: var(--text-secondary);
-    margin: 0 0 40px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.featured-players h3 {
-    font-size: 16px;
-    color: var(--text-secondary);
-    margin-bottom: 15px;
-}
-
-.player-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.player-chip {
-    padding: 10px 20px;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.player-chip:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(93, 173, 226, 0.4);
-}
 
 /* Loading State */
 .loading-state {
@@ -409,6 +419,8 @@
     text-align: center;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
+
+
 
 .spinner {
     width: 60px;
@@ -420,15 +432,21 @@
     margin: 0 auto 20px;
 }
 
+
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
+
+
 .loading-state p {
     color: var(--text-secondary);
     font-size: 18px;
 }
+
+
 
 /* Player Dashboard */
 .player-dashboard {
@@ -436,6 +454,8 @@
     flex-direction: column;
     gap: 30px;
 }
+
+
 
 /* Player Header Card */
 .player-header-card {
@@ -449,6 +469,8 @@
     border: 2px solid var(--border-color);
 }
 
+
+
 .player-photo {
     width: 150px;
     height: 150px;
@@ -459,17 +481,23 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
+
+
 .player-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+
+
 .player-info h2 {
     font-size: 36px;
     margin: 0 0 20px;
     color: var(--text-primary);
 }
+
+
 
 .player-meta {
     display: flex;
@@ -478,6 +506,8 @@
     font-size: 15px;
 }
 
+
+
 .player-meta span {
     display: flex;
     align-items: center;
@@ -485,9 +515,13 @@
     color: var(--text-secondary);
 }
 
+
+
 .player-meta i {
     color: var(--accent-color);
 }
+
+
 
 /* Statistics Cards Grid */
 .stats-cards-grid {
@@ -495,6 +529,8 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
+
+
 
 .stat-card-modern {
     background: var(--bg-secondary);
@@ -508,10 +544,14 @@
     border: 2px solid var(--border-color);
 }
 
+
+
 .stat-card-modern:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
+
+
 
 .stat-icon-modern {
     width: 70px;
@@ -524,29 +564,41 @@
     flex-shrink: 0;
 }
 
+
+
 .goals-card .stat-icon-modern {
     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     color: white;
 }
+
+
 
 .assists-card .stat-icon-modern {
     background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
     color: white;
 }
 
+
+
 .matches-card .stat-icon-modern {
     background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
     color: white;
 }
+
+
 
 .performance-card .stat-icon-modern {
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
     color: #333;
 }
 
+
+
 .stat-content-modern {
     flex: 1;
 }
+
+
 
 .stat-value-modern {
     font-size: 42px;
@@ -556,6 +608,8 @@
     margin-bottom: 8px;
 }
 
+
+
 .stat-label-modern {
     font-size: 14px;
     text-transform: uppercase;
@@ -564,12 +618,16 @@
     font-weight: 600;
 }
 
+
+
 /* Charts Grid */
 .charts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
 }
+
+
 
 .chart-card {
     background: var(--bg-secondary);
@@ -578,6 +636,8 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     border: 2px solid var(--border-color);
 }
+
+
 
 .chart-card h3 {
     font-size: 20px;
@@ -588,13 +648,19 @@
     gap: 10px;
 }
 
+
+
 .chart-card h3 i {
     color: var(--accent-color);
 }
 
+
+
 .chart-card.full-width {
     grid-column: 1 / -1;
 }
+
+
 
 /* Detailed Statistics Section */
 .detailed-stats-section {
@@ -605,6 +671,8 @@
     border: 2px solid var(--border-color);
 }
 
+
+
 .detailed-stats-section h3 {
     font-size: 24px;
     margin: 0 0 30px;
@@ -614,9 +682,13 @@
     gap: 10px;
 }
 
+
+
 .detailed-stats-section h3 i {
     color: var(--accent-color);
 }
+
+
 
 .stats-detailed-grid {
     display: grid;
@@ -624,12 +696,16 @@
     gap: 30px;
 }
 
+
+
 .stats-category-modern {
     background: var(--bg-primary);
     padding: 25px;
     border-radius: 15px;
     border: 1px solid var(--border-color);
 }
+
+
 
 .stats-category-modern h4 {
     font-size: 16px;
@@ -642,9 +718,13 @@
     gap: 10px;
 }
 
+
+
 .stats-category-modern h4 i {
     color: var(--accent-color);
 }
+
+
 
 .stat-row {
     display: flex;
@@ -655,15 +735,21 @@
     color: var(--text-primary);
 }
 
+
+
 .stat-row:last-child {
     border-bottom: none;
 }
+
+
 
 .stat-value-bold {
     font-weight: 700;
     font-size: 18px;
     color: var(--accent-color);
 }
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -699,16 +785,25 @@
 }
 </style>
 
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const playerSearch = document.getElementById('playerSearch');
     const searchSuggestions = document.getElementById('searchSuggestions');
+    let allPlayers = [];
     
-    // Get all available players
-    const playersData = document.getElementById('playersData');
-    const allPlayers = Array.from(playersData.querySelectorAll('[data-player]')).map(el => el.getAttribute('data-player'));
-    
-    console.log('Available players:', allPlayers.slice(0, 5)); // Debug
+    // Fetch players from API
+    console.log('Fetching players from API...');
+    fetch('/api/players')
+        .then(response => response.json())
+        .then(players => {
+            allPlayers = players;
+            console.log(`✅ Loaded ${allPlayers.length} players`);
+        })
+        .catch(error => {
+            console.error('❌ Error loading players:', error);
+        });
     
     // Search with suggestions
     playerSearch.addEventListener('input', function() {
@@ -767,5 +862,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+
 
 {% endblock %}

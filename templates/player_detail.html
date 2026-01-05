@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
+
+
 {% block title %}{{ player_name }} - Player Profile{% endblock %}
 {% block nav_players %}active{% endblock %}
+
+
 
 {% block content %}
 <div class="player-detail-page">
@@ -12,6 +16,8 @@
         </a>
     </div>
 
+
+
     <!-- Loading State -->
     <div id="loadingState" class="loading-state">
         <div class="loading-spinner">
@@ -20,14 +26,13 @@
         </div>
     </div>
 
+
+
     <!-- Player Dashboard -->
     <div id="playerDashboard" class="player-dashboard" style="display: none;">
         
         <!-- Player Header Card -->
         <div class="player-header-card">
-            <div class="player-photo">
-                <img id="playerPhoto" src="" alt="Player" onerror="this.src='https://via.placeholder.com/150?text=No+Photo'">
-            </div>
             <div class="player-info">
                 <h2 id="playerName">{{ player_name }}</h2>
                 <div class="player-meta">
@@ -38,6 +43,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <!-- Statistics Cards Grid -->
         <div class="stats-cards-grid">
@@ -51,6 +58,8 @@
                 </div>
             </div>
 
+
+
             <div class="stat-card-modern assists-card">
                 <div class="stat-icon-modern">
                     <i class="fas fa-hands-helping"></i>
@@ -60,6 +69,8 @@
                     <div class="stat-label-modern">Total Assists</div>
                 </div>
             </div>
+
+
 
             <div class="stat-card-modern matches-card">
                 <div class="stat-icon-modern">
@@ -71,6 +82,8 @@
                 </div>
             </div>
 
+
+
             <div class="stat-card-modern performance-card">
                 <div class="stat-icon-modern">
                     <i class="fas fa-star"></i>
@@ -81,6 +94,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <!-- Detailed Statistics - Horizontal Layout -->
         <div class="detailed-stats-section">
@@ -107,6 +122,8 @@
                     </div>
                 </div>
 
+
+
                 <!-- Passing Stats -->
                 <div class="stats-category-modern">
                     <h4><i class="fas fa-exchange-alt"></i> Passing</h4>
@@ -127,6 +144,8 @@
                         <span class="stat-value-bold" id="detailShotsOnTarget">0</span>
                     </div>
                 </div>
+
+
 
                 <!-- Defensive Stats -->
                 <div class="stats-category-modern">
@@ -151,6 +170,8 @@
             </div>
         </div>
 
+
+
         <!-- Heatmap - Full Width -->
         <div class="heatmap-section-full">
             <div class="chart-card heatmap-card">
@@ -160,6 +181,8 @@
         </div>
     </div>
 </div>
+
+
 
 <script>
 // Load player data on page load
@@ -204,6 +227,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 });
 
+
+
 function displayPlayerData(data) {
     console.log('Displaying data...');
     
@@ -213,14 +238,6 @@ function displayPlayerData(data) {
     document.getElementById('playerPosition').innerHTML = `<i class="fas fa-running"></i> ${data.position || 'Unknown'}`;
     document.getElementById('playerNationality').innerHTML = `<i class="fas fa-flag"></i> ${data.nationality || 'Unknown'}`;
     document.getElementById('playerAge').innerHTML = `<i class="fas fa-birthday-cake"></i> ${data.age || '-'} years`;
-    
-    // Photo
-    const photoElement = document.getElementById('playerPhoto');
-    if (data.photo_url && data.photo_url !== 'NaN' && data.photo_url !== null && data.photo_url !== '') {
-        photoElement.src = data.photo_url;
-    } else {
-        photoElement.src = 'https://via.placeholder.com/150/5dade2/ffffff?text=' + encodeURIComponent(data.player_name.split(' ')[0]);
-    }
     
     // Stats cards
     document.getElementById('totalGoals').textContent = data.total_goals || 0;
@@ -250,6 +267,8 @@ function displayPlayerData(data) {
     
     console.log('Data displayed successfully');
 }
+
+
 
 async function loadHeatmap(playerName) {
     try {
@@ -308,7 +327,8 @@ async function loadHeatmap(playerName) {
             },
             paper_bgcolor: 'rgba(0,0,0,0)',
             plot_bgcolor: '#2d8f47',
-            height: 500,
+            height: 450,
+            autosize: true,
             margin: { t: 20, b: 70, l: 70, r: 20 },
             font: {
                 family: 'Inter, sans-serif',

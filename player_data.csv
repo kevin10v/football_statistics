@@ -1,563 +1,563 @@
 player_name,full_name,photo_url,team,position,nationality,age,birth_date,height_cm,weight_kg,preferred_foot,league,season,match_id,minutes_played,goals,assists,shots,shots_on_target,passes_completed,total_passes,pass_accuracy,tackles,interceptions,dribbles_completed,performance_rating,market_value_euro,number
-Ben White,Ben White,,Arsenal,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1198,0,2,9,12,1493,1678,89.0,20,23,296,100.0,1000000,0
-Bukayo Saka,Bukayo Saka,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1735,6,10,67,2,556,643,87.0,29,15,69,100.0,1000000,0
-David Raya,David Raya,,Arsenal,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Declan Rice,Declan Rice,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2833,4,7,48,18,641,789,81.0,53,13,260,100.0,1000000,0
-Ethan Nwaneri,Ethan Nwaneri,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,889,4,0,24,0,0,0,0.0,11,0,0,56.5,1000000,0
-Gabriel Jesus,Gabriel Jesus,,Arsenal,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,603,3,0,20,0,0,0,0.0,10,0,0,45.0,1000000,0
-Gabriel Magalhães,Gabriel Magalhães,,Arsenal,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2365,3,1,22,25,466,590,79.0,25,5,216,100.0,1000000,0
-Gabriel Martinelli,Gabriel Martinelli,,Arsenal,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2300,8,4,55,12,236,344,69.0,23,10,110,100.0,1000000,0
-Jakub Kiwior,Jakub Kiwior,,Arsenal,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1117,1,0,3,1,461,533,87.0,22,9,52,82.6,1000000,0
-Jorginho,Jorginho,,Arsenal,MID,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,702,0,0,2,0,0,0,0.0,12,0,0,18.0,1000000,0
-Jurriën Timber,Jurriën Timber,,Arsenal,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2422,1,3,14,34,294,451,65.0,58,6,38,100.0,1000000,0
-Kai Havertz,Kai Havertz,,Arsenal,FWD,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1874,9,3,53,2,428,528,81.0,16,19,34,100.0,1000000,0
-Kieran Tierney,Kieran Tierney,,Arsenal,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,252,1,0,2,0,0,0,0.0,7,0,0,20.5,1000000,0
-Leandro Trossard,Leandro Trossard,,Arsenal,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2550,8,7,72,2,765,950,81.0,31,25,135,100.0,1000000,0
-Martin Ødegaard,Martin Ødegaard,,Arsenal,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2328,3,8,49,12,1742,1878,93.0,19,24,259,100.0,1000000,0
-Mikel Merino,Mikel Merino,,Arsenal,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1581,7,2,38,7,1062,1368,78.0,46,27,239,100.0,1000000,0
-Myles Lewis-Skelly,Myles Lewis-Skelly,,Arsenal,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1370,1,0,3,6,1693,1961,86.0,22,34,267,100.0,1000000,0
-Nathan Butler-Oyedeji,Nathan Butler-Oyedeji,,Arsenal,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,6,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Neto,Neto,,Arsenal,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Oleksandr Zinchenko,Oleksandr Zinchenko,,Arsenal,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,522,0,0,10,0,0,0,0.0,6,0,0,9.0,1000000,0
-Raheem Sterling,Raheem Sterling,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,496,0,2,11,0,0,0,0.0,9,0,0,27.5,1000000,0
-Riccardo Calafiori,Riccardo Calafiori,,Arsenal,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,984,2,1,10,2,1101,1204,92.0,0,13,142,74.1,1000000,0
-Takehiro Tomiyasu,Takehiro Tomiyasu,,Arsenal,DEF,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,6,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Thomas Partey,Thomas Partey,,Arsenal,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2799,4,0,26,3,652,786,83.0,89,22,75,100.0,1000000,0
-William Saliba,William Saliba,,Arsenal,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3041,2,0,6,1,1370,1550,88.0,62,26,186,100.0,1000000,0
-Amadou Onana,Amadou Onana,,Aston Villa,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1624,3,0,17,9,611,786,78.0,55,8,82,100.0,1000000,0
-Andrés García,Andrés García,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,317,0,0,2,0,0,0,0.0,9,0,0,13.5,1000000,0
-Axel Disasi,Axel Disasi,,Aston Villa,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,853,1,0,4,0,0,0,0.0,15,0,0,32.5,1000000,0
-Boubacar Kamara,Boubacar Kamara,,Aston Villa,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1725,1,0,10,0,1066,1218,88.0,50,27,129,100.0,1000000,0
-Diego Carlos,Diego Carlos,,Aston Villa,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,828,0,0,4,0,0,0,0.0,8,0,0,12.0,1000000,0
-Donyell Malen,Donyell Malen,,Aston Villa,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,298,3,0,15,0,0,0,0.0,7,0,0,40.5,1000000,0
-Emiliano Buendía,Emiliano Buendía,,Aston Villa,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,89,0,0,5,0,0,0,0.0,6,0,0,9.0,1000000,0
-Emiliano Martínez,Emiliano Martínez,,Aston Villa,GKP,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3195,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
-Ezri Konsa,Ezri Konsa,,Aston Villa,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2937,2,0,11,11,1641,1942,85.0,34,45,232,100.0,1000000,0
-Ian Maatsen,Ian Maatsen,,Aston Villa,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1128,1,2,19,4,1713,1897,90.0,29,17,227,100.0,1000000,0
-Jacob Ramsey,Jacob Ramsey,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1628,1,3,19,8,654,768,85.0,30,2,182,100.0,1000000,0
-Jhon Durán,Jhon Durán,,Aston Villa,FWD,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,626,7,0,31,0,0,0,0.0,8,0,0,82.0,1000000,0
-John McGinn,John McGinn,,Aston Villa,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2230,1,4,31,20,467,626,75.0,33,9,138,100.0,1000000,0
-Kosta Nedeljkovic,Kosta Nedeljkovic,,Aston Villa,DEF,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,121,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
-Lamare Bogarde,Lamare Bogarde,,Aston Villa,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,475,0,0,1,0,0,0,0.0,14,0,0,21.0,1000000,0
-Leon Bailey,Leon Bailey,,Aston Villa,MID,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1143,1,2,28,1,599,700,86.0,7,14,90,81.3,1000000,0
-Lucas Digne,Lucas Digne,,Aston Villa,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2358,0,4,13,6,1109,1407,79.0,65,18,100,100.0,1000000,0
-Marco Asensio,Marco Asensio,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,745,3,1,24,0,0,0,0.0,7,0,0,47.5,1000000,0
-Marcus Rashford,Marcus Rashford,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1426,6,3,35,17,636,792,80.0,17,5,177,100.0,1000000,0
-Matty Cash,Matty Cash,,Aston Villa,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2077,1,1,13,6,1203,1468,82.0,56,54,149,100.0,1000000,0
-Morgan Rogers,Morgan Rogers,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3129,8,10,55,6,1129,1420,80.0,43,36,187,100.0,1000000,0
-Ollie Watkins,Ollie Watkins,,Aston Villa,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2610,16,8,84,17,241,286,84.0,10,6,83,100.0,1000000,0
-Pau Torres,Pau Torres,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2020,0,0,8,15,160,261,61.0,21,1,19,51.3,1000000,0
-Robin Olsen,Robin Olsen,,Aston Villa,GKP,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,225,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Ross Barkley,Ross Barkley,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,569,3,1,16,0,0,0,0.0,14,0,0,58.0,1000000,0
-Tyrone Mings,Tyrone Mings,,Aston Villa,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1121,0,0,9,0,840,1027,82.0,7,42,134,98.1,1000000,0
-Youri Tielemans,Youri Tielemans,,Aston Villa,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3032,3,7,41,6,611,722,85.0,84,11,98,100.0,1000000,0
-Adam Smith,Adam Smith,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1596,0,0,3,0,414,526,79.0,24,15,52,82.2,1000000,0
-Alex Scott,Alex Scott,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,751,0,0,15,0,0,0,0.0,27,0,0,40.5,1000000,0
-Antoine Semenyo,Antoine Semenyo,,Bournemouth,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3209,0,5,125,2,1318,1628,81.0,55,62,294,100.0,1000000,0
-Ben Winterburn,Ben Winterburn,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,22,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Dango Ouattara,Dango Ouattara,,Bournemouth,MID,Burkina Faso,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2006,7,0,62,18,854,1137,75.0,35,44,130,100.0,1000000,0
-Daniel Jebbison,Daniel Jebbison,,Bournemouth,FWD,Canada,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,105,1,0,5,0,0,0,0.0,5,0,0,17.5,1000000,0
-David Brooks,David Brooks,,Bournemouth,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,949,2,0,25,4,1348,1601,84.0,14,51,276,100.0,1000000,0
-Dean Huijsen,Dean Huijsen,,Bournemouth,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2422,3,2,18,15,1326,1476,90.0,36,25,226,100.0,1000000,0
-Enes Ünal,Enes Ünal,,Bournemouth,FWD,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,331,2,0,20,0,0,0,0.0,1,0,0,21.5,1000000,0
-Evanilson,Evanilson,,Bournemouth,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2335,0,1,73,5,1523,1633,93.0,16,24,200,94.9,1000000,0
-Illia Zabarnyi,Illia Zabarnyi,,Bournemouth,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3113,0,0,12,29,476,680,70.0,52,9,146,100.0,1000000,0
-James Hill,James Hill,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,448,0,0,6,0,0,0,0.0,15,0,0,22.5,1000000,0
-Julián Araujo,Julián Araujo,,Bournemouth,DEF,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,497,0,0,0,0,0,0,0.0,10,0,0,15.0,1000000,0
-Julio Soler,Julio Soler,,Bournemouth,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,9,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Justin Kluivert,Justin Kluivert,,Bournemouth,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2356,0,0,63,21,400,501,80.0,23,6,72,67.5,1000000,0
-Kepa,Kepa,,Bournemouth,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2790,0,0,1,0,0,0,0.0,1,0,0,1.5,1000000,0
-Lewis Cook,Lewis Cook,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2978,1,3,14,3,1768,1934,91.0,81,13,201,100.0,1000000,0
-Lloyd Kelly,Lloyd Kelly,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,301,0,1,3,0,0,0,0.0,5,0,0,14.5,1000000,0
-Luis Sinisterra,Luis Sinisterra,,Bournemouth,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,230,1,0,13,0,0,0,0.0,7,0,0,20.5,1000000,0
-Marcos Senesi,Marcos Senesi,,Bournemouth,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1108,0,0,3,16,350,446,79.0,39,5,104,89.7,1000000,0
-Marcus Tavernier,Marcus Tavernier,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1938,3,5,57,5,479,589,81.0,44,27,74,100.0,1000000,0
-Mark Travers,Mark Travers,,Bournemouth,GKP,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,450,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Max Aarons,Max Aarons,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,85,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Milos Kerkez,Milos Kerkez,,Bournemouth,DEF,Hungary,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3342,2,5,19,61,853,1155,74.0,52,9,264,100.0,1000000,0
-Philip Billing,Philip Billing,,Bournemouth,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,176,0,0,5,0,0,0,0.0,14,0,0,21.0,1000000,0
-Remy Rees-Dottin,Remy Rees-Dottin,,Bournemouth,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Ryan Christie,Ryan Christie,,Bournemouth,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2131,2,3,33,1,519,620,84.0,54,17,75,100.0,1000000,0
-Tyler Adams,Tyler Adams,,Bournemouth,MID,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1965,0,3,9,9,494,586,84.0,83,8,177,100.0,1000000,0
-Zain Silcott-Duberry,Zain Silcott-Duberry,,Bournemouth,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Ben Mee,Ben Mee,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,181,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Bryan Mbeumo,Bryan Mbeumo,,Brentford,MID,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3415,20,7,85,23,504,598,84.0,49,3,192,100.0,1000000,0
-Christian Nørgaard,Christian Nørgaard,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2829,5,0,39,12,299,330,91.0,79,7,45,100.0,1000000,0
-Ethan Pinnock,Ethan Pinnock,,Brentford,DEF,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1913,2,0,10,32,244,341,72.0,35,1,62,95.6,1000000,0
-Fábio Carvalho,Fábio Carvalho,,Brentford,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,446,2,1,12,0,0,0,0.0,13,0,0,46.5,1000000,0
-Frank Onyeka,Frank Onyeka,,Brentford,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,23,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Gustavo Nunes,Gustavo Nunes,,Brentford,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,11,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
-Hákon Valdimarsson,Hákon Valdimarsson,,Brentford,GKP,Iceland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,144,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Igor Thiago,Igor Thiago,,Brentford,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,168,0,0,2,0,0,0,0.0,5,0,0,7.5,1000000,0
-Jayden Meghoma,Jayden Meghoma,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,4,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Keane Lewis-Potter,Keane Lewis-Potter,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3101,1,3,28,2,636,767,83.0,49,32,91,100.0,1000000,0
-Kevin Schade,Kevin Schade,,Brentford,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2301,0,2,55,0,886,1038,85.0,39,12,78,100.0,1000000,0
-Kim Ji-Soo,Kim Ji-Soo,,Brentford,DEF,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,28,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Kristoffer Ajer,Kristoffer Ajer,,Brentford,DEF,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1441,0,0,9,2,648,731,89.0,26,3,63,70.2,1000000,0
-Mads Roerslev,Mads Roerslev,,Brentford,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1096,0,0,5,5,1081,1214,89.0,18,24,137,89.7,1000000,0
-Mark Flekken,Mark Flekken,,Brentford,GKP,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3276,0,2,0,0,0,0,0.0,4,0,0,20.0,1000000,0
-Mathias Jensen,Mathias Jensen,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,852,0,2,6,0,0,0,0.0,14,0,0,35.0,1000000,0
-Michael Kayode,Michael Kayode,,Brentford,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,528,0,0,2,0,0,0,0.0,17,0,0,25.5,1000000,0
-Mikkel Damsgaard,Mikkel Damsgaard,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2926,2,10,35,5,1086,1350,80.0,83,45,272,100.0,1000000,0
-Nathan Collins,Nathan Collins,,Brentford,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,2,3,17,7,692,850,81.0,40,31,156,100.0,1000000,0
-Paris Maghoma,Paris Maghoma,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,112,0,0,1,0,0,0,0.0,2,0,0,3.0,1000000,0
-Rico Henry,Rico Henry,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,94,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Ryan Trevitt,Ryan Trevitt,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Sepp van den Berg,Sepp van den Berg,,Brentford,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2588,0,0,20,8,272,332,82.0,39,8,89,95.1,1000000,0
-Vitaly Janelt,Vitaly Janelt,,Brentford,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2266,1,3,14,2,389,473,82.0,38,8,63,100.0,1000000,0
-Yehor Yarmoliuk,Yehor Yarmoliuk,,Brentford,MID,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1442,0,0,9,43,447,563,79.0,49,8,119,100.0,1000000,0
-Yoane Wissa,Yoane Wissa,,Brentford,FWD,DR Congo,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2927,19,0,90,13,1662,1933,86.0,22,23,180,100.0,1000000,0
-Yunus Konak,Yunus Konak,,Brentford,MID,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,36,0,0,1,0,0,0,0.0,4,0,0,6.0,1000000,0
-Jakub Moder,Jakub Moder,,Brighton,MID,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,9,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-James Milner,James Milner,,Brighton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,173,0,0,2,0,0,0,0.0,5,0,0,7.5,1000000,0
-Adam Webster,Adam Webster,,Brighton & Hove Albion,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,888,0,0,5,0,0,0,0.0,10,0,0,15.0,1000000,0
-Bart Verbruggen,Bart Verbruggen,,Brighton & Hove Albion,GKP,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3240,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Billy Gilmour,Billy Gilmour,,Brighton & Hove Albion,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,97,0,0,1,0,0,0,0.0,3,0,0,4.5,1000000,0
-Brajan Gruda,Brajan Gruda,,Brighton & Hove Albion,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,681,1,4,11,0,0,0,0.0,16,0,0,62.0,1000000,0
-Carlos Baleba,Carlos Baleba,,Brighton & Hove Albion,MID,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2670,3,1,44,9,558,629,89.0,79,8,56,100.0,1000000,0
-Danny Welbeck,Danny Welbeck,,Brighton & Hove Albion,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2122,10,0,60,2,1190,1502,79.0,26,33,133,100.0,1000000,0
-Diego Gómez,Diego Gómez,,Brighton & Hove Albion,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,512,1,0,9,0,0,0,0.0,21,0,0,41.5,1000000,0
-Eiran Cashin,Eiran Cashin,,Brighton & Hove Albion,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,19,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Ferdi Kadioglu,Ferdi Kadioglu,,Brighton & Hove Albion,DEF,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,388,1,0,4,0,0,0,0.0,10,0,0,25.0,1000000,0
-Georginio Rutter,Georginio Rutter,,Brighton & Hove Albion,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1666,5,3,50,8,240,310,77.0,39,5,73,100.0,1000000,0
-Harry Howell,Harry Howell,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,6,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Igor Julio,Igor Julio,,Brighton & Hove Albion,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,960,0,0,1,18,587,691,85.0,5,20,212,63.0,1000000,0
-Jack Hinshelwood,Jack Hinshelwood,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1846,5,2,18,2,867,938,92.0,27,13,98,100.0,1000000,0
-Jan Paul van Hecke,Jan Paul van Hecke,,Brighton & Hove Albion,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2959,1,0,17,2,870,958,91.0,45,16,107,100.0,1000000,0
-Jason Steele,Jason Steele,,Brighton & Hove Albion,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Jeremy Sarmiento,Jeremy Sarmiento,,Brighton & Hove Albion,MID,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,8,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-João Pedro,João Pedro,,Brighton & Hove Albion,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1953,10,0,47,5,683,789,87.0,16,14,100,100.0,1000000,0
-Joël Veltman,Joël Veltman,,Brighton & Hove Albion,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1699,0,0,6,12,2310,2528,91.0,43,44,405,100.0,1000000,0
-Kaoru Mitoma,Kaoru Mitoma,,Brighton & Hove Albion,FWD,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2608,10,4,57,14,844,1048,81.0,45,21,229,100.0,1000000,0
-Lewis Dunk,Lewis Dunk,,Brighton & Hove Albion,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2083,0,0,12,1,1121,1313,85.0,17,18,169,78.0,1000000,0
-Mats Wieffer,Mats Wieffer,,Brighton & Hove Albion,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1008,1,0,9,3,1031,1210,85.0,58,22,140,100.0,1000000,0
-Matt O'Riley,Matt O'Riley,,Brighton & Hove Albion,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,937,2,0,22,10,1238,1370,90.0,16,33,143,100.0,1000000,0
-Pervis Estupiñán,Pervis Estupiñán,,Brighton & Hove Albion,DEF,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2403,1,1,28,16,755,852,89.0,65,9,114,100.0,1000000,0
-Simon Adingra,Simon Adingra,,Brighton & Hove Albion,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1091,2,2,33,26,700,833,84.0,23,5,174,100.0,1000000,0
-Solly March,Solly March,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,162,0,0,2,0,0,0,0.0,6,0,0,9.0,1000000,0
-Tariq Lamptey,Tariq Lamptey,,Brighton & Hove Albion,DEF,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,860,2,2,6,0,0,0,0.0,17,0,0,59.5,1000000,0
-Yankuba Minteh,Yankuba Minteh,,Brighton & Hove Albion,MID,Gambia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1841,6,4,34,8,769,900,85.0,48,20,111,100.0,1000000,0
-Yasin Ayari,Yasin Ayari,,Brighton & Hove Albion,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1966,2,1,28,2,652,739,88.0,59,13,74,100.0,1000000,0
-Benoît Badiashile,Benoît Badiashile,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,333,0,0,0,0,0,0,0.0,9,0,0,13.5,1000000,0
-Christopher Nkunku,Christopher Nkunku,,Chelsea,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,911,3,0,25,23,458,547,84.0,12,12,124,91.2,1000000,0
-Cole Palmer,Cole Palmer,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3195,15,8,126,2,976,1067,92.0,34,13,116,100.0,1000000,0
-Enzo Fernández,Enzo Fernández,,Chelsea,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2946,6,7,53,60,253,375,68.0,65,5,45,100.0,1000000,0
-Filip Jørgensen,Filip Jørgensen,,Chelsea,GKP,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,540,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Jadon Sancho,Jadon Sancho,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1764,3,0,24,3,492,605,81.0,13,4,63,79.8,1000000,0
-João Félix,João Félix,,Chelsea,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,364,1,1,20,0,0,0,0.0,8,0,0,29.0,1000000,0
-Josh Acheampong,Josh Acheampong,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,169,0,0,2,0,0,0,0.0,2,0,0,3.0,1000000,0
-Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,259,0,1,1,0,0,0,0.0,8,0,0,19.0,1000000,0
-Levi Colwill,Levi Colwill,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3149,2,1,17,4,1129,1378,82.0,47,41,135,100.0,1000000,0
-Malo Gusto,Malo Gusto,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1858,0,0,22,2,1620,1722,94.0,45,9,271,100.0,1000000,0
-Marc Cucurella,Marc Cucurella,,Chelsea,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2989,5,1,24,7,1465,1741,84.0,67,28,185,100.0,1000000,0
-Marc Guiu,Marc Guiu,,Chelsea,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,71,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Mathis Amougou,Mathis Amougou,,Chelsea,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,7,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Moisés Caicedo,Moisés Caicedo,,Chelsea,MID,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3356,1,2,20,22,979,1213,81.0,114,23,197,100.0,1000000,0
-Mykhailo Mudryk,Mykhailo Mudryk,,Chelsea,MID,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,145,0,0,1,0,0,0,0.0,2,0,0,3.0,1000000,0
-Nicolas Jackson,Nicolas Jackson,,Chelsea,FWD,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2238,10,5,76,32,501,599,84.0,22,10,242,100.0,1000000,0
-Noni Madueke,Noni Madueke,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2046,7,3,80,7,897,1091,82.0,25,23,196,100.0,1000000,0
-Pedro Neto,Pedro Neto,,Chelsea,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2268,4,0,59,8,1095,1440,76.0,23,36,201,100.0,1000000,0
-Reece James,Reece James,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1064,1,0,11,6,421,479,88.0,10,9,62,64.9,1000000,0
-Renato Veiga,Renato Veiga,,Chelsea,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,177,0,0,3,0,0,0,0.0,9,0,0,13.5,1000000,0
-Robert Sánchez,Robert Sánchez,,Chelsea,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2880,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Roméo Lavia,Roméo Lavia,,Chelsea,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,801,0,1,2,0,0,0,0.0,22,0,0,40.0,1000000,0
-Shumaira Mheuka,Shumaira Mheuka,,Chelsea,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Tosin Adarabioyo,Tosin Adarabioyo,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1404,1,1,13,3,1441,1665,87.0,17,25,215,100.0,1000000,0
-Trevoh Chalobah,Trevoh Chalobah,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1974,3,1,18,2,897,1056,85.0,31,32,93,100.0,1000000,0
-Tyrique George,Tyrique George,,Chelsea,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,178,1,0,3,0,0,0,0.0,2,0,0,13.0,1000000,0
-Wesley Fofana,Wesley Fofana,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1176,0,0,3,8,826,1003,82.0,13,31,95,90.6,1000000,0
-Adam Wharton,Adam Wharton,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1326,0,2,13,5,534,679,79.0,34,20,75,100.0,1000000,0
-Asher Agbinone,Asher Agbinone,,Crystal Palace,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,4,0,0,1,0,0,0,0.0,2,0,0,3.0,1000000,0
-Ben Chilwell,Ben Chilwell,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,254,1,0,5,0,0,0,0.0,7,0,0,20.5,1000000,0
-Caleb Kporha,Caleb Kporha,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,11,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Chadi Riad,Chadi Riad,,Crystal Palace,DEF,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,90,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
-Cheick Doucouré,Cheick Doucouré,,Crystal Palace,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,445,0,0,7,0,0,0,0.0,16,0,0,24.0,1000000,0
-Chris Richards,Chris Richards,,Crystal Palace,DEF,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1924,1,0,12,35,314,484,65.0,47,5,32,100.0,1000000,0
-Daichi Kamada,Daichi Kamada,,Crystal Palace,MID,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1553,0,0,20,7,1767,1994,89.0,47,27,163,100.0,1000000,0
-Daniel Muñoz,Daniel Muñoz,,Crystal Palace,DEF,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3233,4,5,37,24,415,485,86.0,123,5,61,100.0,1000000,0
-Dean Henderson,Dean Henderson,,Crystal Palace,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,0,0,1,0,0,0,0.0,2,0,0,3.0,1000000,0
-Eberechi Eze,Eberechi Eze,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2600,8,8,102,16,178,235,76.0,39,3,73,100.0,1000000,0
-Eddie Nketiah,Eddie Nketiah,,Crystal Palace,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1026,3,0,43,1,854,987,87.0,15,18,111,100.0,1000000,0
-Ismaïla Sarr,Ismaïla Sarr,,Crystal Palace,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2714,8,6,59,2,661,755,88.0,22,9,78,100.0,1000000,0
-Jean-Philippe Mateta,Jean-Philippe Mateta,,Crystal Palace,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2654,14,2,70,5,459,551,83.0,18,10,115,100.0,1000000,0
-Jefferson Lerma,Jefferson Lerma,,Crystal Palace,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2277,0,1,26,1,629,732,86.0,35,28,96,100.0,1000000,0
-Jeffrey Schlupp,Jeffrey Schlupp,,Crystal Palace,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,95,0,0,4,0,0,0,0.0,2,0,0,3.0,1000000,0
-Joel Ward,Joel Ward,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,72,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Jordan Ayew,Jordan Ayew,,Crystal Palace,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1664,5,0,33,1,638,774,82.0,0,19,102,100.0,1000000,0
-Justin Devenny,Justin Devenny,,Crystal Palace,MID,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,496,1,1,10,0,0,0,0.0,17,0,0,42.5,1000000,0
-Marc Guéhi,Marc Guéhi,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3059,3,2,15,0,552,713,77.0,61,14,103,100.0,1000000,0
-Matheus França,Matheus França,,Crystal Palace,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,52,1,0,6,0,0,0,0.0,2,0,0,13.0,1000000,0
-Maxence Lacroix,Maxence Lacroix,,Crystal Palace,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3118,1,1,30,3,1696,1948,87.0,68,38,212,100.0,1000000,0
-Nathaniel Clyne,Nathaniel Clyne,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,481,0,0,2,0,0,0,0.0,12,0,0,18.0,1000000,0
-Romain Esse,Romain Esse,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,135,1,1,1,0,0,0,0.0,9,0,0,30.5,1000000,0
-Tyrick Mitchell,Tyrick Mitchell,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3102,0,5,12,1,596,675,88.0,91,7,93,100.0,1000000,0
-Will Hughes,Will Hughes,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2118,0,3,22,3,2409,2547,95.0,66,21,260,100.0,1000000,0
-Abdoulaye Doucouré,Abdoulaye Doucouré,,Everton,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2577,3,2,31,10,724,875,83.0,48,10,108,100.0,1000000,0
-Adam Armstrong,Adam Armstrong,,Everton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1252,2,2,26,9,225,269,84.0,12,3,42,81.7,1000000,0
-Armando Broja,Armando Broja,,Everton,FWD,Albania,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,331,0,0,4,0,0,0,0.0,3,0,0,4.5,1000000,0
-Ashley Young,Ashley Young,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1869,1,3,6,0,578,671,86.0,58,23,63,100.0,1000000,0
-Beto,Beto,,Everton,FWD,Guinea-Bissau,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1528,8,0,49,7,767,955,80.0,14,6,156,100.0,1000000,0
-Carlos Alcaraz,Carlos Alcaraz,,Everton,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,770,2,3,27,0,0,0,0.0,11,0,0,57.5,1000000,0
-Dominic Calvert-Lewin,Dominic Calvert-Lewin,,Everton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1613,3,1,50,26,252,353,71.0,9,1,74,73.3,1000000,0
-Dwight McNeil,Dwight McNeil,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1371,4,0,25,29,745,914,82.0,13,11,176,100.0,1000000,0
-Harrison Armstrong,Harrison Armstrong,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,47,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Idrissa Gueye,Idrissa Gueye,,Everton,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3067,0,3,27,0,661,713,93.0,133,4,142,100.0,1000000,0
-Iliman Ndiaye,Iliman Ndiaye,,Everton,FWD,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2440,9,0,37,7,1509,1634,92.0,53,13,194,100.0,1000000,0
-Jack Harrison,Jack Harrison,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2083,1,0,29,10,803,943,85.0,32,16,74,100.0,1000000,0
-Jake O'Brien,Jake O'Brien,,Everton,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1569,2,0,6,1,670,729,92.0,26,6,66,95.6,1000000,0
-James Garner,James Garner,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1594,0,1,12,7,963,1233,78.0,47,46,113,100.0,1000000,0
-James Tarkowski,James Tarkowski,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2924,1,0,15,6,802,875,92.0,64,13,62,100.0,1000000,0
-Jarrad Branthwaite,Jarrad Branthwaite,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2510,0,1,10,37,554,700,79.0,36,16,214,100.0,1000000,0
-Jesper Lindstrøm,Jesper Lindstrøm,,Everton,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1240,0,1,28,7,923,1031,90.0,45,20,141,100.0,1000000,0
-Jordan Pickford,Jordan Pickford,,Everton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Michael Keane,Michael Keane,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1046,3,0,10,2,725,797,91.0,12,10,77,90.3,1000000,0
-Nathan Patterson,Nathan Patterson,,Everton,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,345,0,0,1,0,0,0,0.0,11,0,0,16.5,1000000,0
-Orel Mangala,Orel Mangala,,Everton,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1255,1,0,16,13,875,999,88.0,16,30,134,100.0,1000000,0
-Roman Dixon,Roman Dixon,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,90,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
-Séamus Coleman,Séamus Coleman,,Everton,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,215,0,0,1,0,0,0,0.0,3,0,0,4.5,1000000,0
-Tim Iroegbunam,Tim Iroegbunam,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,564,0,0,5,0,0,0,0.0,29,0,0,43.5,1000000,0
-Vitalii Mykolenko,Vitalii Mykolenko,,Everton,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3084,1,0,14,4,857,1015,84.0,63,27,84,100.0,1000000,0
-Youssef Chermiti,Youssef Chermiti,,Everton,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,42,0,0,3,0,0,0,0.0,0,0,0,0.0,1000000,0
-Adama Traoré,Adama Traoré,,Fulham,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1769,2,7,39,12,393,484,81.0,20,1,187,100.0,1000000,0
-Alex Iwobi,Alex Iwobi,,Fulham,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2994,9,0,68,29,1101,1376,80.0,44,14,281,100.0,1000000,0
-Andreas Pereira,Andreas Pereira,,Fulham,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2022,2,4,39,3,1356,1541,88.0,24,21,168,100.0,1000000,0
-Antonee Robinson,Antonee Robinson,,Fulham,DEF,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3167,0,10,16,1,964,1079,89.0,95,19,111,100.0,1000000,0
-Bernd Leno,Bernd Leno,,Fulham,GKP,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,0,1,0,0,0,0,0.0,2,0,0,10.0,1000000,0
-Calvin Bassey,Calvin Bassey,,Fulham,DEF,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3074,1,0,14,11,205,247,83.0,54,2,45,100.0,1000000,0
-Carlos Vinícius,Carlos Vinícius,,Fulham,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,13,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Emile Smith Rowe,Emile Smith Rowe,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2061,6,3,37,2,855,996,86.0,31,12,107,100.0,1000000,0
-Harrison Reed,Harrison Reed,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,92,0,0,3,0,0,0,0.0,6,0,0,9.0,1000000,0
-Harry Wilson,Harry Wilson,,Fulham,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1157,6,0,43,4,892,1003,89.0,20,9,95,100.0,1000000,0
-Issa Diop,Issa Diop,,Fulham,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1335,0,0,5,2,292,370,79.0,26,7,84,73.2,1000000,0
-Jay Stansfield,Jay Stansfield,,Fulham,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Joachim Andersen,Joachim Andersen,,Fulham,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2663,0,0,20,3,294,338,87.0,0,6,87,35.1,1000000,0
-Jorge Cuenca,Jorge Cuenca,,Fulham,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,350,0,0,1,0,0,0,0.0,6,0,0,9.0,1000000,0
-Josh King,Josh King,,Fulham,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,126,0,0,3,0,0,0,0.0,7,0,0,10.5,1000000,0
-Kenny Tete,Kenny Tete,,Fulham,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1779,0,2,24,18,853,1028,83.0,56,7,133,100.0,1000000,0
-Martial Godo,Martial Godo,,Fulham,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,21,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Raúl Jiménez,Raúl Jiménez,,Fulham,FWD,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2505,0,3,96,33,449,615,73.0,35,10,85,100.0,1000000,0
-Reiss Nelson,Reiss Nelson,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,488,1,1,12,0,0,0,0.0,9,0,0,30.5,1000000,0
-Rodrigo Muniz,Rodrigo Muniz,,Fulham,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,951,8,1,39,12,820,999,82.0,10,30,126,100.0,1000000,0
-Ryan Sessegnon,Ryan Sessegnon,,Fulham,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,580,4,2,14,0,0,0,0.0,27,0,0,94.5,1000000,0
-Sander Berge,Sander Berge,,Fulham,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2227,0,0,3,12,1257,1463,86.0,50,34,158,100.0,1000000,0
-Sasa Lukic,Sasa Lukic,,Fulham,MID,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2355,0,2,18,21,666,763,87.0,68,6,256,100.0,1000000,0
-Timothy Castagne,Timothy Castagne,,Fulham,DEF,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1643,0,1,8,2,1182,1353,87.0,46,23,225,100.0,1000000,0
-Tom Cairney,Tom Cairney,,Fulham,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,615,2,0,11,0,0,0,0.0,13,0,0,39.5,1000000,0
-Willian,Willian,,Fulham,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,253,0,0,7,0,0,0,0.0,4,0,0,6.0,1000000,0
-Alex Palmer,Alex Palmer,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1170,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Ali Al-Hamadi,Ali Al-Hamadi,,Ipswich Town,FWD,Iraq,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,125,0,0,4,0,0,0,0.0,1,0,0,1.5,1000000,0
-Arijanet Muric,Arijanet Muric,,Ipswich Town,GKP,Kosovo,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1620,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Axel Tuanzebe,Axel Tuanzebe,,Ipswich Town,DEF,DR Congo,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1717,0,0,4,1,890,1011,88.0,31,12,103,90.9,1000000,0
-Ben Godfrey,Ben Godfrey,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,159,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Ben Johnson,Ben Johnson,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1348,1,2,7,2,510,590,86.0,38,16,60,100.0,1000000,0
-Cameron Burgess,Cameron Burgess,,Ipswich Town,DEF,Australia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1540,0,2,10,11,1143,1300,88.0,17,46,200,100.0,1000000,0
-Christian Walton,Christian Walton,,Ipswich Town,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Conor Chaplin,Conor Chaplin,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,854,1,1,16,0,0,0,0.0,15,0,0,39.5,1000000,0
-Conor Townsend,Conor Townsend,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,335,0,0,1,0,0,0,0.0,11,0,0,16.5,1000000,0
-Dara O'Shea,Dara O'Shea,,Ipswich Town,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3123,0,0,22,13,160,224,71.0,49,4,41,100.0,1000000,0
-George Edmundson,George Edmundson,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-George Hirst,George Hirst,,Ipswich Town,FWD,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,649,3,0,14,0,0,0,0.0,3,0,0,34.5,1000000,0
-Harry Clarke,Harry Clarke,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,378,0,0,1,0,0,0,0.0,5,0,0,7.5,1000000,0
-Jack Clarke,Jack Clarke,,Ipswich Town,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1170,0,4,17,7,376,513,73.0,32,10,131,100.0,1000000,0
-Jack Taylor,Jack Taylor,,Ipswich Town,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,838,1,0,19,0,0,0,0.0,20,0,0,40.0,1000000,0
-Jacob Greaves,Jacob Greaves,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2205,1,0,10,15,637,844,76.0,40,13,172,100.0,1000000,0
-Jaden Philogene,Jaden Philogene,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,800,2,0,19,0,0,0,0.0,25,0,0,57.5,1000000,0
-Jens Cajuste,Jens Cajuste,,Ipswich Town,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1976,1,1,12,10,274,348,79.0,44,12,60,100.0,1000000,0
-Julio Enciso,Julio Enciso,,Ipswich Town,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1164,2,3,52,9,591,700,84.0,12,4,366,90.2,1000000,0
-Kalvin Phillips,Kalvin Phillips,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1239,0,0,11,8,275,328,84.0,35,6,139,86.7,1000000,0
-Leif Davis,Leif Davis,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2746,1,2,16,1,700,757,93.0,46,18,111,100.0,1000000,0
-Liam Delap,Liam Delap,,Ipswich Town,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2612,0,2,68,6,1183,1314,90.0,11,32,224,100.0,1000000,0
-Luke Woolfenden,Luke Woolfenden,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1186,0,0,1,2,363,442,82.0,9,4,61,44.1,1000000,0
-Marcus Harness,Marcus Harness,,Ipswich Town,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,43,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Massimo Luongo,Massimo Luongo,,Ipswich Town,MID,Australia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,197,0,0,0,0,0,0,0.0,9,0,0,13.5,1000000,0
-Nathan Broadhead,Nathan Broadhead,,Ipswich Town,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,696,2,0,13,0,0,0,0.0,9,0,0,33.5,1000000,0
-Omari Hutchinson,Omari Hutchinson,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2590,3,2,45,6,436,483,90.0,32,21,39,100.0,1000000,0
-Sam Morsy,Sam Morsy,,Ipswich Town,MID,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2753,1,1,13,12,144,187,77.0,68,6,29,100.0,1000000,0
-Sam Szmodics,Sam Szmodics,,Ipswich Town,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1001,4,0,21,1,1090,1189,92.0,16,21,150,100.0,1000000,0
-Abdul Fatawu,Abdul Fatawu,,Leicester City,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,577,0,2,13,0,0,0,0.0,21,0,0,45.5,1000000,0
-Bilal El Khannouss,Bilal El Khannouss,,Leicester City,MID,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2193,2,3,30,3,825,930,89.0,50,19,82,100.0,1000000,0
-Bobby De Cordova-Reid,Bobby De Cordova-Reid,,Leicester City,MID,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,742,1,2,7,0,0,0,0.0,9,0,0,37.5,1000000,0
-Boubakary Soumaré,Boubakary Soumaré,,Leicester City,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2170,0,0,7,20,433,571,76.0,37,4,120,84.3,1000000,0
-Caleb Okoli,Caleb Okoli,,Leicester City,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1122,1,0,4,17,669,755,89.0,25,13,226,93.7,1000000,0
-Conor Coady,Conor Coady,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1713,1,0,2,1,484,558,87.0,13,9,56,69.1,1000000,0
-Danny Ward,Danny Ward,,Leicester City,GKP,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,135,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Facundo Buonanotte,Facundo Buonanotte,,Leicester City,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1513,5,2,36,3,1003,1104,91.0,53,32,108,100.0,1000000,0
-Hamza Choudhury,Hamza Choudhury,,Leicester City,MID,Bangladesh,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,130,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Harry Winks,Harry Winks,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1540,0,2,10,21,450,548,82.0,24,6,157,83.6,1000000,0
-Jake Evans,Jake Evans,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,21,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Jakub Stolarczyk,Jakub Stolarczyk,,Leicester City,GKP,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,900,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-James Justin,James Justin,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2920,2,2,25,17,995,1147,87.0,58,12,147,100.0,1000000,0
-Jamie Vardy,Jamie Vardy,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2839,9,0,58,3,1563,1683,93.0,19,56,96,100.0,1000000,0
-Jannik Vestergaard,Jannik Vestergaard,,Leicester City,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1395,0,0,3,3,981,1184,83.0,22,27,167,98.4,1000000,0
-Jeremy Monga,Jeremy Monga,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,105,0,0,3,0,0,0,0.0,2,0,0,3.0,1000000,0
-Kasey McAteer,Kasey McAteer,,Leicester City,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,852,1,1,13,0,0,0,0.0,23,0,0,51.5,1000000,0
-Luke Thomas,Luke Thomas,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1112,0,0,5,0,495,559,89.0,31,19,81,100.0,1000000,0
-Mads Hermansen,Mads Hermansen,,Leicester City,GKP,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2385,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Michael Golding,Michael Golding,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Odsonne Édouard,Odsonne Édouard,,Leicester City,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,142,0,0,5,0,0,0,0.0,2,0,0,3.0,1000000,0
-Olabade Aluko,Olabade Aluko,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Oliver Skipp,Oliver Skipp,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1120,0,0,5,40,307,414,74.0,21,8,105,65.7,1000000,0
-Patson Daka,Patson Daka,,Leicester City,FWD,Zambia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,721,1,0,15,0,0,0,0.0,19,0,0,38.5,1000000,0
-Ricardo Pereira,Ricardo Pereira,,Leicester City,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,385,0,0,2,0,0,0,0.0,13,0,0,19.5,1000000,0
-Stephy Mavididi,Stephy Mavididi,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1613,4,1,26,8,1872,2124,88.0,34,30,248,100.0,1000000,0
-Victor Kristiansen,Victor Kristiansen,,Leicester City,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2489,0,1,3,8,2680,2923,92.0,87,56,325,100.0,1000000,0
-Wilfred Ndidi,Wilfred Ndidi,,Leicester City,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2336,0,5,22,1,721,890,81.0,85,22,95,100.0,1000000,0
-Will Alves,Will Alves,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Wout Faes,Wout Faes,,Leicester City,DEF,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2812,1,0,12,16,305,444,69.0,42,11,170,100.0,1000000,0
-Woyo Coulibaly,Woyo Coulibaly,,Leicester City,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,107,0,0,2,0,0,0,0.0,6,0,0,9.0,1000000,0
-Alexis Mac Allister,Alexis Mac Allister,,Liverpool,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2607,5,5,38,17,734,854,86.0,95,11,209,100.0,1000000,0
-Alisson Becker,Alisson Becker,,Liverpool,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2509,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Andy Robertson,Andy Robertson,,Liverpool,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2492,0,0,15,24,491,632,78.0,39,6,206,90.9,1000000,0
-Caoimhín Kelleher,Caoimhín Kelleher,,Liverpool,GKP,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,900,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Cody Gakpo,Cody Gakpo,,Liverpool,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1938,10,4,57,51,1089,1310,83.0,0,11,274,100.0,1000000,0
-Conor Bradley,Conor Bradley,,Liverpool,DEF,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,748,0,2,10,0,0,0,0.0,14,0,0,35.0,1000000,0
-Curtis Jones,Curtis Jones,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1710,3,3,34,4,592,718,83.0,39,18,76,100.0,1000000,0
-Darwin Núñez,Darwin Núñez,,Liverpool,FWD,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1118,5,0,34,12,286,348,82.0,21,5,69,100.0,1000000,0
-Diogo Jota,Diogo Jota,,Liverpool,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1194,6,3,51,3,850,979,87.0,14,21,170,100.0,1000000,0
-Dominik Szoboszlai,Dominik Szoboszlai,,Liverpool,MID,Hungary,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2496,6,6,67,10,417,505,83.0,38,6,98,100.0,1000000,0
-Federico Chiesa,Federico Chiesa,,Liverpool,FWD,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,104,0,0,5,0,0,0,0.0,1,0,0,1.5,1000000,0
-Harvey Elliott,Harvey Elliott,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,360,1,2,17,0,0,0,0.0,5,0,0,31.5,1000000,0
-Ibrahima Konaté,Ibrahima Konaté,,Liverpool,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2565,1,2,19,5,1220,1401,87.0,40,48,124,100.0,1000000,0
-Jarell Quansah,Jarell Quansah,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,488,0,0,1,0,0,0,0.0,12,0,0,18.0,1000000,0
-Jayden Danns,Jayden Danns,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,10,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Joe Gomez,Joe Gomez,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,519,0,0,3,0,0,0,0.0,13,0,0,19.5,1000000,0
-Kostas Tsimikas,Kostas Tsimikas,,Liverpool,DEF,Greece,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,833,0,0,4,0,0,0,0.0,31,0,0,46.5,1000000,0
-Luis Díaz,Luis Díaz,,Liverpool,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2410,0,5,71,0,435,517,84.0,39,21,43,100.0,1000000,0
-Mohamed Salah,Mohamed Salah,,Liverpool,MID,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3377,29,18,130,22,691,769,90.0,21,4,231,100.0,1000000,0
-Ryan Gravenberch,Ryan Gravenberch,,Liverpool,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3168,0,4,20,9,618,747,83.0,69,26,62,100.0,1000000,0
-Trent Alexander-Arnold,Trent Alexander-Arnold,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2377,3,6,45,7,944,1094,86.0,72,29,93,100.0,1000000,0
-Virgil van Dijk,Virgil van Dijk,,Liverpool,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3330,3,0,27,1,764,972,79.0,38,44,105,100.0,1000000,0
-Vítezslav Jaros,Vítezslav Jaros,,Liverpool,GKP,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,11,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Wataru Endo,Wataru Endo,,Liverpool,MID,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,261,0,0,0,0,0,0,0.0,12,0,0,18.0,1000000,0
-Abdukodir Khusanov,Abdukodir Khusanov,,Manchester City,DEF,Uzbekistan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,504,0,0,1,0,0,0,0.0,5,0,0,7.5,1000000,0
-Bernardo Silva,Bernardo Silva,,Manchester City,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2667,4,0,32,23,155,264,59.0,56,4,46,100.0,1000000,0
-Claudio Echeverri,Claudio Echeverri,,Manchester City,FWD,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,5,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Divin Mubama,Divin Mubama,,Manchester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,27,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Ederson,Ederson,,Manchester City,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2321,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Erling Haaland,Erling Haaland,,Manchester City,FWD,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2741,22,3,108,6,904,1032,88.0,11,24,108,100.0,1000000,0
-Ilkay Gündogan,Ilkay Gündogan,,Manchester City,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2227,1,0,27,1,1403,1701,83.0,25,41,321,100.0,1000000,0
-Jack Grealish,Jack Grealish,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,715,1,0,15,0,0,0,0.0,9,0,0,23.5,1000000,0
-Jahmai Simpson-Pusey,Jahmai Simpson-Pusey,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,95,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-James McAtee,James McAtee,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,342,3,0,12,0,0,0,0.0,5,0,0,37.5,1000000,0
-Jérémy Doku,Jérémy Doku,,Manchester City,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1513,3,6,29,6,1704,2054,83.0,31,34,225,100.0,1000000,0
-John Stones,John Stones,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,545,2,0,2,0,0,0,0.0,6,0,0,29.0,1000000,0
-Josko Gvardiol,Josko Gvardiol,,Manchester City,DEF,Croatia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3279,5,0,40,4,1039,1182,88.0,58,22,164,100.0,1000000,0
-Kevin De Bruyne,Kevin De Bruyne,,Manchester City,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1704,4,7,57,27,288,448,64.0,17,5,121,100.0,1000000,0
-Kyle Walker,Kyle Walker,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,967,0,0,5,6,1353,1495,91.0,17,19,315,81.3,1000000,0
-Manuel Akanji,Manuel Akanji,,Manchester City,DEF,Switzerland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2014,0,0,15,4,795,897,89.0,19,27,96,95.7,1000000,0
-Mateo Kovacic,Mateo Kovacic,,Manchester City,MID,Croatia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2202,6,2,45,14,1045,1236,85.0,69,28,219,100.0,1000000,0
-Matheus Nunes,Matheus Nunes,,Manchester City,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1673,1,0,9,9,171,223,77.0,35,2,67,88.6,1000000,0
-Nathan Aké,Nathan Aké,,Manchester City,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,682,0,0,3,0,0,0,0.0,9,0,0,13.5,1000000,0
-Nico González,Nico González,,Manchester City,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,763,1,0,9,0,0,0,0.0,16,0,0,34.0,1000000,0
-Nico O'Reilly,Nico O'Reilly,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,527,2,0,8,0,0,0,0.0,9,0,0,33.5,1000000,0
-Omar Marmoush,Omar Marmoush,,Manchester City,FWD,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1182,7,0,49,19,665,788,84.0,13,11,223,100.0,1000000,0
-Oscar Bobb,Oscar Bobb,,Manchester City,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,14,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Phil Foden,Phil Foden,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1779,7,2,54,1,712,836,85.0,13,15,105,100.0,1000000,0
-Rico Lewis,Rico Lewis,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1891,1,2,10,6,942,1068,88.0,30,40,100,100.0,1000000,0
-Rodri,Rodri,,Manchester City,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,73,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Rúben Dias,Rúben Dias,,Manchester City,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2269,0,0,21,5,1704,1904,90.0,17,60,242,100.0,1000000,0
-Savinho,Savinho,,Manchester City,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1770,1,8,55,6,1036,1209,86.0,23,21,127,100.0,1000000,0
-Stefan Ortega,Stefan Ortega,,Manchester City,GKP,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1099,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Vitor Reis,Vitor Reis,,Manchester City,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Wes Burns,Wes Burns,,Manchester City,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,933,0,1,7,0,709,781,91.0,13,14,99,74.8,1000000,0
-Alejandro Garnacho,Alejandro Garnacho,,Manchester United,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2195,6,2,84,30,625,750,83.0,30,13,241,100.0,1000000,0
-Altay Bayindir,Altay Bayindir,,Manchester United,GKP,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,360,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Amad Diallo,Amad Diallo,,Manchester United,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1901,8,6,47,6,701,799,88.0,38,26,87,100.0,1000000,0
-André Onana,André Onana,,Manchester United,GKP,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3060,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Antony,Antony,,Manchester United,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,135,0,0,6,0,0,0,0.0,6,0,0,9.0,1000000,0
-Ayden Heaven,Ayden Heaven,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,171,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
-Bruno Fernandes,Bruno Fernandes,,Manchester United,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3024,8,10,96,15,1471,1758,84.0,84,29,254,100.0,1000000,0
-Casemiro,Casemiro,,Manchester United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1497,1,0,32,6,677,833,81.0,83,19,64,100.0,1000000,0
-Chido Obi,Chido Obi,,Manchester United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,160,0,0,5,0,0,0,0.0,2,0,0,3.0,1000000,0
-Christian Eriksen,Christian Eriksen,,Manchester United,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1059,1,2,15,16,1153,1394,83.0,19,49,85,100.0,1000000,0
-Diogo Dalot,Diogo Dalot,,Manchester United,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2813,0,3,25,13,213,299,71.0,68,8,71,100.0,1000000,0
-Harry Amass,Harry Amass,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,346,0,0,3,0,0,0,0.0,6,0,0,9.0,1000000,0
-Harry Maguire,Harry Maguire,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1757,1,0,15,17,311,399,78.0,30,7,56,88.9,1000000,0
-Jonny Evans,Jonny Evans,,Manchester United,DEF,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,314,0,0,2,0,0,0,0.0,8,0,0,12.0,1000000,0
-Joshua Zirkzee,Joshua Zirkzee,,Manchester United,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1392,3,0,28,22,261,354,74.0,14,1,105,74.7,1000000,0
-Kobbie Mainoo,Kobbie Mainoo,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1656,0,0,15,5,1081,1244,87.0,46,40,143,100.0,1000000,0
-Leny Yoro,Leny Yoro,,Manchester United,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1162,0,0,5,6,273,352,78.0,0,3,109,27.9,1000000,0
-Lisandro Martínez,Lisandro Martínez,,Manchester United,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1754,2,1,17,2,610,688,89.0,40,24,104,100.0,1000000,0
-Luke Shaw,Luke Shaw,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,348,0,0,1,0,0,0,0.0,4,0,0,6.0,1000000,0
-Manuel Ugarte,Manuel Ugarte,,Manchester United,MID,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1789,1,2,19,12,1449,1633,89.0,77,28,143,100.0,1000000,0
-Mason Mount,Mason Mount,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,621,1,0,20,0,0,0,0.0,15,0,0,32.5,1000000,0
-Matthijs de Ligt,Matthijs de Ligt,,Manchester United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2128,2,0,18,6,646,764,85.0,30,23,120,100.0,1000000,0
-Noussair Mazraoui,Noussair Mazraoui,,Manchester United,DEF,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2848,0,1,13,2,822,1027,80.0,115,33,199,100.0,1000000,0
-Patrick Dorgu,Patrick Dorgu,,Manchester United,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,842,0,0,10,0,0,0,0.0,31,0,0,46.5,1000000,0
-Rasmus Højlund,Rasmus Højlund,,Manchester United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2013,4,0,32,13,1194,1377,87.0,3,26,225,100.0,1000000,0
-Scott McTominay,Scott McTominay,,Manchester United,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,17,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Toby Collyer,Toby Collyer,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,175,0,0,1,0,0,0,0.0,12,0,0,18.0,1000000,0
-Tyler Fredricson,Tyler Fredricson,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,166,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
-Tyrell Malacia,Tyrell Malacia,,Manchester United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,99,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Victor Lindelöf,Victor Lindelöf,,Manchester United,DEF,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,697,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
-Alexander Isak,Alexander Isak,,Newcastle United,FWD,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2769,23,0,99,14,1242,1424,87.0,12,22,132,100.0,1000000,0
-Anthony Gordon,Anthony Gordon,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2444,6,5,59,41,780,997,78.0,32,11,305,100.0,1000000,0
-Bruno Guimarães,Bruno Guimarães,,Newcastle United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3282,5,0,45,41,807,1092,74.0,83,14,267,100.0,1000000,0
-Callum Wilson,Callum Wilson,,Newcastle United,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,357,0,0,6,0,0,0,0.0,2,0,0,3.0,1000000,0
-Dan Burn,Dan Burn,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3330,1,1,23,20,326,495,66.0,39,11,155,100.0,1000000,0
-Emil Krafth,Emil Krafth,,Newcastle United,DEF,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,334,0,0,1,0,0,0,0.0,4,0,0,6.0,1000000,0
-Fabian Schär,Fabian Schär,,Newcastle United,DEF,Switzerland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2937,4,0,40,12,410,515,80.0,36,12,119,100.0,1000000,0
-Harvey Barnes,Harvey Barnes,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1755,9,4,63,5,535,616,87.0,16,15,91,100.0,1000000,0
-Jacob Murphy,Jacob Murphy,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2379,8,12,43,4,493,569,87.0,0,8,134,100.0,1000000,0
-Joe Willock,Joe Willock,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1074,0,2,18,11,292,405,72.0,30,6,52,89.6,1000000,0
-Joelinton,Joelinton,,Newcastle United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2404,4,3,45,7,1357,1574,86.0,57,25,203,100.0,1000000,0
-Kieran Trippier,Kieran Trippier,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1308,0,3,4,2,715,818,87.0,38,19,110,100.0,1000000,0
-Lewis Hall,Lewis Hall,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2192,0,4,11,32,216,348,62.0,58,2,134,100.0,1000000,0
-Lewis Miley,Lewis Miley,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,304,1,0,3,0,0,0,0.0,14,0,0,31.0,1000000,0
-Martin Dúbravka,Martin Dúbravka,,Newcastle United,GKP,Slovakia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,900,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Matt Targett,Matt Targett,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,20,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Miguel Almirón,Miguel Almirón,,Newcastle United,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,151,0,0,6,0,0,0,0.0,3,0,0,4.5,1000000,0
-Nick Pope,Nick Pope,,Newcastle United,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2520,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Sandro Tonali,Sandro Tonali,,Newcastle United,MID,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2631,4,2,35,3,737,837,88.0,51,15,97,100.0,1000000,0
-Sean Longstaff,Sean Longstaff,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,786,0,0,6,0,0,0,0.0,27,0,0,40.5,1000000,0
-Sven Botman,Sven Botman,,Newcastle United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,414,0,0,5,0,0,0,0.0,12,0,0,18.0,1000000,0
-Tino Livramento,Tino Livramento,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2842,0,1,6,18,710,949,75.0,54,20,36,100.0,1000000,0
-William Osula,William Osula,,Newcastle United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,124,1,0,4,0,0,0,0.0,2,0,0,13.0,1000000,0
-Álex Moreno,Álex Moreno,,Nottingham Forest,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,959,0,1,6,46,507,658,77.0,25,3,145,72.1,1000000,0
-Anthony Elanga,Anthony Elanga,,Nottingham Forest,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2507,6,11,44,19,655,809,81.0,19,7,209,100.0,1000000,0
-Callum Hudson-Odoi,Callum Hudson-Odoi,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2201,5,2,37,4,1926,2137,90.0,22,20,332,100.0,1000000,0
-Chris Wood,Chris Wood,,Nottingham Forest,FWD,New Zealand,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2976,20,3,68,2,562,657,86.0,6,7,55,100.0,1000000,0
-Danilo,Danilo,,Nottingham Forest,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,275,0,0,0,0,0,0,0.0,8,0,0,12.0,1000000,0
-Elliot Anderson,Elliot Anderson,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2742,2,6,40,7,715,868,82.0,92,21,128,100.0,1000000,0
-Eric da Silva Moreira,Eric da Silva Moreira,,Nottingham Forest,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,28,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Harry Toffolo,Harry Toffolo,,Nottingham Forest,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,135,0,0,1,0,0,0,0.0,5,0,0,7.5,1000000,0
-Ibrahim Sangaré,Ibrahim Sangaré,,Nottingham Forest,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,590,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Jota Silva,Jota Silva,,Nottingham Forest,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,840,3,1,23,0,0,0,0.0,0,0,0,37.0,1000000,0
-Matz Sels,Matz Sels,,Nottingham Forest,GKP,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3420,0,0,0,0,0,0,0.0,1,0,0,1.5,1000000,0
-Morato,Morato,,Nottingham Forest,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,893,0,0,2,0,0,0,0.0,22,0,0,33.0,1000000,0
-Morgan Gibbs-White,Morgan Gibbs-White,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2822,7,8,61,20,651,864,75.0,43,6,234,100.0,1000000,0
-Murillo,Murillo,,Nottingham Forest,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3191,2,0,25,1,624,667,94.0,53,7,102,100.0,1000000,0
-Nathan Wood,Nathan Wood,,Nottingham Forest,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,772,0,0,2,0,0,0,0.0,14,0,0,21.0,1000000,0
-Neco Williams,Neco Williams,,Nottingham Forest,DEF,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2590,1,3,37,35,299,390,77.0,90,3,102,100.0,1000000,0
-Nicolás Domínguez,Nicolás Domínguez,,Nottingham Forest,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1970,0,1,21,8,850,1026,83.0,86,27,71,100.0,1000000,0
-Nikola Milenkovic,Nikola Milenkovic,,Nottingham Forest,DEF,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3330,5,2,29,3,1368,1589,86.0,51,34,202,100.0,1000000,0
-Ola Aina,Ola Aina,,Nottingham Forest,DEF,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3003,2,1,11,1,418,495,84.0,55,11,33,100.0,1000000,0
-Ramón Sosa,Ramón Sosa,,Nottingham Forest,FWD,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,281,1,0,11,0,0,0,0.0,5,0,0,17.5,1000000,0
-Ryan Yates,Ryan Yates,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1904,2,0,33,3,1243,1423,87.0,42,29,144,100.0,1000000,0
-Taiwo Awoniyi,Taiwo Awoniyi,,Nottingham Forest,FWD,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,400,1,0,10,0,0,0,0.0,6,0,0,19.0,1000000,0
-Willy-Arnaud Boly,Willy-Arnaud Boly,,Nottingham Forest,DEF,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,146,0,0,1,0,0,0,0.0,6,0,0,9.0,1000000,0
-Aaron Ramsdale,Aaron Ramsdale,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2700,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Adam Lallana,Adam Lallana,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,356,0,2,3,0,0,0,0.0,8,0,0,26.0,1000000,0
-Albert Grønbæk,Albert Grønbæk,,Southampton,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,143,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
-Alex McCarthy,Alex McCarthy,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,450,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Armel Bella-Kotchap,Armel Bella-Kotchap,,Southampton,DEF,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,329,0,0,1,0,0,0,0.0,7,0,0,10.5,1000000,0
-Ben Brereton,Ben Brereton,,Southampton,FWD,Chile,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,448,0,0,11,0,0,0,0.0,3,0,0,4.5,1000000,0
-Cameron Archer,Cameron Archer,,Southampton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1432,2,0,29,3,626,770,81.0,13,14,61,84.8,1000000,0
-Charlie Taylor,Charlie Taylor,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,353,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
-Chiedozie Ogbene,Chiedozie Ogbene,,Southampton,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,240,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
-Flynn Downes,Flynn Downes,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2154,1,0,10,5,1477,1628,91.0,49,16,191,100.0,1000000,0
-Jack Stephens,Jack Stephens,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1394,1,0,4,4,948,1095,87.0,34,21,69,100.0,1000000,0
-James Bree,James Bree,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1073,0,1,4,4,573,698,82.0,19,23,48,94.6,1000000,0
-Jan Bednarek,Jan Bednarek,,Southampton,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2535,2,0,5,5,2004,2265,89.0,36,24,494,100.0,1000000,0
-Jay Robinson,Jay Robinson,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,135,0,0,1,0,0,0,0.0,4,0,0,6.0,1000000,0
-Joachim Kayi-Sanda,Joachim Kayi-Sanda,,Southampton,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,12,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Joe Aribo,Joe Aribo,,Southampton,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2018,3,0,17,10,388,483,80.0,47,12,115,100.0,1000000,0
-Joe Lumley,Joe Lumley,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,270,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Kamaldeen Sulemana,Kamaldeen Sulemana,,Southampton,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1406,1,0,29,27,719,890,81.0,22,14,276,88.3,1000000,0
-Kyle Walker-Peters,Kyle Walker-Peters,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2922,0,2,20,22,687,853,81.0,44,9,172,100.0,1000000,0
-Lesley Ugochukwu,Lesley Ugochukwu,,Southampton,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1664,1,0,10,4,2328,2595,90.0,50,33,266,100.0,1000000,0
-Mason Holgate,Mason Holgate,,Southampton,DEF,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,5,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Mateus Fernandes,Mateus Fernandes,,Southampton,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2919,2,4,42,44,753,949,79.0,89,17,277,100.0,1000000,0
-Paul Onuachu,Paul Onuachu,,Southampton,FWD,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1044,4,0,34,17,648,731,89.0,7,9,219,90.7,1000000,0
-Ronnie Edwards,Ronnie Edwards,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,12,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Ross Stewart,Ross Stewart,,Southampton,FWD,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,385,1,0,9,0,0,0,0.0,6,0,0,19.0,1000000,0
-Ryan Fraser,Ryan Fraser,,Southampton,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,306,0,0,1,0,0,0,0.0,6,0,0,9.0,1000000,0
-Ryan Manning,Ryan Manning,,Southampton,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1468,0,1,8,7,2165,2309,94.0,0,20,397,65.2,1000000,0
-Sam Amo-Ameyaw,Sam Amo-Ameyaw,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,26,0,0,1,0,0,0,0.0,1,0,0,1.5,1000000,0
-Samuel Edozie,Samuel Edozie,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,64,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
-Taylor Harwood-Bellis,Taylor Harwood-Bellis,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2828,1,0,20,9,1631,1840,89.0,0,35,244,89.2,1000000,0
-Tyler Dibling,Tyler Dibling,,Southampton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1874,2,0,28,3,754,1025,74.0,34,19,158,100.0,1000000,0
-Welington,Welington,,Southampton,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,480,0,0,3,0,0,0,0.0,21,0,0,31.5,1000000,0
-Will Smallbone,Will Smallbone,,Southampton,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,682,1,0,7,0,0,0,0.0,20,0,0,40.0,1000000,0
-Yukinari Sugawara,Yukinari Sugawara,,Southampton,DEF,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1555,1,0,14,4,753,846,89.0,31,18,110,100.0,1000000,0
-Alfie Dorrington,Alfie Dorrington,,Tottenham Hotspur,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,13,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Antonín Kinsky,Antonín Kinsky,,Tottenham Hotspur,GKP,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,540,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
-Archie Gray,Archie Gray,,Tottenham Hotspur,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1743,0,0,1,3,542,737,74.0,16,25,94,83.7,1000000,0
-Ben Davies,Ben Davies,,Tottenham Hotspur,DEF,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1330,0,0,5,3,249,320,78.0,17,13,50,68.4,1000000,0
-Brandon Austin,Brandon Austin,,Tottenham Hotspur,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,90,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Brennan Johnson,Brennan Johnson,,Tottenham Hotspur,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2179,0,3,54,29,1647,2020,82.0,39,26,245,100.0,1000000,0
-Cristian Romero,Cristian Romero,,Tottenham Hotspur,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1420,1,0,16,13,992,1059,94.0,35,7,124,100.0,1000000,0
-Dane Scarlett,Dane Scarlett,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,31,0,0,1,0,0,0,0.0,1,0,0,1.5,1000000,0
-Dejan Kulusevski,Dejan Kulusevski,,Tottenham Hotspur,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2391,7,4,47,1,841,953,88.0,45,22,162,100.0,1000000,0
-Destiny Udogie,Destiny Udogie,,Tottenham Hotspur,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1931,0,0,5,5,1151,1373,84.0,75,37,195,100.0,1000000,0
-Djed Spence,Djed Spence,,Tottenham Hotspur,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1790,1,2,10,20,179,282,64.0,47,7,52,100.0,1000000,0
-Dominic Solanke,Dominic Solanke,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2206,9,3,60,23,1066,1243,86.0,18,9,163,100.0,1000000,0
-Fraser Forster,Fraser Forster,,Tottenham Hotspur,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Guglielmo Vicario,Guglielmo Vicario,,Tottenham Hotspur,GKP,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2160,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-James Maddison,James Maddison,,Tottenham Hotspur,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1816,9,7,39,4,1042,1277,82.0,31,41,128,100.0,1000000,0
-Kevin Danso,Kevin Danso,,Tottenham Hotspur,DEF,Austria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,843,0,0,7,0,0,0,0.0,7,0,0,10.5,1000000,0
-Lucas Bergvall,Lucas Bergvall,,Tottenham Hotspur,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1206,0,1,12,3,811,980,83.0,39,25,107,100.0,1000000,0
-Mathys Tel,Mathys Tel,,Tottenham Hotspur,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,913,2,0,23,4,559,647,86.0,16,17,67,95.3,1000000,0
-Micky van de Ven,Micky van de Ven,,Tottenham Hotspur,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1018,0,2,6,15,446,558,80.0,10,15,55,75.5,1000000,0
-Mikey Moore,Mikey Moore,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,361,0,1,3,0,0,0,0.0,2,0,0,10.0,1000000,0
-Pape Sarr,Pape Sarr,,Tottenham Hotspur,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1913,3,0,34,3,1214,1359,89.0,49,10,281,100.0,1000000,0
-Pedro Porro,Pedro Porro,,Tottenham Hotspur,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2608,2,0,39,9,1155,1308,88.0,66,37,179,100.0,1000000,0
-Radu Dragusin,Radu Dragusin,,Tottenham Hotspur,DEF,Romania,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1251,0,0,5,13,248,325,76.0,10,2,67,40.8,1000000,0
-Richarlison,Richarlison,,Tottenham Hotspur,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,500,4,1,17,0,0,0,0.0,5,0,0,54.5,1000000,0
-Rodrigo Bentancur,Rodrigo Bentancur,,Tottenham Hotspur,MID,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1653,2,0,22,19,92,140,66.0,40,5,17,100.0,1000000,0
-Sergio Reguilón,Sergio Reguilón,,Tottenham Hotspur,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,195,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
-Son Heung-Min,Son Heung-Min,,Tottenham Hotspur,MID,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2116,7,9,57,7,437,528,83.0,17,11,177,100.0,1000000,0
-Timo Werner,Timo Werner,,Tottenham Hotspur,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,508,0,3,8,0,0,0,0.0,6,0,0,30.0,1000000,0
-Will Lankshear,Will Lankshear,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,10,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Wilson Odobert,Wilson Odobert,,Tottenham Hotspur,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,849,1,0,13,0,0,0,0.0,14,0,0,31.0,1000000,0
-Yves Bissouma,Yves Bissouma,,Tottenham Hotspur,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1405,2,0,11,0,249,320,78.0,49,15,54,100.0,1000000,0
-Aaron Cresswell,Aaron Cresswell,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,823,0,0,5,0,0,0,0.0,11,0,0,16.5,1000000,0
-Aaron Wan-Bissaka,Aaron Wan-Bissaka,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3154,2,5,16,5,1244,1503,83.0,70,66,251,100.0,1000000,0
-Alphonse Areola,Alphonse Areola,,West Ham United,GKP,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2259,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Andy Irving,Andy Irving,,West Ham United,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,162,0,0,4,0,0,0,0.0,7,0,0,10.5,1000000,0
-Carlos Soler,Carlos Soler,,West Ham United,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1404,1,0,25,10,770,960,80.0,16,14,59,79.0,1000000,0
-Crysencio Summerville,Crysencio Summerville,,West Ham United,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,780,1,0,14,0,0,0,0.0,13,0,0,29.5,1000000,0
-Danny Ings,Danny Ings,,West Ham United,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,270,1,2,14,0,0,0,0.0,4,0,0,30.0,1000000,0
-Edson Álvarez,Edson Álvarez,,West Ham United,MID,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1781,0,1,12,7,1061,1289,82.0,50,31,189,100.0,1000000,0
-Emerson,Emerson,,West Ham United,GKP,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2126,2,0,16,11,914,1001,91.0,60,11,129,100.0,1000000,0
-Evan Ferguson,Evan Ferguson,,West Ham United,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,387,1,0,12,0,0,0,0.0,7,0,0,20.5,1000000,0
-Guido Rodríguez,Guido Rodríguez,,West Ham United,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1155,0,0,8,7,963,1118,86.0,36,40,132,100.0,1000000,0
-James Ward-Prowse,James Ward-Prowse,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1440,1,2,15,26,257,371,69.0,24,5,57,88.2,1000000,0
-Jarrod Bowen,Jarrod Bowen,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2979,0,8,87,0,946,1071,88.0,41,26,112,100.0,1000000,0
-Jean-Clair Todibo,Jean-Clair Todibo,,West Ham United,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1831,0,0,5,33,286,420,68.0,47,2,93,93.9,1000000,0
-Kaelan Casey,Kaelan Casey,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Konstantinos Mavropanos,Konstantinos Mavropanos,,West Ham United,DEF,Greece,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2037,0,0,18,3,434,558,78.0,35,12,82,93.9,1000000,0
-Lewis Orford,Lewis Orford,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,47,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Lucas Paquetá,Lucas Paquetá,,West Ham United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2384,4,0,41,30,711,826,86.0,66,7,193,100.0,1000000,0
-Luis Guilherme,Luis Guilherme,,West Ham United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,139,0,0,4,0,0,0,0.0,1,0,0,1.5,1000000,0
-Lukasz Fabianski,Lukasz Fabianski,,West Ham United,GKP,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1161,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Maximilian Kilman,Maximilian Kilman,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3349,0,1,13,4,312,372,84.0,39,16,12,100.0,1000000,0
-Maxwel Cornet,Maxwel Cornet,,West Ham United,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,71,0,0,1,0,0,0,0.0,5,0,0,7.5,1000000,0
-Michail Antonio,Michail Antonio,,West Ham United,FWD,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,844,1,1,19,0,0,0,0.0,2,0,0,20.0,1000000,0
-Mohammed Kudus,Mohammed Kudus,,West Ham United,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2601,5,3,75,3,1941,2153,90.0,38,49,214,100.0,1000000,0
-Niclas Füllkrug,Niclas Füllkrug,,West Ham United,FWD,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,788,3,2,16,0,0,0,0.0,4,0,0,50.0,1000000,0
-Ollie Scarles,Ollie Scarles,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,662,0,0,3,0,0,0,0.0,21,0,0,31.5,1000000,0
-Tomás Soucek,Tomás Soucek,,West Ham United,MID,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2570,9,0,55,2,1075,1177,91.0,46,11,119,100.0,1000000,0
-Vladimír Coufal,Vladimír Coufal,,West Ham United,DEF,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1061,0,0,7,1,139,199,70.0,22,10,63,69.0,1000000,0
-Alfie Pond,Alfie Pond,,Wolverhampton Wanderers,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-André,André,,Wolverhampton Wanderers,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2484,0,0,10,1,1245,1338,93.0,91,37,118,100.0,1000000,0
-Boubacar Traoré,Boubacar Traoré,,Wolverhampton Wanderers,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Carlos Forbs,Carlos Forbs,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,232,0,0,2,0,0,0,0.0,8,0,0,12.0,1000000,0
-Chiquinho,Chiquinho,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,6,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Craig Dawson,Craig Dawson,,Wolverhampton Wanderers,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,969,0,0,5,8,1086,1211,90.0,15,21,205,81.0,1000000,0
-Dan Bentley,Dan Bentley,,Wolverhampton Wanderers,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Daniel Podence,Daniel Podence,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,46,0,0,1,0,0,0,0.0,0,0,0,0.0,1000000,0
-Emmanuel Agbadou,Emmanuel Agbadou,,Wolverhampton Wanderers,DEF,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1411,1,0,7,20,1489,1778,84.0,30,13,181,99.7,1000000,0
-Gonçalo Guedes,Gonçalo Guedes,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,987,2,4,27,1,478,563,85.0,16,13,26,100.0,1000000,0
-Hwang Hee-Chan,Hwang Hee-Chan,,Wolverhampton Wanderers,MID,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,650,2,0,5,0,0,0,0.0,6,0,0,29.0,1000000,0
-Jean-Ricner Bellegarde,Jean-Ricner Bellegarde,,Wolverhampton Wanderers,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1681,2,7,22,8,821,1055,78.0,39,42,65,100.0,1000000,0
-João Gomes,João Gomes,,Wolverhampton Wanderers,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2987,3,0,35,14,846,1010,84.0,116,23,125,100.0,1000000,0
-Jørgen Strand Larsen,Jørgen Strand Larsen,,Wolverhampton Wanderers,FWD,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2599,0,0,54,29,551,680,81.0,10,14,166,60.3,1000000,0
-José Sá,José Sá,,Wolverhampton Wanderers,GKP,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2609,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
-Mario Lemina,Mario Lemina,,Wolverhampton Wanderers,MID,Gabon,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1363,1,3,18,7,148,201,74.0,51,6,23,100.0,1000000,0
-Marshall Munetsi,Marshall Munetsi,,Wolverhampton Wanderers,MID,Zimbabwe,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1079,2,1,22,17,1207,1389,87.0,24,6,271,98.1,1000000,0
-Mateus Mané,Mateus Mané,,Wolverhampton Wanderers,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Matheus Cunha,Matheus Cunha,,Wolverhampton Wanderers,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2600,15,6,110,4,958,1079,89.0,38,15,157,100.0,1000000,0
-Matt Doherty,Matt Doherty,,Wolverhampton Wanderers,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2113,2,1,10,7,299,360,83.0,38,13,40,100.0,1000000,0
-Nasser Djiga,Nasser Djiga,,Wolverhampton Wanderers,DEF,Burkina Faso,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,65,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Nélson Semedo,Nélson Semedo,,Wolverhampton Wanderers,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2891,0,4,18,9,813,927,88.0,62,29,62,100.0,1000000,0
-Pablo Sarabia,Pablo Sarabia,,Wolverhampton Wanderers,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,805,3,0,17,0,0,0,0.0,16,0,0,54.0,1000000,0
-Pedro Lima,Pedro Lima,,Wolverhampton Wanderers,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,70,0,0,1,0,0,0,0.0,1,0,0,1.5,1000000,0
-Rayan Aït-Nouri,Rayan Aït-Nouri,,Wolverhampton Wanderers,DEF,Algeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,3127,4,7,36,3,657,743,88.0,89,13,53,100.0,1000000,0
-Rodrigo Gomes,Rodrigo Gomes,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,797,2,0,7,0,0,0,0.0,23,0,0,54.5,1000000,0
-Sam Johnstone,Sam Johnstone,,Wolverhampton Wanderers,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Santiago Bueno,Santiago Bueno,,Wolverhampton Wanderers,DEF,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1682,0,0,6,3,1077,1195,90.0,41,28,144,100.0,1000000,0
-Tom King,Tom King,,Wolverhampton Wanderers,GKP,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
-Tommy Doyle,Tommy Doyle,,Wolverhampton Wanderers,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,475,0,1,9,0,0,0,0.0,11,0,0,23.5,1000000,0
-Toti Gomes,Toti Gomes,,Wolverhampton Wanderers,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,2615,0,0,7,8,1256,1616,78.0,61,31,190,100.0,1000000,0
-Yerson Mosquera,Yerson Mosquera,,Wolverhampton Wanderers,DEF,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,1,442,0,0,2,0,0,0,0.0,11,0,0,16.5,1000000,0
+Ben White,Ben White,,Arsenal,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1198,0,2,9,12,1493,1678,89.0,20,23,296,100.0,1000000,0
+Bukayo Saka,Bukayo Saka,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1735,6,10,67,2,556,643,87.0,29,15,69,100.0,1000000,0
+David Raya,David Raya,,Arsenal,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Declan Rice,Declan Rice,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2833,4,7,48,18,641,789,81.0,53,13,260,100.0,1000000,0
+Ethan Nwaneri,Ethan Nwaneri,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,889,4,0,24,0,0,0,0.0,11,0,0,56.5,1000000,0
+Gabriel Jesus,Gabriel Jesus,,Arsenal,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,603,3,0,20,0,0,0,0.0,10,0,0,45.0,1000000,0
+Gabriel Magalhães,Gabriel Magalhães,,Arsenal,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2365,3,35,22,25,466,590,79.0,25,5,216,100.0,1000000,0
+Gabriel Martinelli,Gabriel Martinelli,,Arsenal,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2300,8,4,55,12,236,344,69.0,23,10,110,100.0,1000000,0
+Jakub Kiwior,Jakub Kiwior,,Arsenal,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1117,35,0,3,35,461,533,87.0,22,9,52,82.6,1000000,0
+Jorginho,Jorginho,,Arsenal,MID,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,702,0,0,2,0,0,0,0.0,12,0,0,18.0,1000000,0
+Jurriën Timber,Jurriën Timber,,Arsenal,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2422,35,3,14,34,294,451,65.0,58,6,38,100.0,1000000,0
+Kai Havertz,Kai Havertz,,Arsenal,FWD,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1874,9,3,53,2,428,528,81.0,16,19,34,100.0,1000000,0
+Kieran Tierney,Kieran Tierney,,Arsenal,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,252,35,0,2,0,0,0,0.0,7,0,0,20.5,1000000,0
+Leandro Trossard,Leandro Trossard,,Arsenal,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2550,8,7,72,2,765,950,81.0,31,25,135,100.0,1000000,0
+Martin Ødegaard,Martin Ødegaard,,Arsenal,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2328,3,8,49,12,1742,1878,93.0,19,24,259,100.0,1000000,0
+Mikel Merino,Mikel Merino,,Arsenal,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1581,7,2,38,7,1062,1368,78.0,46,27,239,100.0,1000000,0
+Myles Lewis-Skelly,Myles Lewis-Skelly,,Arsenal,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1370,35,0,3,6,1693,1961,86.0,22,34,267,100.0,1000000,0
+Nathan Butler-Oyedeji,Nathan Butler-Oyedeji,,Arsenal,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,6,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Neto,Neto,,Arsenal,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Oleksandr Zinchenko,Oleksandr Zinchenko,,Arsenal,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,522,0,0,10,0,0,0,0.0,6,0,0,9.0,1000000,0
+Raheem Sterling,Raheem Sterling,,Arsenal,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,496,0,2,11,0,0,0,0.0,9,0,0,27.5,1000000,0
+Riccardo Calafiori,Riccardo Calafiori,,Arsenal,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,984,2,35,10,2,1101,1204,92.0,0,13,142,74.1,1000000,0
+Takehiro Tomiyasu,Takehiro Tomiyasu,,Arsenal,DEF,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,6,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Thomas Partey,Thomas Partey,,Arsenal,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2799,4,0,26,3,652,786,83.0,89,22,75,100.0,1000000,0
+William Saliba,William Saliba,,Arsenal,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3041,2,0,6,35,1370,1550,88.0,62,26,186,100.0,1000000,0
+Amadou Onana,Amadou Onana,,Aston Villa,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1624,3,0,17,9,611,786,78.0,55,8,82,100.0,1000000,0
+Andrés García,Andrés García,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,317,0,0,2,0,0,0,0.0,9,0,0,13.5,1000000,0
+Axel Disasi,Axel Disasi,,Aston Villa,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,853,35,0,4,0,0,0,0.0,15,0,0,32.5,1000000,0
+Boubacar Kamara,Boubacar Kamara,,Aston Villa,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1725,35,0,10,0,1066,1218,88.0,50,27,129,100.0,1000000,0
+Diego Carlos,Diego Carlos,,Aston Villa,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,828,0,0,4,0,0,0,0.0,8,0,0,12.0,1000000,0
+Donyell Malen,Donyell Malen,,Aston Villa,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,298,3,0,15,0,0,0,0.0,7,0,0,40.5,1000000,0
+Emiliano Buendía,Emiliano Buendía,,Aston Villa,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,89,0,0,5,0,0,0,0.0,6,0,0,9.0,1000000,0
+Emiliano Martínez,Emiliano Martínez,,Aston Villa,GKP,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3195,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
+Ezri Konsa,Ezri Konsa,,Aston Villa,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2937,2,0,11,11,1641,1942,85.0,34,45,232,100.0,1000000,0
+Ian Maatsen,Ian Maatsen,,Aston Villa,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1128,35,2,19,4,1713,1897,90.0,29,17,227,100.0,1000000,0
+Jacob Ramsey,Jacob Ramsey,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1628,35,3,19,8,654,768,85.0,30,2,182,100.0,1000000,0
+Jhon Durán,Jhon Durán,,Aston Villa,FWD,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,626,7,0,31,0,0,0,0.0,8,0,0,82.0,1000000,0
+John McGinn,John McGinn,,Aston Villa,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2230,35,4,31,20,467,626,75.0,33,9,138,100.0,1000000,0
+Kosta Nedeljkovic,Kosta Nedeljkovic,,Aston Villa,DEF,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,121,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
+Lamare Bogarde,Lamare Bogarde,,Aston Villa,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,475,0,0,35,0,0,0,0.0,14,0,0,21.0,1000000,0
+Leon Bailey,Leon Bailey,,Aston Villa,MID,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1143,35,2,28,35,599,700,86.0,7,14,90,81.3,1000000,0
+Lucas Digne,Lucas Digne,,Aston Villa,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2358,0,4,13,6,1109,1407,79.0,65,18,100,100.0,1000000,0
+Marco Asensio,Marco Asensio,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,745,3,35,24,0,0,0,0.0,7,0,0,47.5,1000000,0
+Marcus Rashford,Marcus Rashford,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1426,6,3,35,17,636,792,80.0,17,5,177,100.0,1000000,0
+Matty Cash,Matty Cash,,Aston Villa,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2077,35,1,13,6,1203,1468,82.0,56,54,149,100.0,1000000,0
+Morgan Rogers,Morgan Rogers,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3129,8,10,55,6,1129,1420,80.0,43,36,187,100.0,1000000,0
+Ollie Watkins,Ollie Watkins,,Aston Villa,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2610,16,8,84,17,241,286,84.0,10,6,83,100.0,1000000,0
+Pau Torres,Pau Torres,,Aston Villa,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2020,0,0,8,15,160,261,61.0,21,35,19,51.3,1000000,0
+Robin Olsen,Robin Olsen,,Aston Villa,GKP,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,225,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Ross Barkley,Ross Barkley,,Aston Villa,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,569,3,35,16,0,0,0,0.0,14,0,0,58.0,1000000,0
+Tyrone Mings,Tyrone Mings,,Aston Villa,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1121,0,0,9,0,840,1027,82.0,7,42,134,98.1,1000000,0
+Youri Tielemans,Youri Tielemans,,Aston Villa,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3032,3,7,41,6,611,722,85.0,84,11,98,100.0,1000000,0
+Adam Smith,Adam Smith,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1596,0,0,3,0,414,526,79.0,24,15,52,82.2,1000000,0
+Alex Scott,Alex Scott,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,751,0,0,15,0,0,0,0.0,27,0,0,40.5,1000000,0
+Antoine Semenyo,Antoine Semenyo,,Bournemouth,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3209,0,5,125,2,1318,1628,81.0,55,62,294,100.0,1000000,0
+Ben Winterburn,Ben Winterburn,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,22,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Dango Ouattara,Dango Ouattara,,Bournemouth,MID,Burkina Faso,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2006,7,0,62,18,854,1137,75.0,35,44,130,100.0,1000000,0
+Daniel Jebbison,Daniel Jebbison,,Bournemouth,FWD,Canada,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,105,35,0,5,0,0,0,0.0,5,0,0,17.5,1000000,0
+David Brooks,David Brooks,,Bournemouth,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,949,2,0,25,4,1348,1601,84.0,14,51,276,100.0,1000000,0
+Dean Huijsen,Dean Huijsen,,Bournemouth,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2422,3,2,18,15,1326,1476,90.0,36,25,226,100.0,1000000,0
+Enes Ünal,Enes Ünal,,Bournemouth,FWD,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,331,2,0,20,0,0,0,0.0,35,0,0,21.5,1000000,0
+Evanilson,Evanilson,,Bournemouth,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2335,0,35,73,5,1523,1633,93.0,16,24,200,94.9,1000000,0
+Illia Zabarnyi,Illia Zabarnyi,,Bournemouth,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3113,0,0,12,29,476,680,70.0,52,9,146,100.0,1000000,0
+James Hill,James Hill,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,448,0,0,6,0,0,0,0.0,15,0,0,22.5,1000000,0
+Julián Araujo,Julián Araujo,,Bournemouth,DEF,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,497,0,0,0,0,0,0,0.0,10,0,0,15.0,1000000,0
+Julio Soler,Julio Soler,,Bournemouth,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,9,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Justin Kluivert,Justin Kluivert,,Bournemouth,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2356,0,0,63,21,400,501,80.0,23,6,72,67.5,1000000,0
+Kepa,Kepa,,Bournemouth,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2790,0,0,35,0,0,0,0.0,35,0,0,1.5,1000000,0
+Lewis Cook,Lewis Cook,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2978,35,3,14,3,1768,1934,91.0,81,13,201,100.0,1000000,0
+Lloyd Kelly,Lloyd Kelly,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,301,0,35,3,0,0,0,0.0,5,0,0,14.5,1000000,0
+Luis Sinisterra,Luis Sinisterra,,Bournemouth,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,230,35,0,13,0,0,0,0.0,7,0,0,20.5,1000000,0
+Marcos Senesi,Marcos Senesi,,Bournemouth,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1108,0,0,3,16,350,446,79.0,39,5,104,89.7,1000000,0
+Marcus Tavernier,Marcus Tavernier,,Bournemouth,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1938,3,5,57,5,479,589,81.0,44,27,74,100.0,1000000,0
+Mark Travers,Mark Travers,,Bournemouth,GKP,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,450,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Max Aarons,Max Aarons,,Bournemouth,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,85,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Milos Kerkez,Milos Kerkez,,Bournemouth,DEF,Hungary,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3342,2,5,19,61,853,1155,74.0,52,9,264,100.0,1000000,0
+Philip Billing,Philip Billing,,Bournemouth,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,176,0,0,5,0,0,0,0.0,14,0,0,21.0,1000000,0
+Remy Rees-Dottin,Remy Rees-Dottin,,Bournemouth,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Ryan Christie,Ryan Christie,,Bournemouth,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2131,2,3,33,35,519,620,84.0,54,17,75,100.0,1000000,0
+Tyler Adams,Tyler Adams,,Bournemouth,MID,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1965,0,3,9,9,494,586,84.0,83,8,177,100.0,1000000,0
+Zain Silcott-Duberry,Zain Silcott-Duberry,,Bournemouth,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Ben Mee,Ben Mee,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,181,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Bryan Mbeumo,Bryan Mbeumo,,Brentford,MID,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3415,20,7,85,23,504,598,84.0,49,3,192,100.0,1000000,0
+Christian Nørgaard,Christian Nørgaard,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2829,5,0,39,12,299,330,91.0,79,7,45,100.0,1000000,0
+Ethan Pinnock,Ethan Pinnock,,Brentford,DEF,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1913,2,0,10,32,244,341,72.0,35,35,62,95.6,1000000,0
+Fábio Carvalho,Fábio Carvalho,,Brentford,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,446,2,35,12,0,0,0,0.0,13,0,0,46.5,1000000,0
+Frank Onyeka,Frank Onyeka,,Brentford,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,23,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Gustavo Nunes,Gustavo Nunes,,Brentford,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,11,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
+Hákon Valdimarsson,Hákon Valdimarsson,,Brentford,GKP,Iceland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,144,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Igor Thiago,Igor Thiago,,Brentford,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,168,0,0,2,0,0,0,0.0,5,0,0,7.5,1000000,0
+Jayden Meghoma,Jayden Meghoma,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,4,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Keane Lewis-Potter,Keane Lewis-Potter,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3101,35,3,28,2,636,767,83.0,49,32,91,100.0,1000000,0
+Kevin Schade,Kevin Schade,,Brentford,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2301,0,2,55,0,886,1038,85.0,39,12,78,100.0,1000000,0
+Kim Ji-Soo,Kim Ji-Soo,,Brentford,DEF,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,28,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Kristoffer Ajer,Kristoffer Ajer,,Brentford,DEF,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1441,0,0,9,2,648,731,89.0,26,3,63,70.2,1000000,0
+Mads Roerslev,Mads Roerslev,,Brentford,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1096,0,0,5,5,1081,1214,89.0,18,24,137,89.7,1000000,0
+Mark Flekken,Mark Flekken,,Brentford,GKP,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3276,0,2,0,0,0,0,0.0,4,0,0,20.0,1000000,0
+Mathias Jensen,Mathias Jensen,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,852,0,2,6,0,0,0,0.0,14,0,0,35.0,1000000,0
+Michael Kayode,Michael Kayode,,Brentford,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,528,0,0,2,0,0,0,0.0,17,0,0,25.5,1000000,0
+Mikkel Damsgaard,Mikkel Damsgaard,,Brentford,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2926,2,10,35,5,1086,1350,80.0,83,45,272,100.0,1000000,0
+Nathan Collins,Nathan Collins,,Brentford,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,2,3,17,7,692,850,81.0,40,31,156,100.0,1000000,0
+Paris Maghoma,Paris Maghoma,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,112,0,0,35,0,0,0,0.0,2,0,0,3.0,1000000,0
+Rico Henry,Rico Henry,,Brentford,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,94,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Ryan Trevitt,Ryan Trevitt,,Brentford,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Sepp van den Berg,Sepp van den Berg,,Brentford,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2588,0,0,20,8,272,332,82.0,39,8,89,95.1,1000000,0
+Vitaly Janelt,Vitaly Janelt,,Brentford,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2266,35,3,14,2,389,473,82.0,38,8,63,100.0,1000000,0
+Yehor Yarmoliuk,Yehor Yarmoliuk,,Brentford,MID,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1442,0,0,9,43,447,563,79.0,49,8,119,100.0,1000000,0
+Yoane Wissa,Yoane Wissa,,Brentford,FWD,DR Congo,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2927,19,0,90,13,1662,1933,86.0,22,23,180,100.0,1000000,0
+Yunus Konak,Yunus Konak,,Brentford,MID,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,36,0,0,35,0,0,0,0.0,4,0,0,6.0,1000000,0
+Jakub Moder,Jakub Moder,,Brighton,MID,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,9,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+James Milner,James Milner,,Brighton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,173,0,0,2,0,0,0,0.0,5,0,0,7.5,1000000,0
+Adam Webster,Adam Webster,,Brighton & Hove Albion,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,888,0,0,5,0,0,0,0.0,10,0,0,15.0,1000000,0
+Bart Verbruggen,Bart Verbruggen,,Brighton & Hove Albion,GKP,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3240,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Billy Gilmour,Billy Gilmour,,Brighton & Hove Albion,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,97,0,0,35,0,0,0,0.0,3,0,0,4.5,1000000,0
+Brajan Gruda,Brajan Gruda,,Brighton & Hove Albion,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,681,35,4,11,0,0,0,0.0,16,0,0,62.0,1000000,0
+Carlos Baleba,Carlos Baleba,,Brighton & Hove Albion,MID,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2670,3,35,44,9,558,629,89.0,79,8,56,100.0,1000000,0
+Danny Welbeck,Danny Welbeck,,Brighton & Hove Albion,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2122,10,0,60,2,1190,1502,79.0,26,33,133,100.0,1000000,0
+Diego Gómez,Diego Gómez,,Brighton & Hove Albion,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,512,35,0,9,0,0,0,0.0,21,0,0,41.5,1000000,0
+Eiran Cashin,Eiran Cashin,,Brighton & Hove Albion,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,19,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Ferdi Kadioglu,Ferdi Kadioglu,,Brighton & Hove Albion,DEF,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,388,35,0,4,0,0,0,0.0,10,0,0,25.0,1000000,0
+Georginio Rutter,Georginio Rutter,,Brighton & Hove Albion,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1666,5,3,50,8,240,310,77.0,39,5,73,100.0,1000000,0
+Harry Howell,Harry Howell,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,6,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Igor Julio,Igor Julio,,Brighton & Hove Albion,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,960,0,0,35,18,587,691,85.0,5,20,212,63.0,1000000,0
+Jack Hinshelwood,Jack Hinshelwood,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1846,5,2,18,2,867,938,92.0,27,13,98,100.0,1000000,0
+Jan Paul van Hecke,Jan Paul van Hecke,,Brighton & Hove Albion,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2959,35,0,17,2,870,958,91.0,45,16,107,100.0,1000000,0
+Jason Steele,Jason Steele,,Brighton & Hove Albion,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Jeremy Sarmiento,Jeremy Sarmiento,,Brighton & Hove Albion,MID,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,8,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+João Pedro,João Pedro,,Brighton & Hove Albion,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1953,10,0,47,5,683,789,87.0,16,14,100,100.0,1000000,0
+Joël Veltman,Joël Veltman,,Brighton & Hove Albion,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1699,0,0,6,12,2310,2528,91.0,43,44,405,100.0,1000000,0
+Kaoru Mitoma,Kaoru Mitoma,,Brighton & Hove Albion,FWD,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2608,10,4,57,14,844,1048,81.0,45,21,229,100.0,1000000,0
+Lewis Dunk,Lewis Dunk,,Brighton & Hove Albion,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2083,0,0,12,35,1121,1313,85.0,17,18,169,78.0,1000000,0
+Mats Wieffer,Mats Wieffer,,Brighton & Hove Albion,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1008,35,0,9,3,1031,1210,85.0,58,22,140,100.0,1000000,0
+Matt O'Riley,Matt O'Riley,,Brighton & Hove Albion,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,937,2,0,22,10,1238,1370,90.0,16,33,143,100.0,1000000,0
+Pervis Estupiñán,Pervis Estupiñán,,Brighton & Hove Albion,DEF,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2403,35,1,28,16,755,852,89.0,65,9,114,100.0,1000000,0
+Simon Adingra,Simon Adingra,,Brighton & Hove Albion,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1091,2,2,33,26,700,833,84.0,23,5,174,100.0,1000000,0
+Solly March,Solly March,,Brighton & Hove Albion,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,162,0,0,2,0,0,0,0.0,6,0,0,9.0,1000000,0
+Tariq Lamptey,Tariq Lamptey,,Brighton & Hove Albion,DEF,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,860,2,2,6,0,0,0,0.0,17,0,0,59.5,1000000,0
+Yankuba Minteh,Yankuba Minteh,,Brighton & Hove Albion,MID,Gambia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1841,6,4,34,8,769,900,85.0,48,20,111,100.0,1000000,0
+Yasin Ayari,Yasin Ayari,,Brighton & Hove Albion,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1966,2,35,28,2,652,739,88.0,59,13,74,100.0,1000000,0
+Benoît Badiashile,Benoît Badiashile,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,333,0,0,0,0,0,0,0.0,9,0,0,13.5,1000000,0
+Christopher Nkunku,Christopher Nkunku,,Chelsea,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,911,3,0,25,23,458,547,84.0,12,12,124,91.2,1000000,0
+Cole Palmer,Cole Palmer,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3195,15,8,126,2,976,1067,92.0,34,13,116,100.0,1000000,0
+Enzo Fernández,Enzo Fernández,,Chelsea,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2946,6,7,53,60,253,375,68.0,65,5,45,100.0,1000000,0
+Filip Jørgensen,Filip Jørgensen,,Chelsea,GKP,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,540,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Jadon Sancho,Jadon Sancho,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1764,3,0,24,3,492,605,81.0,13,4,63,79.8,1000000,0
+João Félix,João Félix,,Chelsea,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,364,35,1,20,0,0,0,0.0,8,0,0,29.0,1000000,0
+Josh Acheampong,Josh Acheampong,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,169,0,0,2,0,0,0,0.0,2,0,0,3.0,1000000,0
+Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,259,0,35,1,0,0,0,0.0,8,0,0,19.0,1000000,0
+Levi Colwill,Levi Colwill,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3149,2,35,17,4,1129,1378,82.0,47,41,135,100.0,1000000,0
+Malo Gusto,Malo Gusto,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1858,0,0,22,2,1620,1722,94.0,45,9,271,100.0,1000000,0
+Marc Cucurella,Marc Cucurella,,Chelsea,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2989,5,35,24,7,1465,1741,84.0,67,28,185,100.0,1000000,0
+Marc Guiu,Marc Guiu,,Chelsea,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,71,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Mathis Amougou,Mathis Amougou,,Chelsea,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,7,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Moisés Caicedo,Moisés Caicedo,,Chelsea,MID,Ecuador,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3356,35,2,20,22,979,1213,81.0,114,23,197,100.0,1000000,0
+Mykhailo Mudryk,Mykhailo Mudryk,,Chelsea,MID,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,145,0,0,35,0,0,0,0.0,2,0,0,3.0,1000000,0
+Nicolas Jackson,Nicolas Jackson,,Chelsea,FWD,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2238,10,5,76,32,501,599,84.0,22,10,242,100.0,1000000,0
+Noni Madueke,Noni Madueke,,Chelsea,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2046,7,3,80,7,897,1091,82.0,25,23,196,100.0,1000000,0
+Pedro Neto,Pedro Neto,,Chelsea,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2268,4,0,59,8,1095,1440,76.0,23,36,201,100.0,1000000,0
+Reece James,Reece James,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1064,35,0,11,6,421,479,88.0,10,9,62,64.9,1000000,0
+Renato Veiga,Renato Veiga,,Chelsea,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,177,0,0,3,0,0,0,0.0,9,0,0,13.5,1000000,0
+Robert Sánchez,Robert Sánchez,,Chelsea,GKP,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2880,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Roméo Lavia,Roméo Lavia,,Chelsea,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,801,0,35,2,0,0,0,0.0,22,0,0,40.0,1000000,0
+Shumaira Mheuka,Shumaira Mheuka,,Chelsea,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Tosin Adarabioyo,Tosin Adarabioyo,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1404,35,1,13,3,1441,1665,87.0,17,25,215,100.0,1000000,0
+Trevoh Chalobah,Trevoh Chalobah,,Chelsea,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1974,3,35,18,2,897,1056,85.0,31,32,93,100.0,1000000,0
+Tyrique George,Tyrique George,,Chelsea,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,178,35,0,3,0,0,0,0.0,2,0,0,13.0,1000000,0
+Wesley Fofana,Wesley Fofana,,Chelsea,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1176,0,0,3,8,826,1003,82.0,13,31,95,90.6,1000000,0
+Adam Wharton,Adam Wharton,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1326,0,2,13,5,534,679,79.0,34,20,75,100.0,1000000,0
+Asher Agbinone,Asher Agbinone,,Crystal Palace,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,4,0,0,35,0,0,0,0.0,2,0,0,3.0,1000000,0
+Ben Chilwell,Ben Chilwell,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,254,35,0,5,0,0,0,0.0,7,0,0,20.5,1000000,0
+Caleb Kporha,Caleb Kporha,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,11,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Chadi Riad,Chadi Riad,,Crystal Palace,DEF,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,90,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
+Cheick Doucouré,Cheick Doucouré,,Crystal Palace,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,445,0,0,7,0,0,0,0.0,16,0,0,24.0,1000000,0
+Chris Richards,Chris Richards,,Crystal Palace,DEF,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1924,35,0,12,35,314,484,65.0,47,5,32,100.0,1000000,0
+Daichi Kamada,Daichi Kamada,,Crystal Palace,MID,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1553,0,0,20,7,1767,1994,89.0,47,27,163,100.0,1000000,0
+Daniel Muñoz,Daniel Muñoz,,Crystal Palace,DEF,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3233,4,5,37,24,415,485,86.0,123,5,61,100.0,1000000,0
+Dean Henderson,Dean Henderson,,Crystal Palace,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,0,0,35,0,0,0,0.0,2,0,0,3.0,1000000,0
+Eberechi Eze,Eberechi Eze,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2600,8,8,102,16,178,235,76.0,39,3,73,100.0,1000000,0
+Eddie Nketiah,Eddie Nketiah,,Crystal Palace,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1026,3,0,43,35,854,987,87.0,15,18,111,100.0,1000000,0
+Ismaïla Sarr,Ismaïla Sarr,,Crystal Palace,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2714,8,6,59,2,661,755,88.0,22,9,78,100.0,1000000,0
+Jean-Philippe Mateta,Jean-Philippe Mateta,,Crystal Palace,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2654,14,2,70,5,459,551,83.0,18,10,115,100.0,1000000,0
+Jefferson Lerma,Jefferson Lerma,,Crystal Palace,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2277,0,35,26,35,629,732,86.0,35,28,96,100.0,1000000,0
+Jeffrey Schlupp,Jeffrey Schlupp,,Crystal Palace,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,95,0,0,4,0,0,0,0.0,2,0,0,3.0,1000000,0
+Joel Ward,Joel Ward,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,72,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Jordan Ayew,Jordan Ayew,,Crystal Palace,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1664,5,0,33,35,638,774,82.0,0,19,102,100.0,1000000,0
+Justin Devenny,Justin Devenny,,Crystal Palace,MID,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,496,35,1,10,0,0,0,0.0,17,0,0,42.5,1000000,0
+Marc Guéhi,Marc Guéhi,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3059,3,2,15,0,552,713,77.0,61,14,103,100.0,1000000,0
+Matheus França,Matheus França,,Crystal Palace,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,52,35,0,6,0,0,0,0.0,2,0,0,13.0,1000000,0
+Maxence Lacroix,Maxence Lacroix,,Crystal Palace,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3118,35,1,30,3,1696,1948,87.0,68,38,212,100.0,1000000,0
+Nathaniel Clyne,Nathaniel Clyne,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,481,0,0,2,0,0,0,0.0,12,0,0,18.0,1000000,0
+Romain Esse,Romain Esse,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,135,35,1,35,0,0,0,0.0,9,0,0,30.5,1000000,0
+Tyrick Mitchell,Tyrick Mitchell,,Crystal Palace,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3102,0,5,12,35,596,675,88.0,91,7,93,100.0,1000000,0
+Will Hughes,Will Hughes,,Crystal Palace,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2118,0,3,22,3,2409,2547,95.0,66,21,260,100.0,1000000,0
+Abdoulaye Doucouré,Abdoulaye Doucouré,,Everton,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2577,3,2,31,10,724,875,83.0,48,10,108,100.0,1000000,0
+Adam Armstrong,Adam Armstrong,,Everton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1252,2,2,26,9,225,269,84.0,12,3,42,81.7,1000000,0
+Armando Broja,Armando Broja,,Everton,FWD,Albania,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,331,0,0,4,0,0,0,0.0,3,0,0,4.5,1000000,0
+Ashley Young,Ashley Young,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1869,35,3,6,0,578,671,86.0,58,23,63,100.0,1000000,0
+Beto,Beto,,Everton,FWD,Guinea-Bissau,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1528,8,0,49,7,767,955,80.0,14,6,156,100.0,1000000,0
+Carlos Alcaraz,Carlos Alcaraz,,Everton,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,770,2,3,27,0,0,0,0.0,11,0,0,57.5,1000000,0
+Dominic Calvert-Lewin,Dominic Calvert-Lewin,,Everton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1613,3,35,50,26,252,353,71.0,9,35,74,73.3,1000000,0
+Dwight McNeil,Dwight McNeil,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1371,4,0,25,29,745,914,82.0,13,11,176,100.0,1000000,0
+Harrison Armstrong,Harrison Armstrong,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,47,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Idrissa Gueye,Idrissa Gueye,,Everton,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3067,0,3,27,0,661,713,93.0,133,4,142,100.0,1000000,0
+Iliman Ndiaye,Iliman Ndiaye,,Everton,FWD,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2440,9,0,37,7,1509,1634,92.0,53,13,194,100.0,1000000,0
+Jack Harrison,Jack Harrison,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2083,35,0,29,10,803,943,85.0,32,16,74,100.0,1000000,0
+Jake O'Brien,Jake O'Brien,,Everton,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1569,2,0,6,35,670,729,92.0,26,6,66,95.6,1000000,0
+James Garner,James Garner,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1594,0,35,12,7,963,1233,78.0,47,46,113,100.0,1000000,0
+James Tarkowski,James Tarkowski,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2924,35,0,15,6,802,875,92.0,64,13,62,100.0,1000000,0
+Jarrad Branthwaite,Jarrad Branthwaite,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2510,0,35,10,37,554,700,79.0,36,16,214,100.0,1000000,0
+Jesper Lindstrøm,Jesper Lindstrøm,,Everton,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1240,0,35,28,7,923,1031,90.0,45,20,141,100.0,1000000,0
+Jordan Pickford,Jordan Pickford,,Everton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Michael Keane,Michael Keane,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1046,3,0,10,2,725,797,91.0,12,10,77,90.3,1000000,0
+Nathan Patterson,Nathan Patterson,,Everton,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,345,0,0,35,0,0,0,0.0,11,0,0,16.5,1000000,0
+Orel Mangala,Orel Mangala,,Everton,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1255,35,0,16,13,875,999,88.0,16,30,134,100.0,1000000,0
+Roman Dixon,Roman Dixon,,Everton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,90,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
+Séamus Coleman,Séamus Coleman,,Everton,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,215,0,0,35,0,0,0,0.0,3,0,0,4.5,1000000,0
+Tim Iroegbunam,Tim Iroegbunam,,Everton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,564,0,0,5,0,0,0,0.0,29,0,0,43.5,1000000,0
+Vitalii Mykolenko,Vitalii Mykolenko,,Everton,DEF,Ukraine,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3084,35,0,14,4,857,1015,84.0,63,27,84,100.0,1000000,0
+Youssef Chermiti,Youssef Chermiti,,Everton,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,42,0,0,3,0,0,0,0.0,0,0,0,0.0,1000000,0
+Adama Traoré,Adama Traoré,,Fulham,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1769,2,7,39,12,393,484,81.0,20,35,187,100.0,1000000,0
+Alex Iwobi,Alex Iwobi,,Fulham,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2994,9,0,68,29,1101,1376,80.0,44,14,281,100.0,1000000,0
+Andreas Pereira,Andreas Pereira,,Fulham,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2022,2,4,39,3,1356,1541,88.0,24,21,168,100.0,1000000,0
+Antonee Robinson,Antonee Robinson,,Fulham,DEF,United States,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3167,0,10,16,35,964,1079,89.0,95,19,111,100.0,1000000,0
+Bernd Leno,Bernd Leno,,Fulham,GKP,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,0,35,0,0,0,0,0.0,2,0,0,10.0,1000000,0
+Calvin Bassey,Calvin Bassey,,Fulham,DEF,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3074,35,0,14,11,205,247,83.0,54,2,45,100.0,1000000,0
+Carlos Vinícius,Carlos Vinícius,,Fulham,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,13,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Emile Smith Rowe,Emile Smith Rowe,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2061,6,3,37,2,855,996,86.0,31,12,107,100.0,1000000,0
+Harrison Reed,Harrison Reed,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,92,0,0,3,0,0,0,0.0,6,0,0,9.0,1000000,0
+Harry Wilson,Harry Wilson,,Fulham,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1157,6,0,43,4,892,1003,89.0,20,9,95,100.0,1000000,0
+Issa Diop,Issa Diop,,Fulham,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1335,0,0,5,2,292,370,79.0,26,7,84,73.2,1000000,0
+Jay Stansfield,Jay Stansfield,,Fulham,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Joachim Andersen,Joachim Andersen,,Fulham,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2663,0,0,20,3,294,338,87.0,0,6,87,35.1,1000000,0
+Jorge Cuenca,Jorge Cuenca,,Fulham,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,350,0,0,35,0,0,0,0.0,6,0,0,9.0,1000000,0
+Josh King,Josh King,,Fulham,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,126,0,0,3,0,0,0,0.0,7,0,0,10.5,1000000,0
+Kenny Tete,Kenny Tete,,Fulham,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1779,0,2,24,18,853,1028,83.0,56,7,133,100.0,1000000,0
+Martial Godo,Martial Godo,,Fulham,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,21,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Raúl Jiménez,Raúl Jiménez,,Fulham,FWD,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2505,0,3,96,33,449,615,73.0,35,10,85,100.0,1000000,0
+Reiss Nelson,Reiss Nelson,,Fulham,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,488,35,1,12,0,0,0,0.0,9,0,0,30.5,1000000,0
+Rodrigo Muniz,Rodrigo Muniz,,Fulham,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,951,8,35,39,12,820,999,82.0,10,30,126,100.0,1000000,0
+Ryan Sessegnon,Ryan Sessegnon,,Fulham,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,580,4,2,14,0,0,0,0.0,27,0,0,94.5,1000000,0
+Sander Berge,Sander Berge,,Fulham,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2227,0,0,3,12,1257,1463,86.0,50,34,158,100.0,1000000,0
+Sasa Lukic,Sasa Lukic,,Fulham,MID,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2355,0,2,18,21,666,763,87.0,68,6,256,100.0,1000000,0
+Timothy Castagne,Timothy Castagne,,Fulham,DEF,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1643,0,35,8,2,1182,1353,87.0,46,23,225,100.0,1000000,0
+Tom Cairney,Tom Cairney,,Fulham,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,615,2,0,11,0,0,0,0.0,13,0,0,39.5,1000000,0
+Willian,Willian,,Fulham,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,253,0,0,7,0,0,0,0.0,4,0,0,6.0,1000000,0
+Alex Palmer,Alex Palmer,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1170,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Ali Al-Hamadi,Ali Al-Hamadi,,Ipswich Town,FWD,Iraq,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,125,0,0,4,0,0,0,0.0,35,0,0,1.5,1000000,0
+Arijanet Muric,Arijanet Muric,,Ipswich Town,GKP,Kosovo,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1620,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Axel Tuanzebe,Axel Tuanzebe,,Ipswich Town,DEF,DR Congo,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1717,0,0,4,35,890,1011,88.0,31,12,103,90.9,1000000,0
+Ben Godfrey,Ben Godfrey,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,159,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Ben Johnson,Ben Johnson,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1348,35,2,7,2,510,590,86.0,38,16,60,100.0,1000000,0
+Cameron Burgess,Cameron Burgess,,Ipswich Town,DEF,Australia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1540,0,2,10,11,1143,1300,88.0,17,46,200,100.0,1000000,0
+Christian Walton,Christian Walton,,Ipswich Town,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Conor Chaplin,Conor Chaplin,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,854,35,1,16,0,0,0,0.0,15,0,0,39.5,1000000,0
+Conor Townsend,Conor Townsend,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,335,0,0,35,0,0,0,0.0,11,0,0,16.5,1000000,0
+Dara O'Shea,Dara O'Shea,,Ipswich Town,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3123,0,0,22,13,160,224,71.0,49,4,41,100.0,1000000,0
+George Edmundson,George Edmundson,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+George Hirst,George Hirst,,Ipswich Town,FWD,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,649,3,0,14,0,0,0,0.0,3,0,0,34.5,1000000,0
+Harry Clarke,Harry Clarke,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,378,0,0,35,0,0,0,0.0,5,0,0,7.5,1000000,0
+Jack Clarke,Jack Clarke,,Ipswich Town,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1170,0,4,17,7,376,513,73.0,32,10,131,100.0,1000000,0
+Jack Taylor,Jack Taylor,,Ipswich Town,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,838,35,0,19,0,0,0,0.0,20,0,0,40.0,1000000,0
+Jacob Greaves,Jacob Greaves,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2205,35,0,10,15,637,844,76.0,40,13,172,100.0,1000000,0
+Jaden Philogene,Jaden Philogene,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,800,2,0,19,0,0,0,0.0,25,0,0,57.5,1000000,0
+Jens Cajuste,Jens Cajuste,,Ipswich Town,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1976,35,1,12,10,274,348,79.0,44,12,60,100.0,1000000,0
+Julio Enciso,Julio Enciso,,Ipswich Town,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1164,2,3,52,9,591,700,84.0,12,4,366,90.2,1000000,0
+Kalvin Phillips,Kalvin Phillips,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1239,0,0,11,8,275,328,84.0,35,6,139,86.7,1000000,0
+Leif Davis,Leif Davis,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2746,35,2,16,35,700,757,93.0,46,18,111,100.0,1000000,0
+Liam Delap,Liam Delap,,Ipswich Town,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2612,0,2,68,6,1183,1314,90.0,11,32,224,100.0,1000000,0
+Luke Woolfenden,Luke Woolfenden,,Ipswich Town,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1186,0,0,35,2,363,442,82.0,9,4,61,44.1,1000000,0
+Marcus Harness,Marcus Harness,,Ipswich Town,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,43,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Massimo Luongo,Massimo Luongo,,Ipswich Town,MID,Australia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,197,0,0,0,0,0,0,0.0,9,0,0,13.5,1000000,0
+Nathan Broadhead,Nathan Broadhead,,Ipswich Town,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,696,2,0,13,0,0,0,0.0,9,0,0,33.5,1000000,0
+Omari Hutchinson,Omari Hutchinson,,Ipswich Town,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2590,3,2,45,6,436,483,90.0,32,21,39,100.0,1000000,0
+Sam Morsy,Sam Morsy,,Ipswich Town,MID,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2753,35,1,13,12,144,187,77.0,68,6,29,100.0,1000000,0
+Sam Szmodics,Sam Szmodics,,Ipswich Town,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1001,4,0,21,35,1090,1189,92.0,16,21,150,100.0,1000000,0
+Abdul Fatawu,Abdul Fatawu,,Leicester City,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,577,0,2,13,0,0,0,0.0,21,0,0,45.5,1000000,0
+Bilal El Khannouss,Bilal El Khannouss,,Leicester City,MID,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2193,2,3,30,3,825,930,89.0,50,19,82,100.0,1000000,0
+Bobby De Cordova-Reid,Bobby De Cordova-Reid,,Leicester City,MID,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,742,35,2,7,0,0,0,0.0,9,0,0,37.5,1000000,0
+Boubakary Soumaré,Boubakary Soumaré,,Leicester City,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2170,0,0,7,20,433,571,76.0,37,4,120,84.3,1000000,0
+Caleb Okoli,Caleb Okoli,,Leicester City,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1122,35,0,4,17,669,755,89.0,25,13,226,93.7,1000000,0
+Conor Coady,Conor Coady,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1713,35,0,2,35,484,558,87.0,13,9,56,69.1,1000000,0
+Danny Ward,Danny Ward,,Leicester City,GKP,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,135,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Facundo Buonanotte,Facundo Buonanotte,,Leicester City,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1513,5,2,36,3,1003,1104,91.0,53,32,108,100.0,1000000,0
+Hamza Choudhury,Hamza Choudhury,,Leicester City,MID,Bangladesh,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,130,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Harry Winks,Harry Winks,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1540,0,2,10,21,450,548,82.0,24,6,157,83.6,1000000,0
+Jake Evans,Jake Evans,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,21,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Jakub Stolarczyk,Jakub Stolarczyk,,Leicester City,GKP,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,900,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+James Justin,James Justin,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2920,2,2,25,17,995,1147,87.0,58,12,147,100.0,1000000,0
+Jamie Vardy,Jamie Vardy,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2839,9,0,58,3,1563,1683,93.0,19,56,96,100.0,1000000,0
+Jannik Vestergaard,Jannik Vestergaard,,Leicester City,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1395,0,0,3,3,981,1184,83.0,22,27,167,98.4,1000000,0
+Jeremy Monga,Jeremy Monga,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,105,0,0,3,0,0,0,0.0,2,0,0,3.0,1000000,0
+Kasey McAteer,Kasey McAteer,,Leicester City,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,852,35,1,13,0,0,0,0.0,23,0,0,51.5,1000000,0
+Luke Thomas,Luke Thomas,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1112,0,0,5,0,495,559,89.0,31,19,81,100.0,1000000,0
+Mads Hermansen,Mads Hermansen,,Leicester City,GKP,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2385,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Michael Golding,Michael Golding,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Odsonne Édouard,Odsonne Édouard,,Leicester City,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,142,0,0,5,0,0,0,0.0,2,0,0,3.0,1000000,0
+Olabade Aluko,Olabade Aluko,,Leicester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Oliver Skipp,Oliver Skipp,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1120,0,0,5,40,307,414,74.0,21,8,105,65.7,1000000,0
+Patson Daka,Patson Daka,,Leicester City,FWD,Zambia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,721,35,0,15,0,0,0,0.0,19,0,0,38.5,1000000,0
+Ricardo Pereira,Ricardo Pereira,,Leicester City,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,385,0,0,2,0,0,0,0.0,13,0,0,19.5,1000000,0
+Stephy Mavididi,Stephy Mavididi,,Leicester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1613,4,35,26,8,1872,2124,88.0,34,30,248,100.0,1000000,0
+Victor Kristiansen,Victor Kristiansen,,Leicester City,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2489,0,35,3,8,2680,2923,92.0,87,56,325,100.0,1000000,0
+Wilfred Ndidi,Wilfred Ndidi,,Leicester City,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2336,0,5,22,35,721,890,81.0,85,22,95,100.0,1000000,0
+Will Alves,Will Alves,,Leicester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Wout Faes,Wout Faes,,Leicester City,DEF,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2812,35,0,12,16,305,444,69.0,42,11,170,100.0,1000000,0
+Woyo Coulibaly,Woyo Coulibaly,,Leicester City,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,107,0,0,2,0,0,0,0.0,6,0,0,9.0,1000000,0
+Alexis Mac Allister,Alexis Mac Allister,,Liverpool,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2607,5,5,38,17,734,854,86.0,95,11,209,100.0,1000000,0
+Alisson Becker,Alisson Becker,,Liverpool,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2509,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Andy Robertson,Andy Robertson,,Liverpool,DEF,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2492,0,0,15,24,491,632,78.0,39,6,206,90.9,1000000,0
+Caoimhín Kelleher,Caoimhín Kelleher,,Liverpool,GKP,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,900,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Cody Gakpo,Cody Gakpo,,Liverpool,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1938,10,4,57,51,1089,1310,83.0,0,11,274,100.0,1000000,0
+Conor Bradley,Conor Bradley,,Liverpool,DEF,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,748,0,2,10,0,0,0,0.0,14,0,0,35.0,1000000,0
+Curtis Jones,Curtis Jones,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1710,3,3,34,4,592,718,83.0,39,18,76,100.0,1000000,0
+Darwin Núñez,Darwin Núñez,,Liverpool,FWD,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1118,5,0,34,12,286,348,82.0,21,5,69,100.0,1000000,0
+Diogo Jota,Diogo Jota,,Liverpool,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1194,6,3,51,3,850,979,87.0,14,21,170,100.0,1000000,0
+Dominik Szoboszlai,Dominik Szoboszlai,,Liverpool,MID,Hungary,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2496,6,6,67,10,417,505,83.0,38,6,98,100.0,1000000,0
+Federico Chiesa,Federico Chiesa,,Liverpool,FWD,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,104,0,0,5,0,0,0,0.0,35,0,0,1.5,1000000,0
+Harvey Elliott,Harvey Elliott,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,360,35,2,17,0,0,0,0.0,5,0,0,31.5,1000000,0
+Ibrahima Konaté,Ibrahima Konaté,,Liverpool,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2565,35,2,19,5,1220,1401,87.0,40,48,124,100.0,1000000,0
+Jarell Quansah,Jarell Quansah,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,488,0,0,35,0,0,0,0.0,12,0,0,18.0,1000000,0
+Jayden Danns,Jayden Danns,,Liverpool,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,10,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Joe Gomez,Joe Gomez,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,519,0,0,3,0,0,0,0.0,13,0,0,19.5,1000000,0
+Kostas Tsimikas,Kostas Tsimikas,,Liverpool,DEF,Greece,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,833,0,0,4,0,0,0,0.0,31,0,0,46.5,1000000,0
+Luis Díaz,Luis Díaz,,Liverpool,MID,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2410,0,5,71,0,435,517,84.0,39,21,43,100.0,1000000,0
+Mohamed Salah,Mohamed Salah,,Liverpool,MID,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3377,29,18,130,22,691,769,90.0,21,4,231,100.0,1000000,0
+Ryan Gravenberch,Ryan Gravenberch,,Liverpool,MID,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3168,0,4,20,9,618,747,83.0,69,26,62,100.0,1000000,0
+Trent Alexander-Arnold,Trent Alexander-Arnold,,Liverpool,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2377,3,6,45,7,944,1094,86.0,72,29,93,100.0,1000000,0
+Virgil van Dijk,Virgil van Dijk,,Liverpool,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3330,3,0,27,35,764,972,79.0,38,44,105,100.0,1000000,0
+Vítezslav Jaros,Vítezslav Jaros,,Liverpool,GKP,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,11,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Wataru Endo,Wataru Endo,,Liverpool,MID,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,261,0,0,0,0,0,0,0.0,12,0,0,18.0,1000000,0
+Abdukodir Khusanov,Abdukodir Khusanov,,Manchester City,DEF,Uzbekistan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,504,0,0,35,0,0,0,0.0,5,0,0,7.5,1000000,0
+Bernardo Silva,Bernardo Silva,,Manchester City,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2667,4,0,32,23,155,264,59.0,56,4,46,100.0,1000000,0
+Claudio Echeverri,Claudio Echeverri,,Manchester City,FWD,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,5,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Divin Mubama,Divin Mubama,,Manchester City,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,27,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Ederson,Ederson,,Manchester City,GKP,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2321,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Erling Haaland,Erling Haaland,,Manchester City,FWD,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2741,22,3,108,6,904,1032,88.0,11,24,108,100.0,1000000,0
+Ilkay Gündogan,Ilkay Gündogan,,Manchester City,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2227,35,0,27,35,1403,1701,83.0,25,41,321,100.0,1000000,0
+Jack Grealish,Jack Grealish,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,715,35,0,15,0,0,0,0.0,9,0,0,23.5,1000000,0
+Jahmai Simpson-Pusey,Jahmai Simpson-Pusey,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,95,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+James McAtee,James McAtee,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,342,3,0,12,0,0,0,0.0,5,0,0,37.5,1000000,0
+Jérémy Doku,Jérémy Doku,,Manchester City,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1513,3,6,29,6,1704,2054,83.0,31,34,225,100.0,1000000,0
+John Stones,John Stones,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,545,2,0,2,0,0,0,0.0,6,0,0,29.0,1000000,0
+Josko Gvardiol,Josko Gvardiol,,Manchester City,DEF,Croatia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3279,5,0,40,4,1039,1182,88.0,58,22,164,100.0,1000000,0
+Kevin De Bruyne,Kevin De Bruyne,,Manchester City,MID,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1704,4,7,57,27,288,448,64.0,17,5,121,100.0,1000000,0
+Kyle Walker,Kyle Walker,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,967,0,0,5,6,1353,1495,91.0,17,19,315,81.3,1000000,0
+Manuel Akanji,Manuel Akanji,,Manchester City,DEF,Switzerland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2014,0,0,15,4,795,897,89.0,19,27,96,95.7,1000000,0
+Mateo Kovacic,Mateo Kovacic,,Manchester City,MID,Croatia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2202,6,2,45,14,1045,1236,85.0,69,28,219,100.0,1000000,0
+Matheus Nunes,Matheus Nunes,,Manchester City,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1673,35,0,9,9,171,223,77.0,35,2,67,88.6,1000000,0
+Nathan Aké,Nathan Aké,,Manchester City,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,682,0,0,3,0,0,0,0.0,9,0,0,13.5,1000000,0
+Nico González,Nico González,,Manchester City,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,763,35,0,9,0,0,0,0.0,16,0,0,34.0,1000000,0
+Nico O'Reilly,Nico O'Reilly,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,527,2,0,8,0,0,0,0.0,9,0,0,33.5,1000000,0
+Omar Marmoush,Omar Marmoush,,Manchester City,FWD,Egypt,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1182,7,0,49,19,665,788,84.0,13,11,223,100.0,1000000,0
+Oscar Bobb,Oscar Bobb,,Manchester City,MID,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,14,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Phil Foden,Phil Foden,,Manchester City,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1779,7,2,54,35,712,836,85.0,13,15,105,100.0,1000000,0
+Rico Lewis,Rico Lewis,,Manchester City,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1891,35,2,10,6,942,1068,88.0,30,40,100,100.0,1000000,0
+Rodri,Rodri,,Manchester City,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,73,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Rúben Dias,Rúben Dias,,Manchester City,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2269,0,0,21,5,1704,1904,90.0,17,60,242,100.0,1000000,0
+Savinho,Savinho,,Manchester City,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1770,35,8,55,6,1036,1209,86.0,23,21,127,100.0,1000000,0
+Stefan Ortega,Stefan Ortega,,Manchester City,GKP,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1099,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Vitor Reis,Vitor Reis,,Manchester City,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Wes Burns,Wes Burns,,Manchester City,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,933,0,35,7,0,709,781,91.0,13,14,99,74.8,1000000,0
+Alejandro Garnacho,Alejandro Garnacho,,Manchester United,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2195,6,2,84,30,625,750,83.0,30,13,241,100.0,1000000,0
+Altay Bayindir,Altay Bayindir,,Manchester United,GKP,Turkiye,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,360,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Amad Diallo,Amad Diallo,,Manchester United,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1901,8,6,47,6,701,799,88.0,38,26,87,100.0,1000000,0
+André Onana,André Onana,,Manchester United,GKP,Cameroon,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3060,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Antony,Antony,,Manchester United,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,135,0,0,6,0,0,0,0.0,6,0,0,9.0,1000000,0
+Ayden Heaven,Ayden Heaven,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,171,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
+Bruno Fernandes,Bruno Fernandes,,Manchester United,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3024,8,10,96,15,1471,1758,84.0,84,29,254,100.0,1000000,0
+Casemiro,Casemiro,,Manchester United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1497,35,0,32,6,677,833,81.0,83,19,64,100.0,1000000,0
+Chido Obi,Chido Obi,,Manchester United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,160,0,0,5,0,0,0,0.0,2,0,0,3.0,1000000,0
+Christian Eriksen,Christian Eriksen,,Manchester United,MID,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1059,35,2,15,16,1153,1394,83.0,19,49,85,100.0,1000000,0
+Diogo Dalot,Diogo Dalot,,Manchester United,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2813,0,3,25,13,213,299,71.0,68,8,71,100.0,1000000,0
+Harry Amass,Harry Amass,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,346,0,0,3,0,0,0,0.0,6,0,0,9.0,1000000,0
+Harry Maguire,Harry Maguire,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1757,35,0,15,17,311,399,78.0,30,7,56,88.9,1000000,0
+Jonny Evans,Jonny Evans,,Manchester United,DEF,Northern Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,314,0,0,2,0,0,0,0.0,8,0,0,12.0,1000000,0
+Joshua Zirkzee,Joshua Zirkzee,,Manchester United,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1392,3,0,28,22,261,354,74.0,14,35,105,74.7,1000000,0
+Kobbie Mainoo,Kobbie Mainoo,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1656,0,0,15,5,1081,1244,87.0,46,40,143,100.0,1000000,0
+Leny Yoro,Leny Yoro,,Manchester United,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1162,0,0,5,6,273,352,78.0,0,3,109,27.9,1000000,0
+Lisandro Martínez,Lisandro Martínez,,Manchester United,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1754,2,35,17,2,610,688,89.0,40,24,104,100.0,1000000,0
+Luke Shaw,Luke Shaw,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,348,0,0,35,0,0,0,0.0,4,0,0,6.0,1000000,0
+Manuel Ugarte,Manuel Ugarte,,Manchester United,MID,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1789,35,2,19,12,1449,1633,89.0,77,28,143,100.0,1000000,0
+Mason Mount,Mason Mount,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,621,35,0,20,0,0,0,0.0,15,0,0,32.5,1000000,0
+Matthijs de Ligt,Matthijs de Ligt,,Manchester United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2128,2,0,18,6,646,764,85.0,30,23,120,100.0,1000000,0
+Noussair Mazraoui,Noussair Mazraoui,,Manchester United,DEF,Morocco,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2848,0,35,13,2,822,1027,80.0,115,33,199,100.0,1000000,0
+Patrick Dorgu,Patrick Dorgu,,Manchester United,DEF,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,842,0,0,10,0,0,0,0.0,31,0,0,46.5,1000000,0
+Rasmus Højlund,Rasmus Højlund,,Manchester United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2013,4,0,32,13,1194,1377,87.0,3,26,225,100.0,1000000,0
+Scott McTominay,Scott McTominay,,Manchester United,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,17,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Toby Collyer,Toby Collyer,,Manchester United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,175,0,0,35,0,0,0,0.0,12,0,0,18.0,1000000,0
+Tyler Fredricson,Tyler Fredricson,,Manchester United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,166,0,0,0,0,0,0,0.0,5,0,0,7.5,1000000,0
+Tyrell Malacia,Tyrell Malacia,,Manchester United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,99,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Victor Lindelöf,Victor Lindelöf,,Manchester United,DEF,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,697,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
+Alexander Isak,Alexander Isak,,Newcastle United,FWD,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2769,23,0,99,14,1242,1424,87.0,12,22,132,100.0,1000000,0
+Anthony Gordon,Anthony Gordon,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2444,6,5,59,41,780,997,78.0,32,11,305,100.0,1000000,0
+Bruno Guimarães,Bruno Guimarães,,Newcastle United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3282,5,0,45,41,807,1092,74.0,83,14,267,100.0,1000000,0
+Callum Wilson,Callum Wilson,,Newcastle United,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,357,0,0,6,0,0,0,0.0,2,0,0,3.0,1000000,0
+Dan Burn,Dan Burn,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3330,35,1,23,20,326,495,66.0,39,11,155,100.0,1000000,0
+Emil Krafth,Emil Krafth,,Newcastle United,DEF,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,334,0,0,35,0,0,0,0.0,4,0,0,6.0,1000000,0
+Fabian Schär,Fabian Schär,,Newcastle United,DEF,Switzerland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2937,4,0,40,12,410,515,80.0,36,12,119,100.0,1000000,0
+Harvey Barnes,Harvey Barnes,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1755,9,4,63,5,535,616,87.0,16,15,91,100.0,1000000,0
+Jacob Murphy,Jacob Murphy,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2379,8,12,43,4,493,569,87.0,0,8,134,100.0,1000000,0
+Joe Willock,Joe Willock,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1074,0,2,18,11,292,405,72.0,30,6,52,89.6,1000000,0
+Joelinton,Joelinton,,Newcastle United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2404,4,3,45,7,1357,1574,86.0,57,25,203,100.0,1000000,0
+Kieran Trippier,Kieran Trippier,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1308,0,3,4,2,715,818,87.0,38,19,110,100.0,1000000,0
+Lewis Hall,Lewis Hall,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2192,0,4,11,32,216,348,62.0,58,2,134,100.0,1000000,0
+Lewis Miley,Lewis Miley,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,304,35,0,3,0,0,0,0.0,14,0,0,31.0,1000000,0
+Martin Dúbravka,Martin Dúbravka,,Newcastle United,GKP,Slovakia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,900,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Matt Targett,Matt Targett,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,20,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Miguel Almirón,Miguel Almirón,,Newcastle United,MID,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,151,0,0,6,0,0,0,0.0,3,0,0,4.5,1000000,0
+Nick Pope,Nick Pope,,Newcastle United,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2520,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Sandro Tonali,Sandro Tonali,,Newcastle United,MID,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2631,4,2,35,3,737,837,88.0,51,15,97,100.0,1000000,0
+Sean Longstaff,Sean Longstaff,,Newcastle United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,786,0,0,6,0,0,0,0.0,27,0,0,40.5,1000000,0
+Sven Botman,Sven Botman,,Newcastle United,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,414,0,0,5,0,0,0,0.0,12,0,0,18.0,1000000,0
+Tino Livramento,Tino Livramento,,Newcastle United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2842,0,35,6,18,710,949,75.0,54,20,36,100.0,1000000,0
+William Osula,William Osula,,Newcastle United,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,124,35,0,4,0,0,0,0.0,2,0,0,13.0,1000000,0
+Álex Moreno,Álex Moreno,,Nottingham Forest,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,959,0,35,6,46,507,658,77.0,25,3,145,72.1,1000000,0
+Anthony Elanga,Anthony Elanga,,Nottingham Forest,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2507,6,11,44,19,655,809,81.0,19,7,209,100.0,1000000,0
+Callum Hudson-Odoi,Callum Hudson-Odoi,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2201,5,2,37,4,1926,2137,90.0,22,20,332,100.0,1000000,0
+Chris Wood,Chris Wood,,Nottingham Forest,FWD,New Zealand,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2976,20,3,68,2,562,657,86.0,6,7,55,100.0,1000000,0
+Danilo,Danilo,,Nottingham Forest,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,275,0,0,0,0,0,0,0.0,8,0,0,12.0,1000000,0
+Elliot Anderson,Elliot Anderson,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2742,2,6,40,7,715,868,82.0,92,21,128,100.0,1000000,0
+Eric da Silva Moreira,Eric da Silva Moreira,,Nottingham Forest,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,28,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Harry Toffolo,Harry Toffolo,,Nottingham Forest,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,135,0,0,35,0,0,0,0.0,5,0,0,7.5,1000000,0
+Ibrahim Sangaré,Ibrahim Sangaré,,Nottingham Forest,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,590,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Jota Silva,Jota Silva,,Nottingham Forest,FWD,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,840,3,35,23,0,0,0,0.0,0,0,0,37.0,1000000,0
+Matz Sels,Matz Sels,,Nottingham Forest,GKP,Belgium,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3420,0,0,0,0,0,0,0.0,35,0,0,1.5,1000000,0
+Morato,Morato,,Nottingham Forest,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,893,0,0,2,0,0,0,0.0,22,0,0,33.0,1000000,0
+Morgan Gibbs-White,Morgan Gibbs-White,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2822,7,8,61,20,651,864,75.0,43,6,234,100.0,1000000,0
+Murillo,Murillo,,Nottingham Forest,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3191,2,0,25,35,624,667,94.0,53,7,102,100.0,1000000,0
+Nathan Wood,Nathan Wood,,Nottingham Forest,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,772,0,0,2,0,0,0,0.0,14,0,0,21.0,1000000,0
+Neco Williams,Neco Williams,,Nottingham Forest,DEF,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2590,35,3,37,35,299,390,77.0,90,3,102,100.0,1000000,0
+Nicolás Domínguez,Nicolás Domínguez,,Nottingham Forest,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1970,0,35,21,8,850,1026,83.0,86,27,71,100.0,1000000,0
+Nikola Milenkovic,Nikola Milenkovic,,Nottingham Forest,DEF,Serbia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3330,5,2,29,3,1368,1589,86.0,51,34,202,100.0,1000000,0
+Ola Aina,Ola Aina,,Nottingham Forest,DEF,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3003,2,35,11,35,418,495,84.0,55,11,33,100.0,1000000,0
+Ramón Sosa,Ramón Sosa,,Nottingham Forest,FWD,Paraguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,281,35,0,11,0,0,0,0.0,5,0,0,17.5,1000000,0
+Ryan Yates,Ryan Yates,,Nottingham Forest,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1904,2,0,33,3,1243,1423,87.0,42,29,144,100.0,1000000,0
+Taiwo Awoniyi,Taiwo Awoniyi,,Nottingham Forest,FWD,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,400,35,0,10,0,0,0,0.0,6,0,0,19.0,1000000,0
+Willy-Arnaud Boly,Willy-Arnaud Boly,,Nottingham Forest,DEF,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,146,0,0,35,0,0,0,0.0,6,0,0,9.0,1000000,0
+Aaron Ramsdale,Aaron Ramsdale,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2700,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Adam Lallana,Adam Lallana,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,356,0,2,3,0,0,0,0.0,8,0,0,26.0,1000000,0
+Albert Grønbæk,Albert Grønbæk,,Southampton,FWD,Denmark,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,143,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
+Alex McCarthy,Alex McCarthy,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,450,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Armel Bella-Kotchap,Armel Bella-Kotchap,,Southampton,DEF,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,329,0,0,35,0,0,0,0.0,7,0,0,10.5,1000000,0
+Ben Brereton,Ben Brereton,,Southampton,FWD,Chile,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,448,0,0,11,0,0,0,0.0,3,0,0,4.5,1000000,0
+Cameron Archer,Cameron Archer,,Southampton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1432,2,0,29,3,626,770,81.0,13,14,61,84.8,1000000,0
+Charlie Taylor,Charlie Taylor,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,353,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
+Chiedozie Ogbene,Chiedozie Ogbene,,Southampton,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,240,0,0,0,0,0,0,0.0,7,0,0,10.5,1000000,0
+Flynn Downes,Flynn Downes,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2154,35,0,10,5,1477,1628,91.0,49,16,191,100.0,1000000,0
+Jack Stephens,Jack Stephens,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1394,35,0,4,4,948,1095,87.0,34,21,69,100.0,1000000,0
+James Bree,James Bree,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1073,0,35,4,4,573,698,82.0,19,23,48,94.6,1000000,0
+Jan Bednarek,Jan Bednarek,,Southampton,DEF,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2535,2,0,5,5,2004,2265,89.0,36,24,494,100.0,1000000,0
+Jay Robinson,Jay Robinson,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,135,0,0,35,0,0,0,0.0,4,0,0,6.0,1000000,0
+Joachim Kayi-Sanda,Joachim Kayi-Sanda,,Southampton,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,12,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Joe Aribo,Joe Aribo,,Southampton,MID,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2018,3,0,17,10,388,483,80.0,47,12,115,100.0,1000000,0
+Joe Lumley,Joe Lumley,,Southampton,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,270,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Kamaldeen Sulemana,Kamaldeen Sulemana,,Southampton,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1406,35,0,29,27,719,890,81.0,22,14,276,88.3,1000000,0
+Kyle Walker-Peters,Kyle Walker-Peters,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2922,0,2,20,22,687,853,81.0,44,9,172,100.0,1000000,0
+Lesley Ugochukwu,Lesley Ugochukwu,,Southampton,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1664,35,0,10,4,2328,2595,90.0,50,33,266,100.0,1000000,0
+Mason Holgate,Mason Holgate,,Southampton,DEF,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,5,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Mateus Fernandes,Mateus Fernandes,,Southampton,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2919,2,4,42,44,753,949,79.0,89,17,277,100.0,1000000,0
+Paul Onuachu,Paul Onuachu,,Southampton,FWD,Nigeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1044,4,0,34,17,648,731,89.0,7,9,219,90.7,1000000,0
+Ronnie Edwards,Ronnie Edwards,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,12,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Ross Stewart,Ross Stewart,,Southampton,FWD,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,385,35,0,9,0,0,0,0.0,6,0,0,19.0,1000000,0
+Ryan Fraser,Ryan Fraser,,Southampton,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,306,0,0,35,0,0,0,0.0,6,0,0,9.0,1000000,0
+Ryan Manning,Ryan Manning,,Southampton,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1468,0,35,8,7,2165,2309,94.0,0,20,397,65.2,1000000,0
+Sam Amo-Ameyaw,Sam Amo-Ameyaw,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,26,0,0,35,0,0,0,0.0,35,0,0,1.5,1000000,0
+Samuel Edozie,Samuel Edozie,,Southampton,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,64,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
+Taylor Harwood-Bellis,Taylor Harwood-Bellis,,Southampton,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2828,35,0,20,9,1631,1840,89.0,0,35,244,89.2,1000000,0
+Tyler Dibling,Tyler Dibling,,Southampton,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1874,2,0,28,3,754,1025,74.0,34,19,158,100.0,1000000,0
+Welington,Welington,,Southampton,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,480,0,0,3,0,0,0,0.0,21,0,0,31.5,1000000,0
+Will Smallbone,Will Smallbone,,Southampton,MID,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,682,35,0,7,0,0,0,0.0,20,0,0,40.0,1000000,0
+Yukinari Sugawara,Yukinari Sugawara,,Southampton,DEF,Japan,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1555,35,0,14,4,753,846,89.0,31,18,110,100.0,1000000,0
+Alfie Dorrington,Alfie Dorrington,,Tottenham Hotspur,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,13,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Antonín Kinsky,Antonín Kinsky,,Tottenham Hotspur,GKP,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,540,0,0,0,0,0,0,0.0,3,0,0,4.5,1000000,0
+Archie Gray,Archie Gray,,Tottenham Hotspur,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1743,0,0,35,3,542,737,74.0,16,25,94,83.7,1000000,0
+Ben Davies,Ben Davies,,Tottenham Hotspur,DEF,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1330,0,0,5,3,249,320,78.0,17,13,50,68.4,1000000,0
+Brandon Austin,Brandon Austin,,Tottenham Hotspur,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,90,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Brennan Johnson,Brennan Johnson,,Tottenham Hotspur,MID,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2179,0,3,54,29,1647,2020,82.0,39,26,245,100.0,1000000,0
+Cristian Romero,Cristian Romero,,Tottenham Hotspur,DEF,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1420,35,0,16,13,992,1059,94.0,35,7,124,100.0,1000000,0
+Dane Scarlett,Dane Scarlett,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,31,0,0,35,0,0,0,0.0,35,0,0,1.5,1000000,0
+Dejan Kulusevski,Dejan Kulusevski,,Tottenham Hotspur,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2391,7,4,47,35,841,953,88.0,45,22,162,100.0,1000000,0
+Destiny Udogie,Destiny Udogie,,Tottenham Hotspur,DEF,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1931,0,0,5,5,1151,1373,84.0,75,37,195,100.0,1000000,0
+Djed Spence,Djed Spence,,Tottenham Hotspur,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1790,35,2,10,20,179,282,64.0,47,7,52,100.0,1000000,0
+Dominic Solanke,Dominic Solanke,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2206,9,3,60,23,1066,1243,86.0,18,9,163,100.0,1000000,0
+Fraser Forster,Fraser Forster,,Tottenham Hotspur,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Guglielmo Vicario,Guglielmo Vicario,,Tottenham Hotspur,GKP,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2160,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+James Maddison,James Maddison,,Tottenham Hotspur,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1816,9,7,39,4,1042,1277,82.0,31,41,128,100.0,1000000,0
+Kevin Danso,Kevin Danso,,Tottenham Hotspur,DEF,Austria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,843,0,0,7,0,0,0,0.0,7,0,0,10.5,1000000,0
+Lucas Bergvall,Lucas Bergvall,,Tottenham Hotspur,MID,Sweden,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1206,0,35,12,3,811,980,83.0,39,25,107,100.0,1000000,0
+Mathys Tel,Mathys Tel,,Tottenham Hotspur,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,913,2,0,23,4,559,647,86.0,16,17,67,95.3,1000000,0
+Micky van de Ven,Micky van de Ven,,Tottenham Hotspur,DEF,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1018,0,2,6,15,446,558,80.0,10,15,55,75.5,1000000,0
+Mikey Moore,Mikey Moore,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,361,0,35,3,0,0,0,0.0,2,0,0,10.0,1000000,0
+Pape Sarr,Pape Sarr,,Tottenham Hotspur,MID,Senegal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1913,3,0,34,3,1214,1359,89.0,49,10,281,100.0,1000000,0
+Pedro Porro,Pedro Porro,,Tottenham Hotspur,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2608,2,0,39,9,1155,1308,88.0,66,37,179,100.0,1000000,0
+Radu Dragusin,Radu Dragusin,,Tottenham Hotspur,DEF,Romania,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1251,0,0,5,13,248,325,76.0,10,2,67,40.8,1000000,0
+Richarlison,Richarlison,,Tottenham Hotspur,FWD,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,500,4,35,17,0,0,0,0.0,5,0,0,54.5,1000000,0
+Rodrigo Bentancur,Rodrigo Bentancur,,Tottenham Hotspur,MID,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1653,2,0,22,19,92,140,66.0,40,5,17,100.0,1000000,0
+Sergio Reguilón,Sergio Reguilón,,Tottenham Hotspur,DEF,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,195,0,0,2,0,0,0,0.0,4,0,0,6.0,1000000,0
+Son Heung-Min,Son Heung-Min,,Tottenham Hotspur,MID,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2116,7,9,57,7,437,528,83.0,17,11,177,100.0,1000000,0
+Timo Werner,Timo Werner,,Tottenham Hotspur,MID,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,508,0,3,8,0,0,0,0.0,6,0,0,30.0,1000000,0
+Will Lankshear,Will Lankshear,,Tottenham Hotspur,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,10,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Wilson Odobert,Wilson Odobert,,Tottenham Hotspur,FWD,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,849,35,0,13,0,0,0,0.0,14,0,0,31.0,1000000,0
+Yves Bissouma,Yves Bissouma,,Tottenham Hotspur,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1405,2,0,11,0,249,320,78.0,49,15,54,100.0,1000000,0
+Aaron Cresswell,Aaron Cresswell,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,823,0,0,5,0,0,0,0.0,11,0,0,16.5,1000000,0
+Aaron Wan-Bissaka,Aaron Wan-Bissaka,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3154,2,5,16,5,1244,1503,83.0,70,66,251,100.0,1000000,0
+Alphonse Areola,Alphonse Areola,,West Ham United,GKP,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2259,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Andy Irving,Andy Irving,,West Ham United,MID,Scotland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,162,0,0,4,0,0,0,0.0,7,0,0,10.5,1000000,0
+Carlos Soler,Carlos Soler,,West Ham United,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1404,35,0,25,10,770,960,80.0,16,14,59,79.0,1000000,0
+Crysencio Summerville,Crysencio Summerville,,West Ham United,FWD,Netherlands,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,780,35,0,14,0,0,0,0.0,13,0,0,29.5,1000000,0
+Danny Ings,Danny Ings,,West Ham United,FWD,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,270,35,2,14,0,0,0,0.0,4,0,0,30.0,1000000,0
+Edson Álvarez,Edson Álvarez,,West Ham United,MID,Mexico,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1781,0,35,12,7,1061,1289,82.0,50,31,189,100.0,1000000,0
+Emerson,Emerson,,West Ham United,GKP,Italy,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2126,2,0,16,11,914,1001,91.0,60,11,129,100.0,1000000,0
+Evan Ferguson,Evan Ferguson,,West Ham United,FWD,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,387,35,0,12,0,0,0,0.0,7,0,0,20.5,1000000,0
+Guido Rodríguez,Guido Rodríguez,,West Ham United,MID,Argentina,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1155,0,0,8,7,963,1118,86.0,36,40,132,100.0,1000000,0
+James Ward-Prowse,James Ward-Prowse,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1440,35,2,15,26,257,371,69.0,24,5,57,88.2,1000000,0
+Jarrod Bowen,Jarrod Bowen,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2979,0,8,87,0,946,1071,88.0,41,26,112,100.0,1000000,0
+Jean-Clair Todibo,Jean-Clair Todibo,,West Ham United,DEF,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1831,0,0,5,33,286,420,68.0,47,2,93,93.9,1000000,0
+Kaelan Casey,Kaelan Casey,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Konstantinos Mavropanos,Konstantinos Mavropanos,,West Ham United,DEF,Greece,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2037,0,0,18,3,434,558,78.0,35,12,82,93.9,1000000,0
+Lewis Orford,Lewis Orford,,West Ham United,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,47,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Lucas Paquetá,Lucas Paquetá,,West Ham United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2384,4,0,41,30,711,826,86.0,66,7,193,100.0,1000000,0
+Luis Guilherme,Luis Guilherme,,West Ham United,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,139,0,0,4,0,0,0,0.0,35,0,0,1.5,1000000,0
+Lukasz Fabianski,Lukasz Fabianski,,West Ham United,GKP,Poland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1161,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Maximilian Kilman,Maximilian Kilman,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3349,0,35,13,4,312,372,84.0,39,16,12,100.0,1000000,0
+Maxwel Cornet,Maxwel Cornet,,West Ham United,MID,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,71,0,0,35,0,0,0,0.0,5,0,0,7.5,1000000,0
+Michail Antonio,Michail Antonio,,West Ham United,FWD,Jamaica,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,844,35,1,19,0,0,0,0.0,2,0,0,20.0,1000000,0
+Mohammed Kudus,Mohammed Kudus,,West Ham United,MID,Ghana,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2601,5,3,75,3,1941,2153,90.0,38,49,214,100.0,1000000,0
+Niclas Füllkrug,Niclas Füllkrug,,West Ham United,FWD,Germany,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,788,3,2,16,0,0,0,0.0,4,0,0,50.0,1000000,0
+Ollie Scarles,Ollie Scarles,,West Ham United,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,662,0,0,3,0,0,0,0.0,21,0,0,31.5,1000000,0
+Tomás Soucek,Tomás Soucek,,West Ham United,MID,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2570,9,0,55,2,1075,1177,91.0,46,11,119,100.0,1000000,0
+Vladimír Coufal,Vladimír Coufal,,West Ham United,DEF,Czech Republic,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1061,0,0,7,35,139,199,70.0,22,10,63,69.0,1000000,0
+Alfie Pond,Alfie Pond,,Wolverhampton Wanderers,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+André,André,,Wolverhampton Wanderers,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2484,0,0,10,35,1245,1338,93.0,91,37,118,100.0,1000000,0
+Boubacar Traoré,Boubacar Traoré,,Wolverhampton Wanderers,MID,Mali,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Carlos Forbs,Carlos Forbs,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,232,0,0,2,0,0,0,0.0,8,0,0,12.0,1000000,0
+Chiquinho,Chiquinho,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,6,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Craig Dawson,Craig Dawson,,Wolverhampton Wanderers,DEF,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,969,0,0,5,8,1086,1211,90.0,15,21,205,81.0,1000000,0
+Dan Bentley,Dan Bentley,,Wolverhampton Wanderers,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,180,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Daniel Podence,Daniel Podence,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,46,0,0,35,0,0,0,0.0,0,0,0,0.0,1000000,0
+Emmanuel Agbadou,Emmanuel Agbadou,,Wolverhampton Wanderers,DEF,Cote D’Ivoire,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1411,35,0,7,20,1489,1778,84.0,30,13,181,99.7,1000000,0
+Gonçalo Guedes,Gonçalo Guedes,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,987,2,4,27,35,478,563,85.0,16,13,26,100.0,1000000,0
+Hwang Hee-Chan,Hwang Hee-Chan,,Wolverhampton Wanderers,MID,South Korea,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,650,2,0,5,0,0,0,0.0,6,0,0,29.0,1000000,0
+Jean-Ricner Bellegarde,Jean-Ricner Bellegarde,,Wolverhampton Wanderers,MID,France,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1681,2,7,22,8,821,1055,78.0,39,42,65,100.0,1000000,0
+João Gomes,João Gomes,,Wolverhampton Wanderers,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2987,3,0,35,14,846,1010,84.0,116,23,125,100.0,1000000,0
+Jørgen Strand Larsen,Jørgen Strand Larsen,,Wolverhampton Wanderers,FWD,Norway,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2599,0,0,54,29,551,680,81.0,10,14,166,60.3,1000000,0
+José Sá,José Sá,,Wolverhampton Wanderers,GKP,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2609,0,0,0,0,0,0,0.0,2,0,0,3.0,1000000,0
+Mario Lemina,Mario Lemina,,Wolverhampton Wanderers,MID,Gabon,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1363,35,3,18,7,148,201,74.0,51,6,23,100.0,1000000,0
+Marshall Munetsi,Marshall Munetsi,,Wolverhampton Wanderers,MID,Zimbabwe,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1079,2,35,22,17,1207,1389,87.0,24,6,271,98.1,1000000,0
+Mateus Mané,Mateus Mané,,Wolverhampton Wanderers,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Matheus Cunha,Matheus Cunha,,Wolverhampton Wanderers,MID,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2600,15,6,110,4,958,1079,89.0,38,15,157,100.0,1000000,0
+Matt Doherty,Matt Doherty,,Wolverhampton Wanderers,DEF,Ireland,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2113,2,35,10,7,299,360,83.0,38,13,40,100.0,1000000,0
+Nasser Djiga,Nasser Djiga,,Wolverhampton Wanderers,DEF,Burkina Faso,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,65,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Nélson Semedo,Nélson Semedo,,Wolverhampton Wanderers,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2891,0,4,18,9,813,927,88.0,62,29,62,100.0,1000000,0
+Pablo Sarabia,Pablo Sarabia,,Wolverhampton Wanderers,MID,Spain,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,805,3,0,17,0,0,0,0.0,16,0,0,54.0,1000000,0
+Pedro Lima,Pedro Lima,,Wolverhampton Wanderers,DEF,Brazil,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,70,0,0,35,0,0,0,0.0,35,0,0,1.5,1000000,0
+Rayan Aït-Nouri,Rayan Aït-Nouri,,Wolverhampton Wanderers,DEF,Algeria,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,3127,4,7,36,3,657,743,88.0,89,13,53,100.0,1000000,0
+Rodrigo Gomes,Rodrigo Gomes,,Wolverhampton Wanderers,MID,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,797,2,0,7,0,0,0,0.0,23,0,0,54.5,1000000,0
+Sam Johnstone,Sam Johnstone,,Wolverhampton Wanderers,GKP,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,630,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Santiago Bueno,Santiago Bueno,,Wolverhampton Wanderers,DEF,Uruguay,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1682,0,0,6,3,1077,1195,90.0,41,28,144,100.0,1000000,0
+Tom King,Tom King,,Wolverhampton Wanderers,GKP,Wales,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,1,0,0,0,0,0,0,0.0,0,0,0,0.0,1000000,0
+Tommy Doyle,Tommy Doyle,,Wolverhampton Wanderers,MID,England,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,475,0,35,9,0,0,0,0.0,11,0,0,23.5,1000000,0
+Toti Gomes,Toti Gomes,,Wolverhampton Wanderers,DEF,Portugal,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,2615,0,0,7,8,1256,1616,78.0,61,31,190,100.0,1000000,0
+Yerson Mosquera,Yerson Mosquera,,Wolverhampton Wanderers,DEF,Colombia,25,1999-01-01,180,75,Right,Premier League,2024-2025,35,442,0,0,2,0,0,0,0.0,11,0,0,16.5,1000000,0
