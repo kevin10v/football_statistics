@@ -251,7 +251,15 @@ This project's live scores interface is inspired by **[Flashscore.com](https://w
 
 Football Statistics ML Dashboard Project by Holberton School
 
-Kevin Voka                       Frenki Janaqi                  Erdi Shpati
-https://github.com/kevin10v.     https://github.com/frenk1j.    https://github.com/Erdi-Shpati
+Kevin Voka   
+https://github.com/kevin10v.
+
+
+Frenki Janaqi    
+https://github.com/frenk1j.
+
+
+Erdi Shpati
+https://github.com/Erdi-Shpati
 
 ---
