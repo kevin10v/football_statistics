@@ -9,8 +9,8 @@
     <div class="hero-section">
         <div class="hero-content">
             <div class="hero-icon">
-                <i class="fas fa-info-circle"></i>
-            </div>
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="hero-logo">
+            </div>            
             <h1 class="hero-title">
                 <span class="gradient-text">About Our Platform</span>
             </h1>
@@ -155,6 +155,12 @@
 
 <style>
 /* About Page Styles */
+.hero-logo {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
 .about-page {
     min-height: 100vh;
     background: var(--bg-primary);
