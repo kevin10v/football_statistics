@@ -4,34 +4,12 @@ let radarChart = null;
 let trendChart = null;
 let importanceChart = null;
 
-// Load player data
-async function loadPlayerData(playerName) {
-    showLoading(true);
-    currentPlayer = playerName;
+// Load player data - Navigate to player detail page
+function loadPlayerData(playerName) {
+    console.log('Navigating to player page:', playerName);
     
-    try {
-        // Fetch player stats
-        const response = await fetch(`/api/player/${encodeURIComponent(playerName)}`);
-        const data = await response.json();
-        
-        // Update UI
-        updatePlayerInfo(data);
-        updateDetailedStats(data);
-        updateRadarChart(data.radar_stats);
-        updateTrendChart(data.performance_trend);
-        updateRecentMatches(data.recent_matches);
-        loadHeatmap(playerName);
-        loadFeatureImportance();
-        
-        // Show dashboard
-        document.getElementById('playerDashboard').style.display = 'block';
-        showLoading(false);
-        
-    } catch (error) {
-        console.error('Error loading player data:', error);
-        alert('Failed to load player data. Please try again.');
-        showLoading(false);
-    }
+    // Navigate to individual player page
+    window.location.href = `/player/${encodeURIComponent(playerName)}`;
 }
 
 // Update player profile (with photo and complete info)

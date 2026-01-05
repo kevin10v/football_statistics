@@ -24,12 +24,11 @@
                 <div id="searchSuggestions" class="search-suggestions"></div>
             </div>
             
-            <!-- Hidden player list for JavaScript -->
-            <div id="playersData" style="display: none;">
-                {% for player in players %}
-                <span data-player="{{ player }}">{{ player }}</span>
-                {% endfor %}
-            </div>
+           
+            <!-- Player data as JSON for JavaScript -->
+<script id="playersData" type="application/json">
+{{ players_json | safe }}
+</script>
         </div>
     </div>
 
@@ -704,12 +703,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const playerSearch = document.getElementById('playerSearch');
     const searchSuggestions = document.getElementById('searchSuggestions');
-    const loadingState = document.getElementById('loadingState');
-    const playerDashboard = document.getElementById('playerDashboard');
     
     // Get all available players
     const playersData = document.getElementById('playersData');
     const allPlayers = Array.from(playersData.querySelectorAll('[data-player]')).map(el => el.getAttribute('data-player'));
+    
+    console.log('Available players:', allPlayers.slice(0, 5)); // Debug
     
     // Search with suggestions
     playerSearch.addEventListener('input', function() {
@@ -737,7 +736,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     const playerName = this.getAttribute('data-player');
                     playerSearch.value = playerName;
                     searchSuggestions.style.display = 'none';
-                    loadPlayerData(playerName);
+                    
+                    // Navigate to player page
+                    console.log('Navigating to:', playerName);
+                    window.location.href = `/player/${encodeURIComponent(playerName)}`;
                 });
             });
         } else {
@@ -749,7 +751,11 @@ document.addEventListener('DOMContentLoaded', function() {
     playerSearch.addEventListener('keypress', function(e) {
         if (e.key === 'Enter' && this.value.trim()) {
             searchSuggestions.style.display = 'none';
-            loadPlayerData(this.value.trim());
+            const playerName = this.value.trim();
+            
+            // Navigate to player page
+            console.log('Navigating to:', playerName);
+            window.location.href = `/player/${encodeURIComponent(playerName)}`;
         }
     });
     
@@ -759,253 +765,7 @@ document.addEventListener('DOMContentLoaded', function() {
             searchSuggestions.style.display = 'none';
         }
     });
-    
-    async function loadPlayerData(playerName) {
-        console.log('Loading player:', playerName);
-        loadingState.style.display = 'block';
-        playerDashboard.style.display = 'none';
-        
-        try {
-            const response = await fetch(`/api/player/${encodeURIComponent(playerName)}`);
-            console.log('Response status:', response.status);
-            
-            if (!response.ok) {
-                throw new Error('Player not found');
-            }
-            
-            const data = await response.json();
-            console.log('Player data received:', data);
-            
-            // Hide loading and show dashboard
-            loadingState.style.display = 'none';
-            playerDashboard.style.display = 'flex';
-            
-            displayPlayerData(data);
-            createCharts(data);
-            loadHeatmap(playerName);
-            
-        } catch (error) {
-            console.error('Error loading player:', error);
-            loadingState.style.display = 'none';
-            alert(`Player "${playerName}" not found. Please try another name.`);
-        }
-    }
-    
-    function displayPlayerData(data) {
-        console.log('Displaying player data...');
-        
-        // Player header
-        document.getElementById('playerName').textContent = data.player_name || 'Unknown Player';
-        document.getElementById('playerTeam').innerHTML = `<i class="fas fa-shield-alt"></i> ${data.current_team || 'Unknown'}`;
-        document.getElementById('playerPosition').innerHTML = `<i class="fas fa-running"></i> ${data.position || 'Unknown'}`;
-        document.getElementById('playerNationality').innerHTML = `<i class="fas fa-flag"></i> ${data.nationality || 'Unknown'}`;
-        document.getElementById('playerAge').innerHTML = `<i class="fas fa-birthday-cake"></i> ${data.age || '-'} years`;
-        
-        // Handle photo (use placeholder if missing)
-        const photoElement = document.getElementById('playerPhoto');
-        if (data.photo_url && data.photo_url !== 'NaN' && data.photo_url !== null) {
-            photoElement.src = data.photo_url;
-        } else {
-            photoElement.src = 'https://via.placeholder.com/150/5dade2/ffffff?text=' + encodeURIComponent(data.player_name.split(' ')[0]);
-        }
-        
-        // Stats cards
-        document.getElementById('totalGoals').textContent = data.total_goals || 0;
-        document.getElementById('totalAssists').textContent = data.total_assists || 0;
-        document.getElementById('totalMatches').textContent = data.total_matches || 0;
-        document.getElementById('avgPerformance').textContent = data.avg_performance ? parseFloat(data.avg_performance).toFixed(2) : '0.0';
-        
-        // Detailed stats
-        document.getElementById('detailGoals').textContent = data.total_goals || 0;
-        document.getElementById('detailAssists').textContent = data.total_assists || 0;
-        document.getElementById('detailShots').textContent = data.avg_shots ? parseFloat(data.avg_shots).toFixed(1) : '0.0';
-        document.getElementById('detailShotAccuracy').textContent = (data.shot_accuracy || 0) + '%';
-        document.getElementById('detailPasses').textContent = data.total_passes || 0;
-        document.getElementById('detailPassAcc').textContent = (data.avg_pass_accuracy || 0) + '%';
-        document.getElementById('detailAvgPasses').textContent = data.avg_passes_per_match ? parseFloat(data.avg_passes_per_match).toFixed(1) : '0.0';
-        document.getElementById('detailTackles').textContent = data.total_tackles || 0;
-        document.getElementById('detailInterceptions').textContent = data.total_interceptions || 0;
-        document.getElementById('detailDribbles').textContent = data.avg_dribbles ? parseFloat(data.avg_dribbles).toFixed(1) : '0.0';
-        
-        console.log('Player data displayed successfully');
-    }
-    
-    function createCharts(data) {
-        console.log('Creating charts...');
-        
-        try {
-            // Destroy existing charts if any
-            const existingRadar = Chart.getChart('radarChart');
-            if (existingRadar) existingRadar.destroy();
-            
-            const existingTrend = Chart.getChart('trendChart');
-            if (existingTrend) existingTrend.destroy();
-            
-            // Radar Chart
-            const radarCtx = document.getElementById('radarChart').getContext('2d');
-            new Chart(radarCtx, {
-            type: 'radar',
-            data: {
-                labels: ['Goals', 'Assists', 'Shots on Target', 'Pass Accuracy', 'Tackles', 'Interceptions', 'Dribbles'],
-                datasets: [{
-                    label: data.player_name,
-                    data: [
-                        data.radar_stats.goals,
-                        data.radar_stats.assists,
-                        data.radar_stats.shots_on_target,
-                        data.radar_stats.pass_accuracy / 10,
-                        data.radar_stats.tackles,
-                        data.radar_stats.interceptions,
-                        data.radar_stats.dribbles_completed
-                    ],
-                    backgroundColor: 'rgba(93, 173, 226, 0.2)',
-                    borderColor: '#5dade2',
-                    borderWidth: 2,
-                    pointBackgroundColor: '#5dade2',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: '#5dade2'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: true,
-                scales: {
-                    r: {
-                        beginAtZero: true,
-                        ticks: {
-                            color: 'var(--text-secondary)'
-                        },
-                        grid: {
-                            color: 'var(--border-color)'
-                        },
-                        pointLabels: {
-                            color: 'var(--text-primary)',
-                            font: {
-                                size: 12
-                            }
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: 'var(--text-primary)'
-                        }
-                    }
-                }
-            }
-        });
-        
-        console.log('Radar chart created');
-        
-        // Performance Trend
-        const trendCtx = document.getElementById('trendChart').getContext('2d');
-        new Chart(trendCtx, {
-            type: 'line',
-            data: {
-                labels: data.performance_trend.matches.map((_, i) => `Match ${i + 1}`),
-                datasets: [{
-                    label: 'Performance Rating',
-                    data: data.performance_trend.ratings,
-                    borderColor: '#5dade2',
-                    backgroundColor: 'rgba(93, 173, 226, 0.1)',
-                    tension: 0.4,
-                    fill: true,
-                    borderWidth: 3
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: true,
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: 'var(--text-primary)'
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            color: 'var(--text-secondary)'
-                        },
-                        grid: {
-                            color: 'var(--border-color)'
-                        }
-                    },
-                    x: {
-                        ticks: {
-                            color: 'var(--text-secondary)',
-                            maxTicksLimit: 10
-                        },
-                        grid: {
-                            color: 'var(--border-color)'
-                        }
-                    }
-                }
-            }
-        });
-        
-        console.log('Trend chart created');
-        
-        } catch (error) {
-            console.error('Error creating charts:', error);
-        }
-    }
-    
-    async function loadHeatmap(playerName) {
-        try {
-            console.log('Loading heatmap...');
-            const response = await fetch(`/api/heatmap/${encodeURIComponent(playerName)}`);
-            if (!response.ok) {
-                console.log('Heatmap not available');
-                return;
-            }
-            
-            const data = await response.json();
-            
-            const trace = {
-                x: data.x,
-                y: data.y,
-                mode: 'markers',
-                type: 'scatter',
-                marker: {
-                    size: 8,
-                    color: data.x,
-                    colorscale: 'Blues',
-                    showscale: true,
-                    opacity: 0.6
-                }
-            };
-            
-            const layout = {
-                title: '',
-                xaxis: {
-                    title: '',
-                    range: [0, 105],
-                    showgrid: true,
-                    gridcolor: '#e0e0e0'
-                },
-                yaxis: {
-                    title: '',
-                    range: [0, 68],
-                    showgrid: true,
-                    gridcolor: '#e0e0e0'
-                },
-                paper_bgcolor: 'rgba(0,0,0,0)',
-                plot_bgcolor: 'rgba(0,0,0,0)',
-                height: 400,
-                margin: { t: 20, b: 40, l: 40, r: 40 }
-            };
-            
-            Plotly.newPlot('heatmapContainer', [trace], layout, {responsive: true});
-            console.log('Heatmap loaded');
-        } catch (error) {
-            console.error('Error loading heatmap:', error);
-        }
-    }
 });
 </script>
+
 {% endblock %}
