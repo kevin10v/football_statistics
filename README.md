@@ -1,6 +1,6 @@
-# ⚽ Football Statistics & Live Scores Platform
+# ⚽ Football Statistics & Scores Platform
 
-A complete football analytics platform with **Flashscore-style live scores**, real match data, league tables, player statistics, and ML predictions.
+A complete football analytics platform with **Flashscore-style**, real match data, league tables, player statistics, and ML predictions.
 
 > **🎉 NEW!** Flashscore.com-inspired layout with real-time match display, league navigation, and comprehensive statistics!
 
@@ -15,8 +15,8 @@ A complete football analytics platform with **Flashscore-style live scores**, re
 - ⚡ **Interactive** - Click leagues, search matches, toggle views
 
 ### ⚽ Match & League Data
-- 🏆 **Live League Tables** - Real standings for 10+ European leagues
-- 📅 **Match Results** - 380+ matches per league with scores
+- 🏆 **Live League Tables** - Real standings for english premier league 24/25 season
+- 📅 **Match Results** - 380+ matches with scores
 - 🔥 **Team Form** - Recent performance tracking (W/D/L badges)
 - 📊 **Team Statistics** - Goals, wins, points, goal difference
 - 🔮 **Upcoming Fixtures** - Scheduled matches
